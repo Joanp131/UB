@@ -1,4 +1,3 @@
-import numpy as np
 import random
 
 def create_data(n):
@@ -24,7 +23,6 @@ def mitjana(data):
 
 def mediana(sorted_data):
     n = int(len(sorted_data))
-    #print("n: {}, n/2 = {}".format(n, n/2, end='\n'))
     if n % 2 == 0:
         return (sorted_data[int(n/2)-1] + sorted_data[int(n/2)])/2
     else:
@@ -37,9 +35,8 @@ def sort_data(data):
         sort = False
         for i in range (n-1):
             prev = data[i]
-            aft = data[i+1]
-            if prev > aft:
-                data[i] = aft
+            if prev > data[i+1]:
+                data[i] = data[i+1]
                 data[i+1] = prev
                 sort = True
     return data
@@ -60,11 +57,9 @@ def main():
     else:
         data = get_data()
         print("Exists data in text document, %d numbers\n" % len(data))
-        #print("data: ", data, "\n")
         sorted_data = sort_data(data)
-        #print("Sorted data: ", sorted_data, "\n")
         print("Mitjana: ", mitjana(data), "\n")
-        print("Mediana: ", mediana(sorted_data), "\n") #La funció de la mediana no funciona
+        print("Mediana: ", mediana(sorted_data), "\n")
     f.close()
     delete()
     
