@@ -62,7 +62,7 @@ def delete():
 
 def main():
     f = open("data.txt", "r+")
-    n = 1000
+    n = 1001
     text = f.read()
     if (text == ''):
         print("Text document with data is empty, filling up with %d numbers\n" % n)
