@@ -1,2 +1,2 @@
-#UB
-RecopilaciÛ de tots els projectes que faig de programaciÛ mentre estudio matem‡tiques a la UB
+# UB
+Recopilaci√≥ de tots els projectes que faig de programaci√≥ mentre estudio matem√†tiques a la UB
