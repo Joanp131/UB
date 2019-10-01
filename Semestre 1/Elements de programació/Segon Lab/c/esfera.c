@@ -11,7 +11,7 @@ int main(void) {
     scanf("%f", &r);
 
     if(r > 0) {
-        v = (4 * PI * r * r * r)/3;
+        v = 4/3.f * PI * r * r * r;
         a = 4 * PI * r * r;
 
         printf("El volum de l'esfera és %f i l'àrea és %f\n", v, a);
