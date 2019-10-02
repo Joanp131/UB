@@ -3,39 +3,36 @@
 
 int main(void) {
 
-    int i, l, sort = 1;
+    int i, len, sort = 1;
 
-    /*
     printf("De quants nombres vols trobar el màxim?\n");
-    scanf("%d", &l);
-    */
-   
-    l = 3;
-    int n[3];
- 
+    scanf("%d", &len);
+    
     /*
-    printf("Dona'm tres nombres reals: \n");
-    scanf("%f %f %f", &n[0], &n[1], &n[2]);
+    len = 3;
+    int nums[3];
     */
-
-    for (i = 0; i < l; i++) {
+    
+    printf("Dona'm %d nombres reals: \n", len);
+    
+    for (i = 0; i < len; i++) {
         printf("Dona'm un nombre enter: \n");
-        scanf("%d", &n[i]);
+        scanf("%d", &nums[i]);
     }
 
     while (sort) {
         sort = 0;
-        for (i = 0; i < l-1; l++) {
-            float prev = n[i];
-            if (prev > n[i+1]) {
-                n[i] = n[i+1];
-                n[i+1] = prev;
+        for (i = 0; i < len-1; i++) {
+            float prev = nums[i];
+            if (prev > nums[i+1]) {
+                nums[i] = nums[i+1];
+                nums[i+1] = prev;
                 sort = 1;
             }
         }
     }
 
-    printf("El màxim dels %d nombres és %d", l, n[l-1]);
+    printf("El màxim dels %d nombres és %d", len, nums[len-1]);
     
     return 0;
 }
