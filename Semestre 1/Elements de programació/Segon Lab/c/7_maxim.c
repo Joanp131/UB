@@ -7,17 +7,12 @@ int main(void) {
 
     printf("De quants nombres vols trobar el màxim?\n");
     scanf("%d", &len);
-    
-    /*
-    len = 3;
-    int nums[3];
-    */
-    
-    printf("Dona'm %d nombres reals: \n", len);
+
+    float nums[len];
     
     for (i = 0; i < len; i++) {
-        printf("Dona'm un nombre enter: \n");
-        scanf("%d", &nums[i]);
+        printf("Dona'm un nombre real: \n");
+        scanf("%f", &nums[i]);
     }
 
     while (sort) {
@@ -32,7 +27,7 @@ int main(void) {
         }
     }
 
-    printf("El màxim dels %d nombres és %d", len, nums[len-1]);
+    printf("El màxim dels %d nombres és %f\n", len, nums[len-1]);
     
     return 0;
 }
