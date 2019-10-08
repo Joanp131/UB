@@ -30,4 +30,21 @@ int main(void) {
     printf("El màxim dels %d nombres és %f\n", len, nums[len-1]);
     
     return 0;
+
+    /*
+    * int a, b, c, aux; 
+    * 
+    * printf("Dame a, b, c:\n");
+    * scanf("%d %d %d", a, b, c);
+    * 
+    * aux = a;
+    * 
+    * if(b>aux){aux = b};
+    * if(c>aux){aux = c};
+    * 
+    * printf("max=%d\n", aux);
+    * 
+    * return 0;
+    * 
+    *  */
 }
