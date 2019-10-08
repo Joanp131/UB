@@ -17,5 +17,7 @@ int main(void){
         i++;
     }
 
+    printf("El nombre té %d dígits, dels quals %d són parells i %d imparells.\n", i, p, i-p);
+
     return 0;
 }
