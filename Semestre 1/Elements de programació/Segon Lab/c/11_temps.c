@@ -5,10 +5,16 @@ int main(void) {
     
     int h, m, s;
 
-    print("Dona'm un temps en forma de Hores, Minuts i Segons:\n");
+    printf("Dona'm un temps en forma de Hores, Minuts i Segons:\n");
     scanf("%d %d %d", &h, &m, &s);
 
     s++;
+    m += (s/60);
+    h += (m/60);
+    m -= 60*(m/60);
+    s -= 60*(s/60);
+
+    printf("La teva hora amb un segon més és: %2d:%2d:%2d\n", h, m, s);
     
     return 0;
 }
