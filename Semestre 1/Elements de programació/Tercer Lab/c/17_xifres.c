@@ -12,30 +12,34 @@ long count(long n) {
 }
 
 int main(void) {
-    long n1, n2, x1 = 0, i, j;
+    long x1 = 0, i, j;
+    long n[2];
 
     printf("Dona'm el primer nombre\n");
-    scanf("%ld", &n1);
+    scanf("%ld", &n[0]);
 
     printf("Dona'm el segon nombre\n");
-    scanf("%ld", &n2);
+    scanf("%ld", &n[1]);
 
-    if (count(n1) != count(n2)) {
+    if (count(n[0]) != count(n[1])) {
         printf("Els nombres han de tenir el mateix nombre de xifres\n");
-        main();
-    }
+    } else {
+        x1 = count(n[0]);
+        long nums[2][x1];
 
-    x1 = count(n1);
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < x1; j++) {
+                nums[i][j] = n[i] % 10;
+                n[i] /= 10;
+            }
+        }
 
-    long nums[2][x1];
-
-    for (i = 0; i < 2; i++) {
         for (j = 0; j < x1; j++) {
-            nums[i][j] =
+            if (nums[0][j] == nums[1][j]) {
+                printf("A la posició %2ld es repeteix la xifra %ld\n", j+1, nums[0][j]);
+            }
         }
     }
-
-    printf("%ld té %ld xifres, %ld té %ld xifres\n",n1, x1, n2, x2);
 
     return 0;
 }
