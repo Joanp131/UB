@@ -5,10 +5,10 @@
 
 int main(void) {
 
-    int n, i, j, sum = 0;
+    long n, i, j, sum = 0;
     float c, t1, t2;
     printf("Dona'm n:\n");
-    scanf("%d", &n);
+    scanf("%ld", &n);
 
     printf("|     a     |     b     |     c     |\n");
     t1 = (float) clock() / CLOCKS_PER_SEC;
@@ -16,12 +16,12 @@ int main(void) {
         for (j = i; j <= n; j++) {
             c = sqrt(i*i + j*j);
             if(c == floor(c) && floor(c) <= n) {
-                printf("%11d %11d %11d\n", i, j,(int) c);
+                printf("%11ld %11ld %11ld\n", i, j,(long) c);
                 sum++;
             }
         }
     }
     t2 = (float) clock() / CLOCKS_PER_SEC;
-    printf("Calculades %d ternes pitagòriques en %.2f segons\n", sum, t2 - t1);
+    printf("Calculades %ld ternes pitagòriques en %.2f segons\n", sum, t2 - t1);
     return 0;
 }

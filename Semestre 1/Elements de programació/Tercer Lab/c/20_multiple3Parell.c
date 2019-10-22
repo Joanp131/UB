@@ -4,12 +4,12 @@
 
 int main(void) {
 
-    int nums[N], i = 0;
+    int nums[N], i = -1;
     
     printf("Dona'm nombres enters positius o -1 per parar:\n");
     do {
-        scanf("%d", &nums[i]);
         i++;
+        scanf("%d", &nums[i]);
     } while (nums[i] != -1);
 
     printf("De tots els nombres que m'has donat, els següents són multiples de 3 i parells:\n");
