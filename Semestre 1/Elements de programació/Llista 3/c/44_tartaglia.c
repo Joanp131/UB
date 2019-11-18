@@ -20,7 +20,7 @@ int main(void) {
 
     /* Següents files */
     for(j = 1; j < n; j++) {
-        width = w.ws_col/n;
+        width = w.ws_col/(j+1);
         for(i = 1; i < n-1; i++) {
             fila[i] = fila[i] + fila[i+1];
         }
