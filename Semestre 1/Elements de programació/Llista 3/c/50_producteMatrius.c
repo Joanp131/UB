@@ -6,7 +6,7 @@
 int main(void) {
 
     int n, m, p, i, j, k;
-    srand((int) time(NULL));
+    srand((int) -1);
 
     printf("Dona'm la dimensió de la matriu A:\n");
     scanf("%d %d", &m, &n);
