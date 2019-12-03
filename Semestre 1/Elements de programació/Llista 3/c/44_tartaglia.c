@@ -1,12 +1,9 @@
 /* Crea el triangle aquell raro */
 #include <stdio.h>
-#include <sys/ioctl.h>
 
 int main(void) {
-    struct winsize w;
-    ioctl(0, TIOCGWINSZ, &w);
 
-    int n, i, j, k, width;
+    int n, i, j;
 
     do {
         printf("Quantes files del triangle vols crear? -> ");
@@ -18,18 +15,15 @@ int main(void) {
         fila[i] = 0;
     }
 
+    fila[1] = 1;
     /* Següents files */
-    for(j = 1; j < n; j++) {
-        width = w.ws_col/(j+1);
-        for(i = 1; i < n-1; i++) {
-            fila[i] = fila[i] + fila[i+1];
+    for(j = 1; j <= n; j++) {
+        for(i = 1; i < n/j; i++) {
+            printf(" ");
         }
-        fila[0] = fila[j] = 1;
-        for(i = 0; i < j; i++) {
-            for(k = 0; k < width; k++) {
-                printf(" ");
-            }
-            printf("%d", fila[i]);
+        for(i = j; i >= 1; i--) {
+            fila[i] = fila[i-1] + fila[i];
+            printf("%9d", fila[i]);
         }
         printf("\n");
     }
