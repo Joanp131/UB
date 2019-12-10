@@ -10,7 +10,7 @@ double Vlen(double[], int);
 
 int main(void) {
     int n, i;
-    double cosin;
+    double cosin, pre, lx, ly;
 
     printf("Quina vols que sigui la dimensió dels vectors?\n");
     scanf("%d", &n);
@@ -26,13 +26,14 @@ int main(void) {
         scanf("%lg", &y[i]);
     }
 
-    printf("Pr es -> %lg\n", prodEscalar(x, y, n));
-    printf("Len x -> %lg\n", Vlen(x, n));
-    printf("Len y -> %lg\n", Vlen(y, n));
+    pre = prodEscalar(x, y, n);
+    lx = Vlen(x, n);
+    ly = Vlen(y, n);
+    printf("Pr es -> %lg\n", pre);
+    printf("Len x -> %lg\n", lx);
+    printf("Len y -> %lg\n", ly);
 
-    cosin = prodEscalar(x, y, n);
-    cosin /=  (double) (Vlen(x, n) * Vlen(y, n));
-    printf("Cosin -> %lg\n", cosin);
+    cosin = pre / (lx*ly);
 
     printf("L'angle entre els vectors és: %lg\n", acos(cosin)*180./PI);
 
@@ -51,7 +52,7 @@ double prodEscalar(double x[], double y[], int dim) {
 }
 
 double Vlen(double x[], int dim) {
-    double sum;
+    double sum = 0;
     int i;
 
     for(i = 0; i < dim; i++) {
