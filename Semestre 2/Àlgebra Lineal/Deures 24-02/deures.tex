@@ -1,0 +1,83 @@
+\documentclass[a4paper, 9pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,250mm},
+ top=20mm,
+ }
+
+\title{Deures 10/02/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \justify
+    \section*{Enunciat:}
+
+    Considerem en ${\mathbb{R}^n}$ les operacions definides com:
+    \begin{center}
+        \begin{math}
+            (a_1, \dots , a_n) +^* (b_1, \dots , b_n) := (a_1 +_{\mathbb{R}} b_1 - 1, \dots , a_n +_{\mathbb{R}} b_n -1) 
+        \end{math}
+        \begin{math}
+            \alpha \cdot^* (a_1, \dots , a_n) := (\alpha \cdot_{\mathbb{R}} (a_1 -1)+1, \dots , \alpha \cdot_{\mathbb{R}} (a_n -1)+1)
+        \end{math}
+    \end{center}
+    Prova que (${\mathbb{R}}^n$, ${+^*}$, ${\cdot^*}$) \'es un espai vectorial. Caracteritza al vector nul de ${\mathbb{R}^n}$, i al vector oposat d'un dau.  \\
+
+    \section*{Demostraci\'o:}
+    Per demostrar que (${\mathbb{R}}^n$, ${+^*}$, ${\cdot^*}$) \'es un espai vectorial haurem de demostrar que es compleixen els vuit condicions de les dues operacions:
+    
+    \subsection*{1. ${+^*}$ \'es associativa:}
+        Hem de demostrar que ${(u+v)+w = u+(v+w), \forall u,v,w \in E}$. Per demostrar-ho agafarem vectors ${u = (a_1, \dots , a_n)}$, ${v = (b_1, \dots , b_n)}$ i ${w = (c_1, \dots , c_n)}$, tots en ${\mathbb{R}^n}$. Per definici\'o de ${+^*}$ tenim que:
+        \begin{center}
+            \begin{math}
+                (u+v)+w = ((a_1+b_1-1)+c1-1,\dots,(a_n+b_n-1)+c_n-1) = (a_1+b_1-1+c_1-1,\dots,a_n+b_n-1+c_n-1) = (a_1+(b_1+c_1-1)-1,\dots,a_n+(b_n+c_n-1)-1) = u+(v+w)
+            \end{math}
+        \end{center}
+        D'on queda demostrada la propietat associativa.
+
+    \subsection*{2. ${+^*}$ \'es commutativa}
+        Hem de demostrar que ${u + v = v + u, \forall u,v \in E}$. Per fer-ho, utilitzarem dos vectors qualsevols que anomenarem \emph{u} i \emph{v} (${u,v\in \mathbb{R}^n}$), on
+        \begin{center}
+            \begin{math}
+                u = (a_1, \dots , a_n), 
+            \end{math}
+            \begin{math}
+                v = (b_1, \dots , b_n)
+            \end{math}
+        \end{center}
+        Utilitzant la definici\'o de ${+^*}$ trobem que:
+        \begin{center}
+            \begin{math}
+                u + v = (a_1 + b_1 -1, \dots , a_n+b_n-1) = (b_1+a_1-1, \dots , b_n+a_n-1) = v + u
+            \end{math}
+        \end{center}
+        D'on trobem que ${+^*}$ \'es associativa.
+
+    \subsection*{3. Vector nul} 
+        Per demostrar que existeix un vector nul, hem de trobar ${\vec{0} \in \mathbb{R}^n}$ tal que ${u + \vec{0} = u, \forall u \in \mathbb{R}^n}$. Sigui ${u = (a_1,\dots,a_n)}$ un vector qualsevol de ${\mathbb{R}^n}$ i ${\vec{0} = (b_1,\dots,b_n)}$ aplicant la definici\'o de ${+^*}$ tenim:
+        \begin{center}
+            \begin{math}
+                u + \vec{0} = (a_1+b_1-1,\dots,a_n+b_n-1) = (a_1,\dots,a_n) = u \implies  a_1+b_1-1 = a_1, \cdots, a_n+b_n-1 = a_n \implies b_1 = 1, \cdots , b_n = 1 \implies \vec{0} = (1, \dots, 1)               
+            \end{math}
+        \end{center}
+        Així podem veure que es compleix la propietat del vector nul i aquest \'es ${\vec{0} = (1,\dots,1)}$
+        
+    \subsection*{4. Suma de l'invers}
+        La quarta propietat que hem de demostrar \'es que ${\forall u \in \mathbb{R}^n}$, ${u +^* (-1)\cdot^*u = \vec{0}}$. Per demostrar-ho aplicarem la deficici\'o de ${+^*}$ i de ${\cdot^*}$:
+        \begin{center}
+            Sigui ${u = (a_1,\dots,a_n)}$ \\
+            \begin{math}
+                u+^*(-1)\cdot^*u = u +^* (-1\cdot(a_1-1)+1,\dots,-1\cdot(a_n-1)+1) = u +^* (-a_1+1+1,\dots,a_n+1+1) = u +^* (2-a_1,\dots,2-a_n) = (a_1+(2-a_1)-1,\dots,a_n+(2-a_n)-1) = (1,\dots,1) = \vec{0}
+            \end{math}
+        \end{center}
+
+    \subsection*{5. Propietat distributiva de ${\cdot^*}$}
+        
+
+\end{document}  
