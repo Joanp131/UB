@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    126841,       2946]
-NotebookOptionsPosition[    118468,       2803]
-NotebookOutlinePosition[    118953,       2821]
-CellTagsIndexPosition[    118910,       2818]
+NotebookDataLength[    128206,       2970]
+NotebookOptionsPosition[    119829,       2827]
+NotebookOutlinePosition[    120314,       2845]
+CellTagsIndexPosition[    120271,       2842]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -286,11 +286,11 @@ html"], None}, "http://reference.wolfram.com/language/ref/FactorInteger.html",
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIcon"],
-                ImageSizeCache->{13., {4., 9.}}], True->
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}], True->
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIconHot"],
-                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}]}, Dynamic[
                 CurrentValue["MouseOver"]]],
               Appearance->None,
               BaseStyle->"Link",
@@ -328,12 +328,13 @@ RowBox[{StyleBox[\\\"n\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"k\\\", \
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{10., {2., 8.}}], True->
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
+              True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
-              System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
+               Dynamic[System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -609,11 +610,11 @@ that divide \\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\). \"\>",
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIcon"],
-                ImageSizeCache->{13., {4., 9.}}], True->
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}], True->
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIconHot"],
-                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}]}, Dynamic[
                 CurrentValue["MouseOver"]]],
               Appearance->None,
               BaseStyle->"Link",
@@ -647,11 +648,13 @@ that divide \\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\). \"\>",
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{10., {2., 8.}}], True->
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
+              True->
+              
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
-              System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
+               Dynamic[System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -915,11 +918,11 @@ html", "Hyperlink", {
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIcon"],
-                ImageSizeCache->{13., {4., 9.}}], True->
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}], True->
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIconHot"],
-                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}]}, Dynamic[
                 CurrentValue["MouseOver"]]],
               Appearance->None,
               BaseStyle->"Link",
@@ -954,12 +957,13 @@ StyleBox[\\\"n\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives the \
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{10., {2., 8.}}], True->
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
+              True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
-              System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
+               Dynamic[System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -1224,11 +1228,11 @@ StyleBox[\\\"x\\\", \\\"TI\\\"], \\\")\\\"}]}]\\) less than or equal to \
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIcon"],
-                ImageSizeCache->{13., {4., 9.}}], True->
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}], True->
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIconHot"],
-                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}]}, Dynamic[
                 CurrentValue["MouseOver"]]],
               Appearance->None,
               BaseStyle->"Link",
@@ -1263,12 +1267,13 @@ StyleBox[\\\"x\\\", \\\"TI\\\"], \\\")\\\"}]}]\\) less than or equal to \
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{10., {2., 8.}}], True->
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
+              True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
-              System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
+               Dynamic[System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -1541,11 +1546,11 @@ html", "Hyperlink", {
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIcon"],
-                ImageSizeCache->{13., {4., 9.}}], True->
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}], True->
                
                DynamicBox[FEPrivate`FrontEndResource[
                 "FEBitmaps", "InformationHelpIconHot"],
-                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                ImageSizeCache->{9.36, {4., 5.359999999999999}}]}, Dynamic[
                 CurrentValue["MouseOver"]]],
               Appearance->None,
               BaseStyle->"Link",
@@ -1579,11 +1584,13 @@ False otherwise. \"\>", "InformationUsageText",
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{10., {2., 8.}}], True->
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
+              True->
+              
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
-              System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
+               Dynamic[System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -1684,21 +1691,24 @@ generar una taula dels 1000 primers nombres primers.",
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"4d819ce2-2ae5-4fbb-8203-e6253815c3a3"],
 
-Cell["\<\
-Primer de tot hem de veure com funciona la comanda Table[expre, {i, max}]. \
-Per aprendre tenim dues opcions: podem fer el mateix que a l' exercici 1 o \
+Cell[TextData[{
+ "Primer de tot hem de veure com funciona la comanda Table[expre, {i, max}]. \
+Per aprendre tenim dues opcions: podem fer el mateix que a l'exercici 1 o \
 podem escriure Table en qualsevol lloc, posar el cursor a sobre de la paraula \
-i hauria de sortir un petit bot\[OAcute] amb forma d'interrogant. Fent click \
-se'ns obrir\[AGrave] una pestanya nova amb tota la informaci\[OAcute] del \
-comando.
-Un cop llegida la documentaci\[OAcute] del comando ja el podem utilitzar :\
-\>", "Text",
+i hauria de sortir un petit bot\[OAcute] amb forma d'interrogant. Fent ",
+ StyleBox["click",
+  FontSlant->"Italic"],
+ " se'ns obrir\[AGrave] una pestanya nova amb tota la informaci\[OAcute] de \
+la comanda.\nUn cop llegida la documentaci\[OAcute] de la comanda ja la podem \
+utilitzar:"
+}], "Text",
  CellChangeTimes->{{3.7905246521864963`*^9, 3.790524687851323*^9}, {
-  3.7905247837559175`*^9, 3.790524820765209*^9}, {3.7905252351407166`*^9, 
-  3.7905252757670507`*^9}, {3.790525322569725*^9, 3.7905255030739355`*^9}, {
-  3.7905297582271895`*^9, 3.7905297704931436`*^9}, {3.790529978930991*^9, 
-  3.790529983861816*^9}, {3.790530363864175*^9, 3.7905303899111233`*^9}, {
-  3.7905817186605434`*^9, 3.790581767775034*^9}},
+   3.7905247837559175`*^9, 3.790524820765209*^9}, {3.7905252351407166`*^9, 
+   3.7905252757670507`*^9}, {3.790525322569725*^9, 3.7905255030739355`*^9}, {
+   3.7905297582271895`*^9, 3.7905297704931436`*^9}, {3.790529978930991*^9, 
+   3.790529983861816*^9}, {3.790530363864175*^9, 3.7905303899111233`*^9}, {
+   3.7905817186605434`*^9, 3.790581767775034*^9}, {3.790922454986485*^9, 
+   3.7909224831172647`*^9}, 3.7909225456340637`*^9},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"9be67e7c-fa4c-4729-9e34-e7dcc4c5ca92"],
 
@@ -1927,12 +1937,12 @@ Cell[TextData[StyleBox["3. Es cert que tots els nombres de la forma n^2 - n + \
 
 Cell["\<\
 Per saber-ho, podem generar una llista de les 100 primeres n i mirarem si n^2 \
-+ n - 41 \[EAcute]s o no \[EAcute]s primer :\
+- n + 41 \[EAcute]s o no \[EAcute]s primer :\
 \>", "Text",
  CellChangeTimes->{{3.7905256851389713`*^9, 3.7905256963920307`*^9}, {
    3.790525745673864*^9, 3.79052575996194*^9}, {3.7905257999240417`*^9, 
    3.7905258168023825`*^9}, 3.790529808112629*^9, {3.7905818146460114`*^9, 
-   3.790581815548256*^9}},
+   3.790581815548256*^9}, {3.790922496443649*^9, 3.7909225006773324`*^9}},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"37317551-23a1-4f8f-bca6-a8081e393903"],
 
@@ -1981,11 +1991,15 @@ Cell[BoxData[
 
 Cell["\<\
 I veiem que fins a un cert valor de n \[EAcute]s cert, per\[OGrave] clarament \
-no ho \[EAcute]s per a tot n. Per saber a partir de quin n tenim el primer no \
-prim, podem tornar a generar la taula posant el valor de n al comando:\
+no ho \[EAcute]s per a tot n. Per saber a partir de quin n tenim el primer \
+nombre no primer, podem tornar a generar la taula posant el valor de n a la \
+comanda:\
 \>", "Text",
  CellChangeTimes->{{3.790526952784032*^9, 3.7905270429035463`*^9}, 
-   3.7905298185675297`*^9, {3.7905818432550335`*^9, 3.7905818824072156`*^9}},
+   3.7905298185675297`*^9, {3.7905818432550335`*^9, 3.7905818824072156`*^9}, {
+   3.7909225132706213`*^9, 3.790922517788536*^9}, {3.7909227582708826`*^9, 
+   3.790922762748948*^9}, {3.790924070165535*^9, 3.790924073204398*^9}, {
+   3.790924496268992*^9, 3.7909244963706865`*^9}},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"5d30bf67-04ce-4a1b-9639-110606a0600b"],
 
@@ -2312,10 +2326,11 @@ Cell[BoxData[
 Cell["\<\
 Generant la taula anterior tenim els 10 primers nombres de Fermat i si s\
 \[OAcute]n o no s\[OAcute]n primers. Amb la taula anterior, podem veure que \
-dels 10 primers nombres de Fermat, nom\[EAcute]s 4 de 10 s\[OAcute]n primers.\
+dels 10 primers nombres de Fermat, nom\[EAcute]s 4 s\[OAcute]n primers.\
 \>", "Text",
  CellChangeTimes->{{3.790527295910452*^9, 3.7905273636949778`*^9}, 
-   3.7905298558722625`*^9, {3.790582033084708*^9, 3.790582033164495*^9}},
+   3.7905298558722625`*^9, {3.790582033084708*^9, 3.790582033164495*^9}, {
+   3.7909245221796975`*^9, 3.7909245223572345`*^9}},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"de95d05c-7589-40d8-8629-cad5122739f5"],
 
@@ -2367,10 +2382,12 @@ Cell[BoxData["False"], "Output",
  CellLabel->"Out[4]=",ExpressionUUID->"38fe4ea4-d212-40c4-863d-4f85321217e5"]
 }, Open  ]],
 
-Cell["\<\
-I com que ens retorna False, significa que el nombre 10^10 + 1 no \[EAcute]s \
-primer.\
-\>", "Text",
+Cell[TextData[{
+ "I com que ens retorna ",
+ StyleBox["False",
+  FontSlant->"Italic"],
+ ", significa que el nombre 10^10 + 1 no \[EAcute]s primer."
+}], "Text",
  CellChangeTimes->{{3.790527486868658*^9, 3.7905275565036187`*^9}, {
   3.7905298759917297`*^9, 3.7905298818277445`*^9}, {3.790582176596179*^9, 
   3.790582176638096*^9}},
@@ -2413,20 +2430,20 @@ Cell["I ens surt un nombre prim de 12 xifres decimals.", "Text",
 
 Cell["\<\
 Per trobar el nombre m\[EAcute]s petit amb m\[EAcute]s de 10 xifres decimals, \
-utilitzarem la f\[OAcute]rmula PrimePi. Si tornem a l' exercici 1, veiem que \
+utilitzarem la f\[OAcute]rmula PrimePi. Si tornem a l'exercici 1, veiem que \
 la funci\[OAcute] PrimePi amb n com a argument ens retorna el nombre de n\
-\[UAcute]meros primers menors o iguals que n.; i sabem que 10^10 \[EAcute]s \
-el primer nombre amb m\[EAcute]s de deu xifres decimals. Per tant, si \
-utilitzem la funci\[OAcute] PrimePi amb 10^10 com a argument, ens donar\
-\[AGrave] la quantitat de prims que v\[EAcute]nen abans del nombre 10^10, \
-\[EAcute]s a dir, ens donar\[AGrave] la posici\[OAcute] de l'\[UAcute]ltim \
-nombre primer amb 10 xifres decimals. Si agafem el seg\[UDoubleDot]ent nombre \
-primer, ser\[AGrave] el primer amb 11 xifres decimals:\
+\[UAcute]meros primers menors o iguals que n; i sabem que 10^10 \[EAcute]s el \
+primer nombre amb m\[EAcute]s de deu xifres decimals. Per tant, si utilitzem \
+la funci\[OAcute] PrimePi amb 10^10 com a argument, ens donar\[AGrave] la \
+quantitat de prims que v\[EAcute]nen abans del nombre 10^10, \[EAcute]s a \
+dir, ens donar\[AGrave] la posici\[OAcute] de l'\[UAcute]ltim nombre primer \
+amb 10 xifres decimals. Si agafem el seg\[UDoubleDot]ent nombre primer, ser\
+\[AGrave] el primer amb 11 xifres decimals:\
 \>", "Text",
  CellChangeTimes->{{3.7905275731808376`*^9, 3.7905277955113964`*^9}, {
    3.790527927343588*^9, 3.790527970839759*^9}, 3.7905296989432364`*^9, {
    3.7905822012019453`*^9, 3.7905822624999747`*^9}, {3.7905822944784517`*^9, 
-   3.79058232393364*^9}},
+   3.79058232393364*^9}, {3.790924767929636*^9, 3.7909247707765446`*^9}},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"04dee728-5f91-47c9-b605-3ee6c4c5943d"],
 
@@ -2504,35 +2521,43 @@ analitza les comandes que la defineixen. Repeteix l'exercici anterior.",
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"629fd405-6cfa-45f3-a452-e2c406ef481c"],
 
-Cell["\<\
-
-Per entendre qu\[EGrave] fa la funci\[OAcute] anterior, primer hem de saber \
-qu\[EGrave] fan totes les comandes que cont\[EAcute].
-Despr\[EAcute]s de l\[CloseCurlyQuote]assignaci\[OAcute] de la funci\[OAcute] \
-( := ), trobem la comanda Module. Aix\[OGrave] ens crea una variable (k) i li \
-assigna un valor inicial (n).
-Tot seguit veiem la comanda while, que repeteix una operaci\[OAcute] concreta \
-mentre una avaluaci\[OAcute] sigui certa. En aquest cas, la operaci\[OAcute] \
-que repeteix \[EAcute]s k++, que significa que incrementa en 1 el valor de k. \
-I l'avaluaci\[OAcute] que fa per veure si repeteix l'operaci\[OAcute] \
-\[EAcute]s !PrimeQ[k]. Aquesta avaluaci\[OAcute] el que fa \[EAcute]s veure \
-si el nombre k \[EAcute]s o no primer, i agafa el valor de veritat invers al \
-que retorna la operaci\[OAcute] PrimeQ gr\[AGrave]cies al signe !. Per tant, \
-si k \[EAcute]s primer el loop para, i sin\[OAcute] segueix executant-lo.
-  \
-\>", "Text",
+Cell[TextData[{
+ "\nPer entendre qu\[EGrave] fa la funci\[OAcute] anterior, primer hem de \
+saber qu\[EGrave] fan totes les comandes que cont\[EAcute].\nDespr\[EAcute]s \
+de l\[CloseCurlyQuote]assignaci\[OAcute] de la funci\[OAcute] ( := ), trobem \
+la comanda ",
+ StyleBox["Module",
+  FontSlant->"Italic"],
+ ". Aix\[OGrave] ens crea una variable (k) i li assigna un valor inicial (n).\
+\nTot seguit veiem la comanda ",
+ StyleBox["While",
+  FontSlant->"Italic"],
+ ", que repeteix una operaci\[OAcute] concreta mentre una avaluaci\[OAcute] \
+sigui certa. En aquest cas, la operaci\[OAcute] que repeteix \[EAcute]s k++, \
+que significa que incrementa en 1 el valor de k. I l'avaluaci\[OAcute] que fa \
+per veure si repeteix l'operaci\[OAcute] \[EAcute]s ",
+ StyleBox["!PrimeQ[k]",
+  FontSlant->"Italic"],
+ ". Aquesta avaluaci\[OAcute] el que fa \[EAcute]s veure si el nombre k \
+\[EAcute]s o no primer, i agafa el valor de veritat invers al que retorna la \
+operaci\[OAcute] PrimeQ gr\[AGrave]cies al signe !. Per tant, si k \[EAcute]s \
+primer el loop para, i sin\[OAcute] segueix executant-lo.\n  "
+}], "Text",
  CellChangeTimes->{{3.7905282611741323`*^9, 3.790528457981736*^9}, {
    3.7905284931102414`*^9, 3.7905286611277013`*^9}, 3.790529903747297*^9, {
    3.7905300082921934`*^9, 3.790530009668246*^9}, {3.7905823592511654`*^9, 
-   3.790582398383521*^9}, {3.790582436385837*^9, 3.7905824374839334`*^9}},
+   3.790582398383521*^9}, {3.790582436385837*^9, 3.7905824374839334`*^9}, {
+   3.7909248848511796`*^9, 3.790924922566818*^9}},
  FontFamily->"Arial",
  FontSize->14,ExpressionUUID->"2fe7b031-8e52-4074-8335-d39dcfd71dae"],
 
-Cell["\<\
-Per tant, el que fa la funci\[OAcute] PrimerSeg\[UDoubleDot]ent[n], \
-\[EAcute]s anar afegint 1 al valor de n fins que troba un altre nombre primer \
-i el retorna.\
-\>", "Text",
+Cell[TextData[{
+ "Per tant, el que fa la funci\[OAcute] ",
+ StyleBox["PrimerSeg\[UDoubleDot]ent[n]",
+  FontSlant->"Italic"],
+ ", \[EAcute]s anar afegint 1 al valor de n fins que troba un altre nombre \
+primer i el retorna."
+}], "Text",
  CellChangeTimes->{{3.7905282611741323`*^9, 3.790528457981736*^9}, {
    3.7905284931102414`*^9, 3.7905287056864076`*^9}, 3.790529916848689*^9, {
    3.7905824628690295`*^9, 3.7905824711967535`*^9}, {3.79058250138101*^9, 
@@ -2571,10 +2596,9 @@ Cell[BoxData["10000000019"], "Output",
  CellLabel->"Out[5]=",ExpressionUUID->"402c6903-6c5c-4f1f-93d4-bb6cf726948e"]
 }, Open  ]],
 
-Cell["\<\
-Podem observar que el resultat en aquest exercici i a \
-l\[CloseCurlyQuote]anterior \[EAcute]s el mateix.\
-\>", "Text",
+Cell[TextData[StyleBox["Podem observar que el resultat en aquest exercici i a \
+l\[CloseCurlyQuote]anterior \[EAcute]s el mateix.",
+ FontSize->14]], "Text",
  CellChangeTimes->{{3.7905288225553617`*^9, 3.7905288246936817`*^9}, {
   3.7905288617252884`*^9, 3.7905288624609537`*^9}, {3.790582529365136*^9, 
   3.7905825602066174`*^9}},
@@ -2829,123 +2853,123 @@ Cell[CellGroupData[{
 Cell[2500, 61, 336, 6, 23, "Subtitle",ExpressionUUID->"e302a4e1-6344-4ea7-88bc-70bf7781a06b"],
 Cell[CellGroupData[{
 Cell[2861, 71, 223, 4, 30, "Input",ExpressionUUID->"c6883260-f916-4ea8-b038-a9a3baad4398"],
-Cell[3087, 77, 13565, 316, 115, "Output",ExpressionUUID->"f9bed657-f1fd-4430-a720-5b67d08bd679"]
+Cell[3087, 77, 13670, 317, 115, "Output",ExpressionUUID->"f9bed657-f1fd-4430-a720-5b67d08bd679"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16689, 398, 218, 4, 30, "Input",ExpressionUUID->"acb05182-1e6a-4924-bb7b-8b73343e7b86"],
-Cell[16910, 404, 12584, 304, 91, "Output",ExpressionUUID->"08ece1ad-7baa-488b-9cf8-a200803c2950"]
+Cell[16794, 399, 218, 4, 30, "Input",ExpressionUUID->"acb05182-1e6a-4924-bb7b-8b73343e7b86"],
+Cell[17015, 405, 12704, 306, 91, "Output",ExpressionUUID->"08ece1ad-7baa-488b-9cf8-a200803c2950"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29531, 713, 216, 4, 30, "Input",ExpressionUUID->"585b77d3-2d3b-4402-bbc2-4c89575eac04"],
-Cell[29750, 719, 12253, 296, 91, "Output",ExpressionUUID->"49ea604b-de7d-439e-8108-c6ecbf54d341"]
+Cell[29756, 716, 216, 4, 30, "Input",ExpressionUUID->"585b77d3-2d3b-4402-bbc2-4c89575eac04"],
+Cell[29975, 722, 12358, 297, 91, "Output",ExpressionUUID->"49ea604b-de7d-439e-8108-c6ecbf54d341"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42040, 1020, 220, 4, 30, "Input",ExpressionUUID->"f5903e29-dc25-48c1-941f-660b6493433a"],
-Cell[42263, 1026, 12530, 299, 91, "Output",ExpressionUUID->"f7e3f087-d96d-4e0f-955f-d2bccada7e7c"]
+Cell[42370, 1024, 220, 4, 30, "Input",ExpressionUUID->"f5903e29-dc25-48c1-941f-660b6493433a"],
+Cell[42593, 1030, 12635, 300, 91, "Output",ExpressionUUID->"f7e3f087-d96d-4e0f-955f-d2bccada7e7c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54830, 1330, 219, 4, 30, "Input",ExpressionUUID->"79bccb50-fb7c-4710-b36f-a5143cf8772a"],
-Cell[55052, 1336, 12599, 304, 91, "Output",ExpressionUUID->"5e38076c-5b30-48bf-a102-9381a8591fcc"]
+Cell[55265, 1335, 219, 4, 30, "Input",ExpressionUUID->"79bccb50-fb7c-4710-b36f-a5143cf8772a"],
+Cell[55487, 1341, 12719, 306, 91, "Output",ExpressionUUID->"5e38076c-5b30-48bf-a102-9381a8591fcc"]
 }, Open  ]],
-Cell[67666, 1643, 406, 6, 24, "Text",ExpressionUUID->"9b3165bd-43b7-479b-add8-701603af6a59"],
-Cell[68075, 1651, 657, 11, 24, "Text",ExpressionUUID->"5adebea8-f27f-449a-89b7-6112cf518df8"],
-Cell[68735, 1664, 278, 5, 24, "Text",ExpressionUUID->"976c7b2b-43d3-4f14-909d-cf5ed6b3768f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[69050, 1674, 649, 10, 22, "Subtitle",ExpressionUUID->"4d819ce2-2ae5-4fbb-8203-e6253815c3a3"],
-Cell[69702, 1686, 1009, 16, 62, "Text",ExpressionUUID->"9be67e7c-fa4c-4729-9e34-e7dcc4c5ca92"],
-Cell[CellGroupData[{
-Cell[70736, 1706, 486, 10, 30, "Input",ExpressionUUID->"b8ff3f19-5439-4b04-a188-a169dc4d00b2"],
-Cell[71225, 1718, 13715, 184, 392, "Output",ExpressionUUID->"5a604d32-3648-4185-bfe8-c410414e1002"]
-}, Open  ]],
-Cell[84955, 1905, 371, 6, 24, "Text",ExpressionUUID->"2be4a366-65a8-4160-8e2b-5c2df2b83efd"]
+Cell[68221, 1650, 406, 6, 24, "Text",ExpressionUUID->"9b3165bd-43b7-479b-add8-701603af6a59"],
+Cell[68630, 1658, 657, 11, 24, "Text",ExpressionUUID->"5adebea8-f27f-449a-89b7-6112cf518df8"],
+Cell[69290, 1671, 278, 5, 24, "Text",ExpressionUUID->"976c7b2b-43d3-4f14-909d-cf5ed6b3768f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[85363, 1916, 515, 9, 22, "Subtitle",ExpressionUUID->"3e0d2d04-da8b-4309-8915-d4ff8fafbb9d"],
-Cell[85881, 1927, 487, 9, 24, "Text",ExpressionUUID->"37317551-23a1-4f8f-bca6-a8081e393903"],
+Cell[69605, 1681, 649, 10, 22, "Subtitle",ExpressionUUID->"4d819ce2-2ae5-4fbb-8203-e6253815c3a3"],
+Cell[70257, 1693, 1143, 19, 62, "Text",ExpressionUUID->"9be67e7c-fa4c-4729-9e34-e7dcc4c5ca92"],
 Cell[CellGroupData[{
-Cell[86393, 1940, 501, 12, 30, "Input",ExpressionUUID->"b80b2118-3f37-4e82-8b58-2e8a596f3b94"],
-Cell[86897, 1954, 1609, 24, 50, "Output",ExpressionUUID->"67efaf40-6de4-4894-940f-ab02db342f4c"]
+Cell[71425, 1716, 486, 10, 30, "Input",ExpressionUUID->"b8ff3f19-5439-4b04-a188-a169dc4d00b2"],
+Cell[71914, 1728, 13715, 184, 392, "Output",ExpressionUUID->"5a604d32-3648-4185-bfe8-c410414e1002"]
 }, Open  ]],
-Cell[88521, 1981, 492, 8, 24, "Text",ExpressionUUID->"5d30bf67-04ce-4a1b-9639-110606a0600b"],
-Cell[CellGroupData[{
-Cell[89038, 1993, 451, 12, 30, "Input",ExpressionUUID->"25a5214d-f511-4493-88e7-a25d14be0029"],
-Cell[89492, 2007, 6501, 205, 88, "Output",ExpressionUUID->"fa33ef6f-a412-40bf-9e90-01e0d26c744f"]
-}, Open  ]],
-Cell[96008, 2215, 365, 7, 24, "Text",ExpressionUUID->"3f201103-dc2e-46c7-827c-a3fa129fa4fb"]
+Cell[85644, 1915, 371, 6, 24, "Text",ExpressionUUID->"2be4a366-65a8-4160-8e2b-5c2df2b83efd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96410, 2227, 473, 11, 38, "Subtitle",ExpressionUUID->"254bba7c-3489-4a6b-bb2f-ed4ca7cb49d4"],
-Cell[96886, 2240, 394, 11, 33, "Input",ExpressionUUID->"e5740006-04b5-4379-a62f-bc388e1175f5"],
+Cell[86052, 1926, 515, 9, 22, "Subtitle",ExpressionUUID->"3e0d2d04-da8b-4309-8915-d4ff8fafbb9d"],
+Cell[86570, 1937, 535, 9, 24, "Text",ExpressionUUID->"37317551-23a1-4f8f-bca6-a8081e393903"],
 Cell[CellGroupData[{
-Cell[97305, 2255, 462, 12, 30, "Input",ExpressionUUID->"f1d03496-6ad7-4e5d-a79f-834e0861d065"],
-Cell[97770, 2269, 1486, 39, 88, "Output",ExpressionUUID->"2b1a7d08-e409-41f6-ab38-80181db2c669"]
+Cell[87130, 1950, 501, 12, 30, "Input",ExpressionUUID->"b80b2118-3f37-4e82-8b58-2e8a596f3b94"],
+Cell[87634, 1964, 1609, 24, 50, "Output",ExpressionUUID->"67efaf40-6de4-4894-940f-ab02db342f4c"]
 }, Open  ]],
-Cell[99271, 2311, 487, 8, 24, "Text",ExpressionUUID->"de95d05c-7589-40d8-8629-cad5122739f5"],
-Cell[99761, 2321, 276, 5, 24, "Text",ExpressionUUID->"cd1c2094-13ec-4cc9-a653-110d883b5e80"]
-}, Open  ]],
+Cell[89258, 1991, 707, 12, 24, "Text",ExpressionUUID->"5d30bf67-04ce-4a1b-9639-110606a0600b"],
 Cell[CellGroupData[{
-Cell[100074, 2331, 564, 10, 22, "Subtitle",ExpressionUUID->"bbd14f2f-be36-42b4-9918-20e22b58befc"],
-Cell[100641, 2343, 353, 7, 24, "Text",ExpressionUUID->"158c62d7-8689-4f1d-87de-8992465359c6"],
-Cell[CellGroupData[{
-Cell[101019, 2354, 299, 7, 30, "Input",ExpressionUUID->"32ab2250-c5e5-4302-89be-c16c175937bb"],
-Cell[101321, 2363, 176, 3, 30, "Output",ExpressionUUID->"38fe4ea4-d212-40c4-863d-4f85321217e5"]
+Cell[89990, 2007, 451, 12, 30, "Input",ExpressionUUID->"25a5214d-f511-4493-88e7-a25d14be0029"],
+Cell[90444, 2021, 6501, 205, 88, "Output",ExpressionUUID->"fa33ef6f-a412-40bf-9e90-01e0d26c744f"]
 }, Open  ]],
-Cell[101512, 2369, 372, 8, 24, "Text",ExpressionUUID->"7b351875-c27a-4c9c-837d-1122cbb55200"],
-Cell[101887, 2379, 376, 8, 43, "Text",ExpressionUUID->"96682b3b-3964-4f90-8577-2270e961216c"],
-Cell[CellGroupData[{
-Cell[102288, 2391, 297, 7, 30, "Input",ExpressionUUID->"3f106ab3-22d4-49ce-aa93-0e7e9f4f74dc"],
-Cell[102588, 2400, 183, 3, 30, "Output",ExpressionUUID->"b0bdd0b9-7d4a-4978-9264-79a735a7f383"]
-}, Open  ]],
-Cell[102786, 2406, 354, 5, 24, "Text",ExpressionUUID->"f349b04a-b133-4ece-9909-ac9085cb3f0b"],
-Cell[103143, 2413, 1109, 17, 62, "Text",ExpressionUUID->"04dee728-5f91-47c9-b605-3ee6c4c5943d"],
-Cell[CellGroupData[{
-Cell[104277, 2434, 420, 11, 30, "Input",ExpressionUUID->"fb44f135-6180-4777-8e5c-f90e5a5026aa"],
-Cell[104700, 2447, 234, 4, 30, "Output",ExpressionUUID->"6b851d2e-5c52-4fcb-9dd8-f6168a896f7e"]
-}, Open  ]],
-Cell[104949, 2454, 290, 6, 24, "Text",ExpressionUUID->"5670ee5b-fccf-4085-b4cf-018d655e4023"]
+Cell[96960, 2229, 365, 7, 24, "Text",ExpressionUUID->"3f201103-dc2e-46c7-827c-a3fa129fa4fb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[105276, 2465, 386, 7, 22, "Subtitle",ExpressionUUID->"2cdb077f-e030-49f3-b0d3-37e6e063cf97"],
-Cell[105665, 2474, 697, 18, 107, "Input",ExpressionUUID->"0d7c05b6-9304-4ca9-80c7-a74199d898cf"]
+Cell[97362, 2241, 473, 11, 38, "Subtitle",ExpressionUUID->"254bba7c-3489-4a6b-bb2f-ed4ca7cb49d4"],
+Cell[97838, 2254, 394, 11, 33, "Input",ExpressionUUID->"e5740006-04b5-4379-a62f-bc388e1175f5"],
+Cell[CellGroupData[{
+Cell[98257, 2269, 462, 12, 30, "Input",ExpressionUUID->"f1d03496-6ad7-4e5d-a79f-834e0861d065"],
+Cell[98722, 2283, 1486, 39, 88, "Output",ExpressionUUID->"2b1a7d08-e409-41f6-ab38-80181db2c669"]
+}, Open  ]],
+Cell[100223, 2325, 535, 9, 24, "Text",ExpressionUUID->"de95d05c-7589-40d8-8629-cad5122739f5"],
+Cell[100761, 2336, 276, 5, 24, "Text",ExpressionUUID->"cd1c2094-13ec-4cc9-a653-110d883b5e80"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[106399, 2497, 417, 7, 22, "Subtitle",ExpressionUUID->"629fd405-6cfa-45f3-a452-e2c406ef481c"],
-Cell[106819, 2506, 1358, 22, 119, "Text",ExpressionUUID->"2fe7b031-8e52-4074-8335-d39dcfd71dae"],
-Cell[108180, 2530, 526, 10, 24, "Text",ExpressionUUID->"eb7a8ec5-c888-4fa8-8d3c-072773858f7c"],
-Cell[108709, 2542, 641, 11, 24, "Text",ExpressionUUID->"fe8d5cc6-4927-4363-b956-c2a94e682e9b"],
+Cell[101074, 2346, 564, 10, 22, "Subtitle",ExpressionUUID->"bbd14f2f-be36-42b4-9918-20e22b58befc"],
+Cell[101641, 2358, 353, 7, 24, "Text",ExpressionUUID->"158c62d7-8689-4f1d-87de-8992465359c6"],
 Cell[CellGroupData[{
-Cell[109375, 2557, 423, 7, 30, "Input",ExpressionUUID->"6daee586-6aa3-417c-b581-c38f3805e01f"],
-Cell[109801, 2566, 233, 4, 30, "Output",ExpressionUUID->"402c6903-6c5c-4f1f-93d4-bb6cf726948e"]
+Cell[102019, 2369, 299, 7, 30, "Input",ExpressionUUID->"32ab2250-c5e5-4302-89be-c16c175937bb"],
+Cell[102321, 2378, 176, 3, 30, "Output",ExpressionUUID->"38fe4ea4-d212-40c4-863d-4f85321217e5"]
 }, Open  ]],
-Cell[110049, 2573, 380, 7, 23, "Text",ExpressionUUID->"560485e8-dc81-4098-95c8-9ef1e374b0ea"],
-Cell[110432, 2582, 170, 2, 30, "Input",ExpressionUUID->"7a937274-9459-4aef-b730-784943470bf1"]
+Cell[102512, 2384, 420, 10, 24, "Text",ExpressionUUID->"7b351875-c27a-4c9c-837d-1122cbb55200"],
+Cell[102935, 2396, 376, 8, 43, "Text",ExpressionUUID->"96682b3b-3964-4f90-8577-2270e961216c"],
+Cell[CellGroupData[{
+Cell[103336, 2408, 297, 7, 30, "Input",ExpressionUUID->"3f106ab3-22d4-49ce-aa93-0e7e9f4f74dc"],
+Cell[103636, 2417, 183, 3, 30, "Output",ExpressionUUID->"b0bdd0b9-7d4a-4978-9264-79a735a7f383"]
+}, Open  ]],
+Cell[103834, 2423, 354, 5, 24, "Text",ExpressionUUID->"f349b04a-b133-4ece-9909-ac9085cb3f0b"],
+Cell[104191, 2430, 1155, 17, 62, "Text",ExpressionUUID->"04dee728-5f91-47c9-b605-3ee6c4c5943d"],
+Cell[CellGroupData[{
+Cell[105371, 2451, 420, 11, 30, "Input",ExpressionUUID->"fb44f135-6180-4777-8e5c-f90e5a5026aa"],
+Cell[105794, 2464, 234, 4, 30, "Output",ExpressionUUID->"6b851d2e-5c52-4fcb-9dd8-f6168a896f7e"]
+}, Open  ]],
+Cell[106043, 2471, 290, 6, 24, "Text",ExpressionUUID->"5670ee5b-fccf-4085-b4cf-018d655e4023"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110639, 2589, 356, 7, 22, "Subtitle",ExpressionUUID->"e2e2c2c8-ec35-47f2-9629-844cf306a69a"],
-Cell[110998, 2598, 654, 16, 107, "Input",ExpressionUUID->"1f25132f-beac-4d2f-bf90-1172f1caa450"],
-Cell[CellGroupData[{
-Cell[111677, 2618, 260, 5, 30, "Input",ExpressionUUID->"dee00ce1-0b69-4101-93e2-7496e3db78b6"],
-Cell[111940, 2625, 181, 3, 30, "Output",ExpressionUUID->"f351c712-a9e7-4f02-8c53-88939c5d7221"]
+Cell[106370, 2482, 386, 7, 22, "Subtitle",ExpressionUUID->"2cdb077f-e030-49f3-b0d3-37e6e063cf97"],
+Cell[106759, 2491, 697, 18, 107, "Input",ExpressionUUID->"0d7c05b6-9304-4ca9-80c7-a74199d898cf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112158, 2633, 146, 3, 42, "Author",ExpressionUUID->"2685d115-28c4-4dc1-aaa7-8f8a33b3ca3f"],
-Cell[112307, 2638, 78, 0, 15, "Institution",ExpressionUUID->"31decdcd-7f9d-461f-b0b4-1f6ac0cd9c14"]
+Cell[107493, 2514, 417, 7, 22, "Subtitle",ExpressionUUID->"629fd405-6cfa-45f3-a452-e2c406ef481c"],
+Cell[107913, 2523, 1550, 28, 119, "Text",ExpressionUUID->"2fe7b031-8e52-4074-8335-d39dcfd71dae"],
+Cell[109466, 2553, 574, 12, 24, "Text",ExpressionUUID->"eb7a8ec5-c888-4fa8-8d3c-072773858f7c"],
+Cell[110043, 2567, 641, 11, 24, "Text",ExpressionUUID->"fe8d5cc6-4927-4363-b956-c2a94e682e9b"],
+Cell[CellGroupData[{
+Cell[110709, 2582, 423, 7, 30, "Input",ExpressionUUID->"6daee586-6aa3-417c-b581-c38f3805e01f"],
+Cell[111135, 2591, 233, 4, 30, "Output",ExpressionUUID->"402c6903-6c5c-4f1f-93d4-bb6cf726948e"]
+}, Open  ]],
+Cell[111383, 2598, 407, 6, 24, "Text",ExpressionUUID->"560485e8-dc81-4098-95c8-9ef1e374b0ea"],
+Cell[111793, 2606, 170, 2, 30, "Input",ExpressionUUID->"7a937274-9459-4aef-b730-784943470bf1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112000, 2613, 356, 7, 22, "Subtitle",ExpressionUUID->"e2e2c2c8-ec35-47f2-9629-844cf306a69a"],
+Cell[112359, 2622, 654, 16, 107, "Input",ExpressionUUID->"1f25132f-beac-4d2f-bf90-1172f1caa450"],
+Cell[CellGroupData[{
+Cell[113038, 2642, 260, 5, 30, "Input",ExpressionUUID->"dee00ce1-0b69-4101-93e2-7496e3db78b6"],
+Cell[113301, 2649, 181, 3, 30, "Output",ExpressionUUID->"f351c712-a9e7-4f02-8c53-88939c5d7221"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[113519, 2657, 146, 3, 42, "Author",ExpressionUUID->"2685d115-28c4-4dc1-aaa7-8f8a33b3ca3f"],
+Cell[113668, 2662, 78, 0, 15, "Institution",ExpressionUUID->"31decdcd-7f9d-461f-b0b4-1f6ac0cd9c14"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112434, 2644, 525, 10, 22, "Subtitle",ExpressionUUID->"9c163bad-75de-49dc-9c9c-190708aebb27"],
-Cell[112962, 2656, 463, 11, 29, "Input",ExpressionUUID->"52c41f78-6126-42c8-a23b-b01d09ea6bac"],
+Cell[113795, 2668, 525, 10, 22, "Subtitle",ExpressionUUID->"9c163bad-75de-49dc-9c9c-190708aebb27"],
+Cell[114323, 2680, 463, 11, 29, "Input",ExpressionUUID->"52c41f78-6126-42c8-a23b-b01d09ea6bac"],
 Cell[CellGroupData[{
-Cell[113450, 2671, 627, 17, 29, "Input",ExpressionUUID->"6c6049a8-09e2-49e0-9825-341630c4a4a9"],
-Cell[114080, 2690, 1711, 49, 58, "Output",ExpressionUUID->"fa8260c5-bd29-42de-a63f-a6b660d45ffb"]
+Cell[114811, 2695, 627, 17, 29, "Input",ExpressionUUID->"6c6049a8-09e2-49e0-9825-341630c4a4a9"],
+Cell[115441, 2714, 1711, 49, 58, "Output",ExpressionUUID->"fa8260c5-bd29-42de-a63f-a6b660d45ffb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[115828, 2744, 141, 2, 29, "Input",ExpressionUUID->"287b6a68-ed6e-4466-abd3-313afa4b6358"],
-Cell[115972, 2748, 1352, 28, 239, "Output",ExpressionUUID->"443c1a57-b307-4528-827b-12e689504169"]
+Cell[117189, 2768, 141, 2, 29, "Input",ExpressionUUID->"287b6a68-ed6e-4466-abd3-313afa4b6358"],
+Cell[117333, 2772, 1352, 28, 239, "Output",ExpressionUUID->"443c1a57-b307-4528-827b-12e689504169"]
 }, Open  ]],
-Cell[117339, 2779, 629, 10, 43, "Text",ExpressionUUID->"ad247444-f600-400e-bb80-ccc6b911239d"],
-Cell[117971, 2791, 469, 8, 24, "Text",ExpressionUUID->"7eedd878-9e09-4985-a28e-da15d21e0943"]
+Cell[118700, 2803, 629, 10, 43, "Text",ExpressionUUID->"ad247444-f600-400e-bb80-ccc6b911239d"],
+Cell[119332, 2815, 469, 8, 24, "Text",ExpressionUUID->"7eedd878-9e09-4985-a28e-da15d21e0943"]
 }, Open  ]]
 }, Open  ]]
 }
