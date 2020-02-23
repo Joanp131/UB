@@ -87,8 +87,8 @@
         \end{align*}
         De la demostraci\'o observem tamb\'e que el vector invers de un ${a \in \mathbb{R}^n}$ qualsevol \'es ${-a = (2-a_1,\dots,2-a_n)}$.
 
-    \subsection*{5. Propietat distributiva de ${\cdot^*}$:}
-        La seg\"uent propietat a demostrar \'es la distributiva del producte: ${\alpha\cdot^*(a+^*b) = \alpha\cdot^* a + \alpha\cdot^* b}$.
+    \subsection*{5. Propietat distributiva de ${+^*}$ i ${\cdot^*}$:}
+        La seg\"uent propietat a demostrar \'es la distributiva de ${+^*}$ i ${\cdot^*}$: ${\alpha\cdot^*(a+^*b) = \alpha\cdot^* a + \alpha\cdot^* b}$.
         \\Per demostrar-ho, comen\c{c}arem desenvolupant les dues equacions per separat.
         \\\\Primer de tot, desenvoluparem l'equaci\'o ${\alpha \cdot^* (a+^*b)}$. Aplicant la definici\'o de ${+^*}$ obtenim:
         \begin{center}
@@ -112,27 +112,27 @@
         \end{align}
         De l'equaci\'o (1) i (2) obtenim que ${\alpha\cdot^* (a+^*b) = \alpha\cdot^*a +^* \alpha\cdot^*b}$, demostrant la cinquena propietat.
 
-    \subsection*{6. ${(\alpha+\beta)\cdot u= \alpha u + \beta u, \forall u \in E, \forall\alpha,\beta\in\mathbb{R}^n}$:}
-        La sisena propietat que hem de demostrar \'es: ${(\alpha+\beta)\cdot u = \alpha u+\beta u, \forall\alpha,\beta\in\mathbb{R}, u\in E}$.
-        La demostraci\'o la farem similar a la secci\'o anterior, desenvolupant per separat la igualtat.\\
-        Primer de tot desenvoluparem ${(\alpha+_{\mathbb{R}}\beta)\cdot^*u, u = (a_1,\dots,a_n)}$:
+    \subsection*{6. Propietat distributiva de ${+_{\mathbb{R}}}$ i ${\cdot^*}$:}
+        La sisena propietat que hem de demostrar \'es la distributiva de ${+_{\mathbb{R}}}$ i ${\cdot^*}$.
+        La demostraci\'o la farem similar a la secci\'o anterior, desenvolupant per separat la igualtat.\\\\
+        Primer de tot desenvoluparem ${(\alpha+_{\mathbb{R}}\beta)\cdot^*a}$:
         \begin{align}
             \begin{aligned}
-                (\alpha+_{\mathbb{R}}\beta)\cdot^*u &= ((\alpha+_{\mathbb{R}}\beta)\cdot(a_1-1)+1,\dots,(\alpha+_{\mathbb{R}}\beta)\cdot(a_n-1)+1) =\\
-                                                    &= ((\alpha a_1 -\alpha +\beta a_1 -\beta)+1,\dots,(\alpha a_n -\alpha +\beta a_n -\beta)+1) =
+                (\alpha+_{\mathbb{R}}\beta)\cdot^*a &= ((\alpha+_{\mathbb{R}}\beta)\cdot(a_1-1)+1,\dots,(\alpha+_{\mathbb{R}}\beta)\cdot(a_n-1)+1) =\\
+                                                    &= ((\alpha a_1 -\alpha +\beta a_1 -\beta)+1,\dots,(\alpha a_n -\alpha +\beta a_n -\beta)+1)
             \end{aligned}
         \end{align}
         I tot seguit desenvoluparem la segona part de l'equaci\'o:
         \begin{align}
             \begin{aligned}
-                (\alpha\cdot^*u)+^*(\beta\cdot^*u) &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) +^* (\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
+                (\alpha\cdot^*a)+^*(\beta\cdot^*a) &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) +^* (\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
                                                    &= ((\alpha(a_1-1)+1)+(\beta(a_1-1)+1)-1,\dots,(\alpha(a_n-1)+1)+(\beta(a_n-1)+1)-1) =\\
                                                    &= (\alpha a_1 -\alpha +\beta a_1 -\beta +1, \dots,\alpha a_n -\alpha +\beta a_n -\beta +1).
             \end{aligned}
         \end{align}
         Finament, comparant les equacions (3) i (4), veiem que la igualtat es compleix.
 
-    \subsection*{7. Títol 7}
+    \subsection*{7. Propietat associativa del producte:}
         ${(\alpha\cdot_{\mathbb{R}}\beta)\cdot^*u = \alpha\cdot^*(\beta\cdot^* u)}$\\
         Demostraci\'o:
         \begin{align}
