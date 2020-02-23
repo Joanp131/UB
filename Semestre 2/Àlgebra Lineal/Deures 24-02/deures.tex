@@ -8,6 +8,7 @@
  total={170mm,250mm},
  top=20mm,
  }
+\usepackage[catalan]{babel}
 
 \title{Deures 10/02/2020}
 \author{Joan Pau Condal Marco}
@@ -30,53 +31,130 @@
     Prova que (${\mathbb{R}}^n$, ${+^*}$, ${\cdot^*}$) \'es un espai vectorial. Caracteritza al vector nul de ${\mathbb{R}^n}$, i al vector oposat d'un dau.  \\
 
     \section*{Demostraci\'o:}
-    Per demostrar que (${\mathbb{R}}^n$, ${+^*}$, ${\cdot^*}$) \'es un espai vectorial haurem de demostrar que es compleixen els vuit condicions de les dues operacions:
+    Per demostrar que (${\mathbb{R}}^n$, ${+^*}$, ${\cdot^*}$) \'es un espai vectorial haurem de demostrar que es compleixen les vuit condicions de les dues operacions (${+^*, \cdot^*}$).\\
+    Per les demostracions següents considerarem:
+    \begin{align*}
+        \begin{array}{lcl}
+            a = (a_1,\dots,a_n)& & \\
+            b = (b_1,\dots,b_n)& & a, b, c \in \mathbb{R}^n\\
+            c = (c_1,\dots,c_n)& &\\
+            & \alpha,\beta \in \mathbb{R} &
+        \end{array}
+    \end{align*}
     
     \subsection*{1. ${+^*}$ \'es associativa:}
-        Hem de demostrar que ${(u+v)+w = u+(v+w), \forall u,v,w \in E}$. Per demostrar-ho agafarem vectors ${u = (a_1, \dots , a_n)}$, ${v = (b_1, \dots , b_n)}$ i ${w = (c_1, \dots , c_n)}$, tots en ${\mathbb{R}^n}$. Per definici\'o de ${+^*}$ tenim que:
-        \begin{center}
-            \begin{math}
-                (u+v)+w = ((a_1+b_1-1)+c1-1,\dots,(a_n+b_n-1)+c_n-1) = (a_1+b_1-1+c_1-1,\dots,a_n+b_n-1+c_n-1) = (a_1+(b_1+c_1-1)-1,\dots,a_n+(b_n+c_n-1)-1) = u+(v+w)
-            \end{math}
-        \end{center}
+        Hem de demostrar que ${(a+^*b)+^*c = a+^*(b+^*c), \forall a,b,c \in \mathbb{R}^n}$. Per definici\'o de ${+^*}$ tenim que:
+        \begin{align*}
+            \begin{aligned}
+                (a+^*b)+^*c &= ((a_1+b_1-1)+c1-1,\dots,(a_n+b_n-1)+c_n-1) =\\ 
+                        &= (a_1+b_1-1+c_1-1,\dots,a_n+b_n-1+c_n-1) =\\ 
+                        &= (a_1+(b_1+c_1-1)-1,\dots,a_n+(b_n+c_n-1)-1) =\\
+                        &= a+^*(b+^*c).
+            \end{aligned}
+        \end{align*}
         D'on queda demostrada la propietat associativa.
 
     \subsection*{2. ${+^*}$ \'es commutativa}
-        Hem de demostrar que ${u + v = v + u, \forall u,v \in E}$. Per fer-ho, utilitzarem dos vectors qualsevols que anomenarem \emph{u} i \emph{v} (${u,v\in \mathbb{R}^n}$), on
-        \begin{center}
-            \begin{math}
-                u = (a_1, \dots , a_n), 
-            \end{math}
-            \begin{math}
-                v = (b_1, \dots , b_n)
-            \end{math}
-        \end{center}
-        Utilitzant la definici\'o de ${+^*}$ trobem que:
-        \begin{center}
-            \begin{math}
-                u + v = (a_1 + b_1 -1, \dots , a_n+b_n-1) = (b_1+a_1-1, \dots , b_n+a_n-1) = v + u
-            \end{math}
-        \end{center}
-        D'on trobem que ${+^*}$ \'es associativa.
+        Hem de demostrar que ${a +^* b = b +^* a, \forall a,b \in \mathbb{R}^n}$. Utilitzant la definici\'o de ${+^*}$ trobem que:
+        \begin{align*}
+            \begin{aligned}
+                a +^* b &= (a_1 + b_1 -1, \dots , a_n+b_n-1) =\\
+                        &=(b_1+a_1-1, \dots , b_n+a_n-1) = b +^* a.
+            \end{aligned}
+        \end{align*}
+        D'on trobem que ${+^*}$ \'es commutativa.
 
     \subsection*{3. Vector nul} 
-        Per demostrar que existeix un vector nul, hem de trobar ${\vec{0} \in \mathbb{R}^n}$ tal que ${u + \vec{0} = u, \forall u \in \mathbb{R}^n}$. Sigui ${u = (a_1,\dots,a_n)}$ un vector qualsevol de ${\mathbb{R}^n}$ i ${\vec{0} = (b_1,\dots,b_n)}$ aplicant la definici\'o de ${+^*}$ tenim:
-        \begin{center}
-            \begin{math}
-                u + \vec{0} = (a_1+b_1-1,\dots,a_n+b_n-1) = (a_1,\dots,a_n) = u \implies  a_1+b_1-1 = a_1, \cdots, a_n+b_n-1 = a_n \implies b_1 = 1, \cdots , b_n = 1 \implies \vec{0} = (1, \dots, 1)               
-            \end{math}
-        \end{center}
-        Així podem veure que es compleix la propietat del vector nul i aquest \'es ${\vec{0} = (1,\dots,1)}$
+        Per demostrar que existeix un vector nul, hem de trobar ${\vec{0} \in \mathbb{R}^n}$ tal que ${a + \vec{0} = a, \forall a \in \mathbb{R}^n}$. Sigui ${\vec{0} = (b_1,\dots,b_n)}$ aplicant la definici\'o de ${+^*}$ tenim:
+        \begin{align*}
+            \begin{aligned}
+                a + \vec{0} &\:= (a_1+b_1-1,\dots,a_n+b_n-1) = (a_1,\dots,a_n) = a \\
+                            &\implies  a_1+b_1-1 = a_1, \cdots, a_n+b_n-1 = a_n \\
+                            &\implies b_1 = 1, \cdots , b_n = 1\\
+                            &\implies \vec{0} = (1, \dots, 1)
+            \end{aligned}
+        \end{align*}
+        Del procediment podem veure que es compleix la propietat del vector nul i aquest \'es ${\vec{0} = (1,\dots,1)}$
         
     \subsection*{4. Suma de l'invers}
-        La quarta propietat que hem de demostrar \'es que ${\forall u \in \mathbb{R}^n}$, ${u +^* (-1)\cdot^*u = \vec{0}}$. Per demostrar-ho aplicarem la deficici\'o de ${+^*}$ i de ${\cdot^*}$:
-        \begin{center}
-            Sigui ${u = (a_1,\dots,a_n)}$ \\
-            \begin{math}
-                u+^*(-1)\cdot^*u = u +^* (-1\cdot(a_1-1)+1,\dots,-1\cdot(a_n-1)+1) = u +^* (-a_1+1+1,\dots,a_n+1+1) = u +^* (2-a_1,\dots,2-a_n) = (a_1+(2-a_1)-1,\dots,a_n+(2-a_n)-1) = (1,\dots,1) = \vec{0}
-            \end{math}
-        \end{center}
+        La quarta propietat que hem de demostrar \'es ${\forall a \in \mathbb{R}^n}$, ${a +^* (-1)\cdot^*a = \vec{0}}$. Per demostrar-ho aplicarem la deficici\'o de ${+^*}$ i de ${\cdot^*}$:
+        \begin{align*}
+            \begin{aligned}
+                a+^*(-1)\cdot^*a &= a +^* (-1\cdot(a_1-1)+1,\dots,-1\cdot(a_n-1)+1) =\\ 
+                                 &= a +^* (-a_1+1+1,\dots,a_n+1+1) =\\ 
+                                 &= a +^* (2-a_1,\dots,2-a_n) =\\
+                                 &= (a_1+(2-a_1)-1,\dots,a_n+(2-a_n)-1) =\\
+                                 &= (1,\dots,1) = \vec{0}
+            \end{aligned}
+        \end{align*}
+        De la demostraci\'o observem tamb\'e que el vector invers de un ${u \in \mathbb{R}^n}$ qualsevol \'es ${-u = (2-a_1,\dots,2-a_n)}$.
 
     \subsection*{5. Propietat distributiva de ${\cdot^*}$}
+        La següent propietat a demostrar \'es l'associativa: ${\alpha\cdot(u+v) = \alpha u + \alpha v, \forall \alpha \in \mathbb{R}^n, \forall u,v \in E}$.
+        \\Per demostrar-ho, començarem desenvolupant les dues equacions per separat.
+        \\Sigui ${u=(a_1,\dots,a_n)}$, ${v=(b_1,\dots,b_n)}$, ${\alpha \in \mathbb{R}^n}$
+        \\\\Primer de tot, desenvoluparem l'equaci\'o ${\alpha \cdot^* (u+^*v)}$. Aplicant la definici\'o de ${+^*}$ obtenim:
+        \begin{center}
+            ${\alpha\cdot^* (a_1+b_1-1,\dots,a_n+b_n-1)}$
+        \end{center}
+        I aplicant la definici\'o de ${\cdot^*}$ i desenvolupant una mica arribem a
+        \begin{align}
+            \begin{aligned}
+                &(\alpha\cdot(a_1+b_1-1-1)+1,\dots,\alpha\cdot(a_n+b_n-1-1)+1) = \\
+                &= (\alpha\cdot(a_1+b_1-2)+1,\dots,\alpha\cdot(a_n+b_n-2)+1)
+            \end{aligned}
+        \end{align}
+        Tot seguit, desenvoluparem l'equaci\'o ${\alpha\cdot^*u+^*\alpha\cdot^*v}$:
+        \begin{align}
+            \begin{aligned}
+                \alpha\cdot^*u +^* \alpha\cdot^* &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) + (\alpha(b_1-1)+1,\dots,\alpha(b_n-1)+1) = \\
+                                                 &= ((\alpha(a_1-1)+1)+(\alpha(b_1-1)+1)-1,\dots,(\alpha(a_n-1)+1)+(\alpha(b_n-1)+1)-1) = \\
+                                                 &= (\alpha(a_1+b_1-1-1)+1+1-1,\dots,\alpha(a_n+b_n-1-1)+1+1-1) =\\
+                                                 &= (\alpha(a_1+b_1-2)+1,\dots,\alpha(a_n+b_n-2)+1)
+            \end{aligned}
+        \end{align}
+        De l'equaci\'o (1) i (2) obtenim que ${\alpha\cdot^* (u+^*v) = \alpha\cdot^*u +^* \alpha\cdot^*v}$, demostrant la cinquena propietat.
+
+    \subsection*{6. ${(\alpha+\beta)\cdot u= \alpha u + \beta u, \forall u \in E, \forall\alpha,\beta\in\mathbb{R}^n}$:}
+        La sisena propietat que hem de demostrar \'es: ${(\alpha+\beta)\cdot u = \alpha u+\beta u, \forall\alpha,\beta\in\mathbb{R}, u\in E}$.
+        La demostraci\'o la farem similar a la secci\'o anterior, desenvolupant per separat la igualtat.\\
+        Primer de tot desenvoluparem ${(\alpha+_{\mathbb{R}}\beta)\cdot^*u, u = (a_1,\dots,a_n)}$:
+        \begin{align}
+            \begin{aligned}
+                (\alpha+_{\mathbb{R}}\beta)\cdot^*u &= ((\alpha+_{\mathbb{R}}\beta)\cdot(a_1-1)+1,\dots,(\alpha+_{\mathbb{R}}\beta)\cdot(a_n-1)+1) =\\
+                                                    &= ((\alpha a_1 -\alpha +\beta a_1 -\beta)+1,\dots,(\alpha a_n -\alpha +\beta a_n -\beta)+1) =
+            \end{aligned}
+        \end{align}
+        I tot seguit desenvoluparem la segona part de l'equaci\'o:
+        \begin{align}
+            \begin{aligned}
+                (\alpha\cdot^*u)+^*(\beta\cdot^*u) &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) +^* (\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
+                                                   &= ((\alpha(a_1-1)+1)+(\beta(a_1-1)+1)-1,\dots,(\alpha(a_n-1)+1)+(\beta(a_n-1)+1)-1) =\\
+                                                   &= (\alpha a_1 -\alpha +\beta a_1 -\beta +1, \dots,\alpha a_n -\alpha +\beta a_n -\beta +1).
+            \end{aligned}
+        \end{align}
+        Finament, comparant les equacions (1) i (2), veiem que la igualtat es compleix.
+
+    \subsection*{7. Títol 7}
+        ${(\alpha\beta)u = \alpha(\beta u)}$\\
+        Demostraci\'o:
+        \begin{align}
+            \begin{aligned}
+                \alpha(\beta\cdot^*u) &= \alpha\cdot^*(\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
+                                      &= (\alpha(\beta(a_1-1)+1-1)+1,\dots,\alpha(\beta(a_1-1)+1-1)+1) =\\
+                                      &= (\alpha\beta(a_1-1)+1,\dots,\alpha\beta(a_n-1)+1) =\\
+                                      &= (\alpha\beta)\cdot^*u.
+            \end{aligned}
+        \end{align}
+
+    \subsection*{8. Element neutre del producte}
+        ${1\cdot^*u = u, \forall u \in \mathbb{R}^n}$.\\
+        Demostraci\'o:
+        \begin{align*}
+            \begin{aligned}
+                1\cdot^*u &= (1\cdot(a_1-1)+1,\dots,1\cdot(a_n-1)+1) =\\
+                          &= (a_1,\dots,a_n) = u
+            \end{aligned}
+        \end{align*}
 
 \end{document}  
