@@ -1,0 +1,29 @@
+Pràctica 2
+Exercici 1:
+In[25]:= Mod[27,29]
+Out[25]= 27
+In[26]:= Mod[29,27]
+Out[26]= 2
+In[27]:= Mod[27,2]
+Out[27]= 1
+In[28]:= Mod [2,1]
+Out[28]= 0
+Exercici 2:
+In[30]:= MCD[m_,n_]:=Module[{x,y},{x,y}={m,n};
+While[Abs[y]>0,{x,y}={y,Mod[x,y]}];
+x]
+In[13]:= MCD[29,27]
+1clear
+In[14]:= MCD[27,29]
+Out[14]= 1
+In[15]:= MCD[27,311111019]
+Out[15]= 9
+In[31]:= MCD[29,-27]
+In[32]:= -1
+MCD[-29,27]
+Out[32]= -1
+Out[33]= 1
+In[34]:= MCD[-29,-27]
+Out[34]= -1
+In[35]:= MCD[27,-311111019]
+Out[35]= -9
