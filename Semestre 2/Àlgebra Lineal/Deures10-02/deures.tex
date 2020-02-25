@@ -41,7 +41,7 @@
     \end{align*}
     
     \subsection*{1. ${+^*}$ \'es associativa:}
-        Hem de demostrar que ${(a+^*b)+^*c = a+^*(b+^*c), \forall a,b,c \in \mathbb{R}^n}$. Per definici\'o de ${+^*}$ tenim que:
+        Hem de demostrar que ${(a+^*b)+^*c = a+^*(b+^*c)}$. Per definici\'o de ${+^*}$ tenim que:
         \begin{align*}
             \begin{aligned}
                 (a+^*b)+^*c &= ((a_1+b_1-1)+c1-1,\dots,(a_n+b_n-1)+c_n-1) =\\ 
@@ -53,7 +53,7 @@
         D'on queda demostrada la propietat associativa.
 
     \subsection*{2. ${+^*}$ \'es commutativa}
-        Hem de demostrar que ${a +^* b = b +^* a, \forall a,b \in \mathbb{R}^n}$. Utilitzant la definici\'o de ${+^*}$ trobem que:
+        Hem de demostrar que ${a +^* b = b +^* a}$. Utilitzant la definici\'o de ${+^*}$ trobem que:
         \begin{align*}
             \begin{aligned}
                 a +^* b &= (a_1 + b_1 -1, \dots , a_n+b_n-1) =\\
@@ -63,13 +63,13 @@
         D'on trobem que ${+^*}$ \'es commutativa.
 
     \subsection*{3. Vector nul} 
-        Per demostrar que existeix un vector nul, hem de trobar ${\mathbf{0} \in \mathbb{R}^n}$ tal que ${a + \mathbf{0} = a, \forall a \in \mathbb{R}^n}$. Sigui ${\mathbf{0} = (b_1,\dots,b_n)}$ aplicant la definici\'o de ${+^*}$ tenim:
+        Per demostrar que existeix un vector nul, hem de trobar ${\mathbf{0} \in \mathbb{R}^n}$ tal que ${a +^* \mathbf{0} = a}$. Sigui ${\mathbf{0} = (b_1,\dots,b_n)}$, aplicant la definici\'o de ${+^*}$ tenim:
         \begin{align*}
             \begin{aligned}
-                a + \mathbf{0} &\:= (a_1+b_1-1,\dots,a_n+b_n-1) = (a_1,\dots,a_n) = a \\
-                            &\implies  a_1+b_1-1 = a_1, \cdots, a_n+b_n-1 = a_n \\
-                            &\implies b_1 = 1, \cdots , b_n = 1\\
-                            &\implies \mathbf{0} = (1, \dots, 1)
+                a +^* \mathbf{0} &\:= (a_1+b_1-1,\dots,a_n+b_n-1) = (a_1,\dots,a_n) = a \\
+                                 &\implies  a_1+b_1-1 = a_1, \cdots, a_n+b_n-1 = a_n \\
+                                 &\implies b_1 = 1, \cdots , b_n = 1\\
+                                 &\implies \mathbf{0} = (1, \dots, 1)
             \end{aligned}
         \end{align*}
         Del procediment podem veure que es compleix la propietat del vector nul i aquest \'es ${\mathbf{0} = (1,\dots,1)}$
@@ -88,7 +88,7 @@
         De la demostraci\'o observem tamb\'e que el vector invers de un ${a \in \mathbb{R}^n}$ qualsevol \'es ${-a = (2-a_1,\dots,2-a_n)}$.
 
     \subsection*{5. Propietat distributiva de ${+^*}$ i ${\cdot^*}$:}
-        La seg\"uent propietat a demostrar \'es la distributiva de ${+^*}$ i ${\cdot^*}$: ${\alpha\cdot^*(a+^*b) = \alpha\cdot^* a + \alpha\cdot^* b}$.
+        La seg\"uent propietat a demostrar \'es la distributiva de ${+^*}$ i ${\cdot^*}$: ${\alpha\cdot^*(a+^*b) = (\alpha\cdot^* a) +^* (\alpha\cdot^* b)}$.
         \\Per demostrar-ho, comen\c{c}arem desenvolupant les dues equacions per separat.
         \\\\Primer de tot, desenvoluparem l'equaci\'o ${\alpha \cdot^* (a+^*b)}$. Aplicant la definici\'o de ${+^*}$ obtenim:
         \begin{center}
@@ -101,19 +101,19 @@
                 &= (\alpha\cdot(a_1+b_1-2)+1,\dots,\alpha\cdot(a_n+b_n-2)+1)
             \end{aligned}
         \end{align}
-        Tot seguit, desenvoluparem l'equaci\'o ${\alpha\cdot^*a+^*\alpha\cdot^*b}$:
+        Tot seguit, desenvoluparem l'equaci\'o ${(\alpha\cdot^*a)+^*(\alpha\cdot^*b)}$:
         \begin{align}
             \begin{aligned}
-                \alpha\cdot^*a +^* \alpha\cdot^*b &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) + (\alpha(b_1-1)+1,\dots,\alpha(b_n-1)+1) = \\
-                                                  &= ((\alpha(a_1-1)+1)+(\alpha(b_1-1)+1)-1,\dots,(\alpha(a_n-1)+1)+(\alpha(b_n-1)+1)-1) = \\
-                                                  &= (\alpha(a_1+b_1-1-1)+1+1-1,\dots,\alpha(a_n+b_n-1-1)+1+1-1) =\\
-                                                  &= (\alpha(a_1+b_1-2)+1,\dots,\alpha(a_n+b_n-2)+1)
+                (\alpha\cdot^*a) +^* (\alpha\cdot^*b) &= (\alpha(a_1-1)+1,\dots,\alpha(a_n-1)+1) + (\alpha(b_1-1)+1,\dots,\alpha(b_n-1)+1) = \\
+                                                      &= ((\alpha(a_1-1)+1)+(\alpha(b_1-1)+1)-1,\dots,(\alpha(a_n-1)+1)+(\alpha(b_n-1)+1)-1) = \\
+                                                      &= (\alpha(a_1+b_1-1-1)+1+1-1,\dots,\alpha(a_n+b_n-1-1)+1+1-1) =\\
+                                                      &= (\alpha(a_1+b_1-2)+1,\dots,\alpha(a_n+b_n-2)+1)
             \end{aligned}
         \end{align}
-        De l'equaci\'o (1) i (2) obtenim que ${\alpha\cdot^* (a+^*b) = \alpha\cdot^*a +^* \alpha\cdot^*b}$, demostrant la cinquena propietat.
+        De l'equaci\'o (1) i (2) obtenim que ${\alpha\cdot^* (a+^*b) = (\alpha\cdot^*a) +^* (\alpha\cdot^*b)}$, demostrant la cinquena propietat.
 
     \subsection*{6. Propietat distributiva de ${+_{\mathbb{R}}}$ i ${\cdot^*}$:}
-        La sisena propietat que hem de demostrar \'es la distributiva de ${+_{\mathbb{R}}}$ i ${\cdot^*}$.
+        La sisena propietat que hem de demostrar \'es la distributiva de ${+_{\mathbb{R}}}$ i ${\cdot^*}$: ${(\alpha+_{\mathbb{R}}\beta) \cdot^*a = \alpha\cdot^*a+^*\beta\cdot^*a}$.
         La demostraci\'o la farem similar a la secci\'o anterior, desenvolupant per separat la igualtat.\\\\
         Primer de tot desenvoluparem ${(\alpha+_{\mathbb{R}}\beta)\cdot^*a}$:
         \begin{align}
@@ -133,25 +133,28 @@
         Finament, comparant les equacions (3) i (4), veiem que la igualtat es compleix.
 
     \subsection*{7. Propietat associativa del producte:}
-        ${(\alpha\cdot_{\mathbb{R}}\beta)\cdot^*u = \alpha\cdot^*(\beta\cdot^* u)}$\\
+        La setena propietat, l'associativa del producte, ens diu que ${\cdot^*}$ ha de complir: ${(\alpha\cdot_{\mathbb{R}}\beta)\cdot^*a = \alpha\cdot^*(\beta\cdot^* a)}$\\
         Demostraci\'o:
         \begin{align}
             \begin{aligned}
-                \alpha(\beta\cdot^*u) &= \alpha\cdot^*(\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
-                                      &= (\alpha(\beta(a_1-1)+1-1)+1,\dots,\alpha(\beta(a_1-1)+1-1)+1) =\\
-                                      &= (\alpha\beta(a_1-1)+1,\dots,\alpha\beta(a_n-1)+1) =\\
-                                      &= (\alpha\beta)\cdot^*u.
+                \alpha\cdot^*(\beta\cdot^*a) &= \alpha\cdot^*(\beta(a_1-1)+1,\dots,\beta(a_n-1)+1) =\\
+                                             &= (\alpha(\beta(a_1-1)+1-1)+1,\dots,\alpha(\beta(a_1-1)+1-1)+1) =\\
+                                             &= (\alpha\beta(a_1-1)+1,\dots,\alpha\beta(a_n-1)+1) =\\
+                                             &= (\alpha\beta)\cdot^*a.
             \end{aligned}
         \end{align}
 
     \subsection*{8. Element neutre del producte}
-        ${1\cdot^*u = u, \forall u \in \mathbb{R}^n}$.\\
+        Finalment, hem de comprovar que es compleix la propietat de l'element neutre del producte tal que ${1\cdot^*a = a}$.\\
         Demostraci\'o:
         \begin{align*}
             \begin{aligned}
-                1\cdot^*u &= (1\cdot(a_1-1)+1,\dots,1\cdot(a_n-1)+1) =\\
-                          &= (a_1,\dots,a_n) = u
+                1\cdot^*a &= (1\cdot(a_1-1)+1,\dots,1\cdot(a_n-1)+1) =\\
+                          &= (a_1,\dots,a_n) = a
             \end{aligned}
         \end{align*}
+
+    \section*{Conclusi\'o}
+        Per les demostracions a l'apartat anterior, podem afirmar que ${(\mathbb{R}^n, +^*, \cdot^*)}$ \'es un espai vectorial. Per la demostraci\'o n\'umero (3.) veiem que el vector nul d'aquest subespai \'es: ${\mathbf{0} = (1,\dots,1)}$; i per la demostraci\'o (4.) veiem que el vector oposat d'un ${(a,b)}$ \'es ${(2-a,2-b)}$.
 
 \end{document}  

@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,250mm},
+ top=20mm,
+ }
+\usepackage[catalan]{babel}
+
+\title{Deures 14/02/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \justify
+
+    \section*{Enunciat:}
+        Es sap que si ${\langle B_1\rangle=\langle B_2\rangle}$ i ${\#B_1 < \#B_2}$, aleshores ${B_2}$ \'es linealment dependent.\\
+        Prova que si ${B_1}$ i ${B_2}$ s\'on bases de \emph{F}, aleshores ${\#B_1 = \#B_2}$.
+
+    \section*{Demostraci\'o:}
+        Per demostrar la proposici\'o anterior, utilitzarem el metode de reducci\'o a l'absurd; per tant, suposarem que si ${B_1}$ i ${B_2}$ s\'on base de \emph{F}, aleshores ${\# B_1 \neq \# B_2}$. Per la desigualtat anterior, obtenim dos casos a demostrar:
+
+        \subsection*{1. ${\# B_1 < \# B_2}$:}
+            Si ${\# B_1 < \# B_2}$, sabem que aleshores ${B_2}$ \'es linealment dependent, afirmaci\'o que va en contra de la nostra hip\'otesis inicial i per tant arribem a una \textbf{contradicci\'o}.
+            
+        \subsection*{2. ${\# B_1 > \# B_2}$:}
+            Si ${\# B_1 < \# B_2}$, sabem que aleshores ${B_1}$ \'es linealment dependent, afirmaci\'o que va en contra de la nostra hip\'otesis inicial i per tant arribem a una segona \textbf{contradicci\'o}.\\
+    
+        Per tant, podem afirmar que si ${B_1}$ i ${B_2}$ s\'on bases de \emph{F}, ${\#B_1 = \#B_2}$.
+\end{document}

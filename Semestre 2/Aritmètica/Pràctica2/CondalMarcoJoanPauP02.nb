@@ -1,0 +1,80 @@
+Pràctica 2 - Joan Pau CM
+Exercici 1:
+In[1]:= Mod[27,29]
+Out[1]= 27
+In[2]:= Mod[29,27]
+Out[2]= 2
+In[3]:= Mod[27,2]
+Out[3]= 1
+In[4]:= Mod[2,1]
+Out[4]= 0
+Per tant, Mcd(27, 29) és 1
+In[5]:= Mod[27,311111019]
+Out[5]= 27
+In[6]:= Mod[311111019, 27]
+Out[6]= 9
+In[7]:= Mod[27,9]
+Out[7]= 0
+Per tant, Mcd(27, 311111019) és 9.
+Exercici 2:
+In[8]:= MCD[m_, n_]:=Module[{x,y},{x,y}={m,n};
+While[Abs[y]>0, {x,y}={y,Mod[x,y]}];
+x]
+In[9]:= MCD[27,311111019]
+Out[9]= 9
+In[10]:= MCD[-27, 311111019]
+Out[10]= 9
+In[11]:= MCD[27,-311111019]
+Out[11]= -9
+Podem veure que ara la funció també funciona amb m i n negatives
+Exercici 3 :
+In[20]:= EMCD[m_,n_]:=Module[{a,b,g,u,v,w},
+{a,b,g,u,v,w}={1,0,m,0,1,n};
+While[Abs[w]>0,
+q=Quotient[g,w];
+{a,b,g,u,v,w}={u,v,w,a-q*u,b-q*v,g-q*w}];
+{g,a,b}]
+In[21]:= EMCD[27,29]
+Out[21]= {1,14,-13}
+In[22]:= EMCD[-27,29]
+Out[22]= {1,-14,-13}
+In[23]:= -14*-27-13*29
+Out[23]= 1
+In[24]:= EMCD[27,-311111019]
+Out[24]= {-9,11522630,1}
+In[25]:= 11522630*27-311111019
+Out[25]= -9
+In[36]:= EMCD[25,-5]
+Out[36]= {-5,0,1}
+Exercici 4 :
+In[26]:= GCD[27,29]
+Out[26]= 1
+In[27]:= GCD[-27,29]
+Out[27]= 1
+In[28]:= GCD[-27,-29]
+Out[28]= 1
+In[30]:= ExtendedGCD[-27,29]
+Out[30]= {1,{-14,-13}}
+In[31]:= ExtendedGCD[27,-311111019]
+Out[31]= {9,{-11522630,-1}}
+In[32]:= Timing[Module[{x=10000},Do[GCD[RandomInteger[x],RandomInteger[x]],{10^6}]]]
+Out[32]= {0.8125,Null}
+In[38]:= Timing[Module[{x=10000},Do[MCD[RandomInteger[x],RandomInteger[x]],{10^6}]]]
+Out[38]= {13.8906,Null}
+Podem veure que la funció GCD és molt més ràpida que la MCD
+In[39]:= Timing[Module[{x=10000},Do[ExtendedGCD[RandomInteger[x],RandomInteger[x]],{10^6}]]]
+Out[39]= {0.984375,Null}
+In[40]:= Timing[Module[{x=10000},Do[EMCD[RandomInteger[x],RandomInteger[x]],{10^6}]]]
+Out[40]= {32.6406,Null}
+De nou la funció ExtendedGCD del Mathematica és molt més ràpida que EMCD declarada anteriorment.
+Exercici 5 :
+In[61]:= n=1000
+t=Table[GCD[a,b],{a,n},{b,n}];
+t1=Flatten[t];
+c=Count[t1,1]
+N[c/n^2]
+N[6/Pi^2]
+Out[61]= 1000
+Out[64]= 608383
+Out[65]= 0.608383
+Out[66]= 0.607927
