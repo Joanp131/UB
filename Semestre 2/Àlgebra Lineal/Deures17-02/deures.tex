@@ -1,0 +1,134 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,250mm},
+ top=20mm,
+ }
+\usepackage[catalan]{babel}
+
+\title{Deures 17/02/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \justify
+
+    \section*{Enunciat:}
+        Siguin ${F_1}$ i ${F_2}$ subespais de \emph{E} de dimensi\'o finita amb bases ${B_1}$ i ${B_2}$. Demostreu:
+        \begin{align*}
+            \begin{aligned}
+                F_1 \oplus F_2 \iff B_1 \cup B_2 \text{ base de } F_1 + F_2
+            \end{aligned}
+        \end{align*}
+    
+        \section*{Demostraci\'o:}
+            Sabem que ${F_1 \oplus F_2 \iff F_1 \cap F_2 = \left\{\mathbf{0}\right\}}$\\
+            Per aquesta demostraci\'o suposarem:
+            \begin{align*}
+                \begin{aligned}
+                    B_1 = \left\{v_1,\dots,v_k\right\}\\
+                    B_2 = \left\{w_1,\dots,w_m\right\}
+                \end{aligned}
+            \end{align*}
+            \\
+            ${\mathbf{\implies]}}$ Hem de demostrar que ${F_1 \oplus F_2 \implies B_1 \cup B_2 \text{ base de } F_1 + F_2}$; per tant, hem de demostrar que ${B_1 \cup B_2}$ generen ${F_1 + F_2}$ i s\'on linealment independents.\\
+            La nostra hip\`otesis \'es que ${F_1 \oplus F_2}$. Primer de tot, demostrarem que generen:
+            \subsection*{1. Generen:}
+                Sigui ${u \in F_1 + F_2}$, per tant, ${\exists v \in F_1 \text{ i } \exists w\in F_2}$ tal que:
+                \begin{align*}
+                    \begin{aligned}
+                        u = v + w
+                    \end{aligned}
+                \end{align*}
+                Com que ${v \in F_1}$, existeixen ${\alpha_1,\dots,\alpha_k \in \mathbb{R}}$ tals que 
+                \begin{align*}
+                    \begin{aligned}
+                        v = \alpha_1v_1+\cdots+\alpha_kv_k
+                    \end{aligned}
+                \end{align*}
+                I com que ${w \in F_2}$, existeixen ${\beta_1,\dots,\beta_m \in \mathbb{R}}$ tals que 
+                \begin{align*}
+                    \begin{aligned}
+                        w = \beta_1w_1+\cdots+\beta_mw_m
+                    \end{aligned}
+                \end{align*}
+                Per tant:
+                \begin{align*}
+                    \begin{aligned}
+                        u &= \alpha_1v_1+\cdots+\alpha_kv_k + \beta_1w_1+\cdots+\beta_mw_m\\
+                        &\implies u \in \langle B_1 \cup B_2 \rangle \\
+                        &\implies B_1 \cup B_2 \text{ generen } F_1 + F_2
+                    \end{aligned}
+                \end{align*}
+
+            \subsection*{2. Independ\`encia lineal:}
+                Per demostrar la independ\`encia lineal de ${B_1 \cup B_2}$ hem de demostrar que l'\'unica soluci\'o a l'equaci\'o:
+                \begin{align}
+                    \begin{aligned}
+                        \alpha_1v_1+\cdots+\alpha_kv_k + \beta_1w_1+\cdots+\beta_mw_m = 0
+                    \end{aligned}
+                \end{align}
+                \'es la soluci\'o amb ${\alpha_1=\cdots=\alpha_k=\beta_1=\cdots=\beta_m=0}$.
+                \\\\
+                De l'equaci\'o (1), veiem que:
+                \begin{align}
+                    \begin{aligned}
+                        v = \alpha_1v_1+\cdots+\alpha_kv_k = -\beta_1w_1-\cdots-\beta_mw_m
+                    \end{aligned}
+                \end{align}
+                d'on observem que 
+                \begin{align}
+                    \begin{aligned}
+                        v \in \langle B_1 \rangle \text{ i } v \in \langle B_2 \rangle\\
+                        \implies v \in F_1 \cap F_2
+                    \end{aligned}
+                \end{align}
+                Sabem per hip\`otesis que ${F_1 \cap F_2 = \left\{\mathbf{0}\right\}}$; per tant, ${v = \mathbf{0}}$. Substitu\"int a l'equaci\'o (2) obtenim:
+                \begin{align}
+                    \begin{aligned}
+                        \mathbf{0} = \alpha_1v_1+\cdots+\alpha_kv_k = -\beta_1w_1-\cdots-\beta_mw_m
+                    \end{aligned}
+                \end{align}
+                Com que ${B_1}$ i ${B_2}$ s\'on bases per hip\'otesis, l'\'unica soluci\'o de l'equaci\'o (4) \'es:
+                \begin{align}
+                    \begin{aligned}
+                        \alpha_1=\cdots=\alpha_k=-\beta_1=\cdots=-\beta_m=0
+                    \end{aligned}
+                \end{align}
+                D'on queda demostrada la independ\`encia lineal de ${B_1}$ i ${B_2}$.\\\\
+                Per tant, com que ${B_1}$ i ${B_2}$ generen ${F_1 + F_2}$ i s\'on linealment independents, podem afirmar que s\'on base de ${F_1 + F_2}$.\\\\\\
+            ${\Longleftarrow]}$ Hem de demostrar que ${B_1 \cup B_2 \text{ base de } F_1 + F_2 \implies F_1 \oplus F_2}$\\\\
+            Per hip\`otesis sabem que ${B_1 \cup B_2}$ s\'on base de ${F_1 + F_2}$, per tant, s\'on linealment independents.\\\\
+            Sigui ${v \in F_1 \cap F_2}$, existeixen ${\alpha_1,\dots,\alpha_k,\beta_1,\dots,\beta_m \in \mathbb{R}}$ tals que:
+            \begin{align}
+                \begin{aligned}
+                    v = \alpha_1v_1 + \cdots + \alpha_k v_k\\
+                    v = \beta_1 w_1 + \cdots + \beta_m w_m
+                \end{aligned}
+            \end{align}
+            Per tant, sabem que:
+            \begin{align}
+                \begin{aligned}
+                    \alpha_1v_1 + \cdots + \alpha_k v_k = \beta_1 w_1 + \cdots + \beta_m w_m\\
+                    \alpha_1v_1 + \cdots + \alpha_k v_k -\beta_1 w_1 - \cdots -\beta_m w_m = \mathbf{0}
+                \end{aligned}
+            \end{align}
+            I com que ${B_1 \cup B_2}$ \'es base de ${F_1 + F_2}$, l'\'unica solució a l'equaci\'o (7) \'es:
+            \begin{align}
+                \begin{aligned}
+                    \alpha_1 = \cdots = \alpha_k = -\beta_1 = \cdots = -\beta_m = 0
+                \end{aligned}
+            \end{align}
+            I substitu\"int els valors a l'equaci\'o (6) obtenim:
+            \begin{align}
+                \begin{aligned}
+                    v = 0\cdot v_1 +\cdots+ 0\cdot v_k = \mathbf{0}
+                \end{aligned}
+            \end{align}
+            Per tant, ${F_1 \cap F_2 = \left\{\mathbf{0}\right\}}$; d'on conclu\"im que ${F_1 \oplus F_2}$.
+\end{document}
