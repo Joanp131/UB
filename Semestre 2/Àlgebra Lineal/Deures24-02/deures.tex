@@ -1,0 +1,139 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ragged2e} 
+\usepackage[catalan]{babel}
+\usepackage{fancyhdr}
+
+\title{Deures 24/02/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Deures 24/02}
+\rfoot{Page \thepage}
+
+\begin{document}
+    \maketitle
+    \justify
+    \section{Enunciat:}
+        Siguin ${E = \mathbb{R}[X]_{3} \text{ i } F = \left\{p(x) \in E: \int_0^1 p(x) dx = 0\right\}}$.
+        \begin{enumerate}
+            \item Prova que ${F \text{ \'es un subespai d' }E}$.
+            \item Prova que ${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ \'es una base de \emph{F}.
+            \item Prova que ${\left\{2x-1, 3x^2-1, 4x^3-1, 1\right\}}$ \'es una base de \emph{E}.
+            \item Per ${p(x) \in E}$, es t\'e que existeix ${\alpha \in \mathbb{R}}$ tal que ${\left[p(x)\right] = \alpha \cdot \left[1\right]}$ en ${E/F}$. Prova que ${\alpha = \int_0^1p(x)dx}$.
+        \end{enumerate}
+
+    \section{Demostraci\'o:}
+        \subsection{Prova que ${F \text{ \'es un subespai d' }E}$.}
+            Per demostrar que \emph{F} \'es un subespai de \emph{E}, cal veure que la suma de dos element de \emph{F} est\`a a \emph{F}; que el producte d'un escalar per un element de \emph{F} \'es de \emph{F} i que ${F \neq \varnothing}$.
+            
+            \subsubsection{${\forall u,v \in F, u + v\in F}$:}
+            Siguin ${p(x),q(x)\in F}$. Sabem que:
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1 p(x) dx = 0 \text{, }
+                    \int_0^1 q(x) dx = 0
+                \end{aligned}
+            \end{align*}
+            Sigui ${h(x) = p(x) + q(x)}$. Tenim:
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1 h(x)dx = \int_0^1\left(p(x)+q(x)\right)dx = \int_0^1p(x)dx + \int_0^1q(x)dx = 0 + 0 = 0.
+                \end{aligned}
+            \end{align*}
+            D'on veiem que tot element que sigui suma de dos elements de \emph{F} tamb\'e pertany a \emph{F}.
+
+            \subsubsection{${\forall\alpha\in\mathbb{R}, \forall u \in F, \alpha\cdot u \in F}$:}
+            Siguin ${p(x) \in F \text{ i } \alpha\in\mathbb{R}}$, sabem que:
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1p(x)dx = 0
+                \end{aligned}
+            \end{align*}
+            Sigui ${h(x) = \alpha\cdot p(x)}$:
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1h(x)dx = \int_0^1\left(\alpha\cdot p(x)\right)dx = \alpha \cdot \int_0^1p(x)dx = \alpha \cdot 0 = 0.
+                \end{aligned}
+            \end{align*}
+
+            \subsubsection{${F \neq \varnothing}$:}
+            Sigui ${p(x) = 0}$
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1p(x)dx = \left[C\right]_0^1 = C - C = 0.
+                \end{aligned}
+            \end{align*}
+
+        \subsection{Prova que ${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ \'es una base de \emph{F}:}
+            Per demostrar que ${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ s\'on base de \emph{F} cal veure que pertanyen a \emph{F}, que generen i que s\'on linealment independents.
+            
+            \subsubsection{${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ pertanyen a \emph{F}:}
+            \begin{align*}
+                \begin{aligned}
+                    \int_0^1\left(2x-1\right)dx = \left[\frac{2x^2}{2}-x\right]_0^1 = \left(\frac{2}{2}-1\right) - 0 = 0\\
+                    \int_0^1\left(3x^2-1\right)dx = \left[\frac{3x^3}{3}-1\right]_0^1 = \left(\frac{3}{3}-1\right) - 0 = 0\\
+                    \int_0^1\left(4x^3-1\right)dx = \left[\frac{4x^4}{4}-1\right]_0^1 = \left(\frac{4}{4}-1\right) - 0 = 0
+                \end{aligned}
+            \end{align*}
+
+            \subsubsection{${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ generen \emph{F}:}
+            Siguin ${\alpha_1,\alpha_2,\alpha_3\in\mathbb{R},\; p(x) = \alpha_1\cdot (2x-1) + \alpha_2\cdot (3x^2-1) + \alpha_3\cdot (4x^3-1) \in E}$:
+            \begin{gather*}
+                \int_0^1p(x)dx =\\
+                = \int_0^1\left( \alpha_1\cdot (2x-1)\right)dx + \int_0^1 \left( \alpha_2\cdot (3x^2-1) \right)dx + \int_0^1 \left(\alpha\cdot (4x^3-1) \right)dx =\\
+                = \int_0^1 \left( \alpha_1\cdot (2x-1) \right) dx + \int_0^1 \left( \alpha_2\cdot (3x^2-1) \right)dx + \int_0^1 \left( \alpha_3\cdot (4x^3-1) \right)dx =\\
+                = \alpha_1 \cdot \int_0^1 \left(2x-1\right) dx + \alpha_2\cdot\int_0^1 \left(3x^2-1\right)dx + \alpha_3\cdot\int_0^1 \left(4x^3-1\right)dx =\\
+                = \alpha_1\cdot 0 + \alpha_2\cdot 0 + \alpha_3\cdot 0 = 0 + 0 + 0 = 0
+            \end{gather*}
+            Per tant, ${p(x)\in F}$, d'on queda demostrat que ${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ generen \emph{F}.
+
+            \subsubsection{${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ s\'on linealment independents:}
+            Per demostrar que ${\left\{2x-1, 3x^2-1, 4x^3-1\right\}}$ s\'on linealment independents, hem de demostrar que l'\'unica soluci\'o a l'equaci\'o:
+            \begin{align}
+                \begin{aligned}
+                    \alpha_1\cdot(2x-1) + \alpha_2\cdot (3x^2-1) + \alpha_3\cdot (4x^3-1) = 0
+                \end{aligned}
+            \end{align}
+            Amb ${\alpha_1,\alpha_2,\alpha_3 \in \mathbb{R}}$ \'es la soluci\'o ${\alpha_1 = \alpha_2 = \alpha_3 = 0}$.\\\\
+            Com que els tres polinomis de la base tenen grau diferent i els ${\alpha}$ que busquem pertanyen als nombres reals, no existeixen ${\alpha_1, \alpha_2, \alpha_3 \neq 0}$ que donin una soluci\'o nula a l'equaci\'o (1). Per tant, l'\'unica soluci\'o possible \'es ${\alpha_1 = \alpha_2 = \alpha_3 = 0}$; d'on queda demostrat que s\'on linealment independents i, per tant, base de \emph{F}.
+
+        \subsection{Prova que ${\left\{2x-1, 3x^2-1, 4x^3-1, 1\right\}}$ \'es una base de \emph{E}:}
+            Com que ${dim(E) = 4}$, i ${\left\{2x-1, 3x^2-1, 4x^3-1, 1\right\}}$ t\'e quatre polinomis, si aconseguim demostrar que s\'on linealment independents, quedar\`a demostrat que s\'on base. Per veure si s\'on linealment independents, farem reducci\'o a la matriu que formen els coeficients dels polinomis:
+            \begin{align}
+                \begin{bmatrix}
+                    -1 & 2 & 0 & 0\\
+                    -1 & 0 & 3 & 0\\
+                    -1 & 0 & 0 & 4\\
+                    1 & 0 & 0 & 0
+                \end{bmatrix}
+                \longrightarrow
+                \begin{bmatrix}
+                    0 & 2 & 0 & 0\\
+                    0 & 0 & 3 & 0\\
+                    0 & 0 & 0 & 4\\
+                    1 & 0 & 0 & 0
+                \end{bmatrix}
+                \longrightarrow
+                \begin{bmatrix}
+                    1 & 0 & 0 & 0\\
+                    0 & 2 & 0 & 0\\
+                    0 & 0 & 3 & 0\\
+                    0 & 0 & 0 & 4
+                \end{bmatrix}
+            \end{align}
+            Com podem veure a la reducci\'o (2), els vectors del conjunt ${\left\{2x-1, 3x^2-1, 4x^3-1, 1\right\}}$ s\'on linealment independents, i per tant, base de \emph{E}.
+
+        \subsection{Per ${p(x) \in E}$, es t\'e que existeix ${\alpha \in \mathbb{R}}$ tal que ${\left[p(x)\right] = \alpha \cdot \left[1\right]}$ en ${E/F}$. Prova que ${\alpha = \int_0^1p(x)dx}$:}
+            \begin{align*}
+                \begin{aligned}
+                    \left[p(x)\right] = \left\{ p(x)+q(x): q(x)\in F \right\} =\\
+                    = \left\{h(x): h(X) = p(x)+q(x), q(x)\in F\right\}
+                \end{aligned}
+            \end{align*}
+\end{document}
