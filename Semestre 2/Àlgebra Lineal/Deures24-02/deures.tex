@@ -7,12 +7,12 @@
 \usepackage{fancyhdr}
 
 \title{Deures 24/02/2020}
-\author{Joan Pau Condal Marco}
+\author{Here goes my name}
 \date{\today}
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Joan Pau Condal Marco}
+\rhead{Here also goes my name}
 \lhead{Deures 24/02}
 \rfoot{Page \thepage}
 
@@ -130,10 +130,14 @@
             Com podem veure a la reducci\'o (2), els vectors del conjunt ${\left\{2x-1, 3x^2-1, 4x^3-1, 1\right\}}$ s\'on linealment independents, i per tant, base de \emph{E}.
 
         \subsection{Per ${p(x) \in E}$, es t\'e que existeix ${\alpha \in \mathbb{R}}$ tal que ${\left[p(x)\right] = \alpha \cdot \left[1\right]}$ en ${E/F}$. Prova que ${\alpha = \int_0^1p(x)dx}$:}
+            Per definici\'o del subespai quocient sabem que:
             \begin{align*}
-                \begin{aligned}
-                    \left[p(x)\right] = \left\{ p(x)+q(x): q(x)\in F \right\} =\\
-                    = \left\{h(x): h(X) = p(x)+q(x), q(x)\in F\right\}
-                \end{aligned}
+                \left[p(x)\right] = \left\{p(x) + q(x): q(x)\in F\right\} = \alpha \left[1\right] = \left[\alpha\right]
             \end{align*}
+            Aplicant la definici\'o a la classe de $p(x)$ obtenim:
+            \begin{gather*}
+                \left[p(x)\right] = \alpha \cdot \left[1\right] \implies p(x) + F = \alpha(1 + F) \implies p(x) = \alpha + \alpha F - F\\
+                \implies p(x) = \alpha + F(\alpha -1) \implies\\ \int_0^1p(x)dx = \int_0^1\alpha dx + \int_0^1 F(\alpha-1)dx = \\
+                \int_0^1\alpha dx = \left[\alpha \cdot x\right]_0^1 = \alpha
+            \end{gather*}
 \end{document}
