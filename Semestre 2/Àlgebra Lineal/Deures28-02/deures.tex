@@ -1,0 +1,67 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ragged2e} 
+\usepackage[catalan]{babel}
+\usepackage{fancyhdr}
+
+\title{Deures 24/02/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Deures 24/02}
+\rfoot{Page \thepage}
+
+\begin{document}
+    \maketitle
+    \justify
+
+    \section{Enunciat:}
+        Siguin \emph{E} un espai vectorial i ${F\subset E}$ un subespai.
+        \begin{enumerate}
+            \item Prova que ${f:E \rightarrow E/F}$ definida com a ${f(u) := u + F}$ \'es una aplicaci\'o lineal.
+            \item Prova que \emph{f} \'es epimorfisme.
+            \item Prova que ${ker(f) = F}$.
+        \end{enumerate}
+
+    \section{Demostraci\'o:}
+        Per la definici\'o de ${E/F}$ sabem que ${u+F = [u]}$ i recordem tamb\'e les definicions de ${+_Q \text{ i } \cdot_Q}$:
+        \begin{gather*}
+            [u] +_Q [v] := [u+v]\\
+            \alpha\cdot_Q [u] = [\alpha u]\\
+            \forall u,v \in E, \alpha \in \mathbb{R}
+        \end{gather*}
+
+        \subsection{Prova que \emph{f} \'es aplicaci\'o lineal:}
+            Siguin ${u,v \in E}$ i ${\alpha,\beta\in\mathbb{R}}$:
+            \begin{equation*}
+                f(\alpha u + \beta v) = [\alpha u + \beta v] = [\alpha u] + [\beta v] = \alpha [u] + \beta [v] = \alpha f(u) + \beta f(v) 
+            \end{equation*}
+            Per tant, queda demostrat que \emph{f} \'es una aplicaci\'o lineal.
+
+        \subsection{Prova que \emph{f} \'es un epimorfisme:}
+            Sabem que \emph{f} \'es epimorfisme ${\iff Im(f) = E/F}$.
+            Per la definici\'o de ${Im(f)}$ sabem que:
+            \begin{equation*}
+                Im(f) = \left\{f(u): u\in E\right\} = \left\{[u]: u\in E\right\} = E/F
+            \end{equation*}
+            Com que ${Im(f) = E/F \implies f}$ \'es epimorfisme.
+
+        \subsection{Prova que el nucli de \emph{f} \'es \emph{F}:}
+            Per la definici\'o de \emph{E/F} sabem que ${u\in F \iff [u] = [0]}$.
+
+            \subsubsection{Nucli \'es subconjunt de \emph{F}:}
+                Sigui \emph{u} un vector qualsevol de ${Ker(f)}$. Sabem que:
+                \begin{equation*}
+                    u \in Ker(f) \implies f(u) = [0] \implies [u] = [0] \implies u\in F \implies Ker(f) \subseteq F.
+                \end{equation*}
+
+            \subsubsection{\emph{F} \'es subconjunt del nucli de \emph{f}:}
+                Sigui \emph{u} un vector qualsevol de \emph{F}. Sabem que ${f(u) = [0]}$ ja que ${u\in F}$. Per tant, ${u \in Ker(f) \implies F \subseteq Ker(f)}$.\\\\
+            Com que ${Ker(f) \subseteq F \text{ i } F \subseteq Ker(f) \implies F = Ker(f)}$.
+
+\end{document}
