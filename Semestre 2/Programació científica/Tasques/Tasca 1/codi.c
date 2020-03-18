@@ -7,7 +7,7 @@ double* integrar(int, double*, double*);
 int main(void) {
 
     int i, j, k, n;
-    double **p, max = -100, mit;
+    double **p, max, mit = 0;
 
     printf("Quin serà el grau del polinomi i quantes vegades vols integrar?\n");
     scanf("%d %d", &n, &k);
@@ -32,12 +32,17 @@ int main(void) {
     printf("Grau %d: ", n);
     for(i = 0; i <= n; i++) {
         printf("%+.4le ", p[0][i]);
+        mit += p[0][i];
     }
+    mit /= n+1;
+    max = mit;
 
     printf("\n");
     for(i = 0; i < k; i++) {
         p[i+1] = integrar(n+i, p[i], &mit);
+
         if(mit >= max) max = mit;
+        
         printf("Grau %d: ", n+i+1);
         for(j = 0; j <= n+i+1; j++) {
             printf("%+.4le ", p[i+1][j]);
