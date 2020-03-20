@@ -1,0 +1,100 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[catalan]{babel}
+\usepackage{fancyhdr}
+\usepackage[%
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}%
+
+\renewcommand{\familydefault}{\rmdefault}
+
+\title{Deures 06/03/2020}
+\author{Joan Pau Condal Marco}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Deures 06/03}
+\rfoot{Page \thepage}
+
+\begin{document}
+    \maketitle
+
+    \section*{Enunciat:}
+    \begin{enumerate}
+        \item Siguin ${f:E\longrightarrow F}$, ${S_E}$ subespai d'\emph{E} i ${S_F}$ subespai de \emph{F}.
+        \begin{enumerate}
+            \item Prova que ${f(S_E)}$ \'es subespai de \emph{F}.
+            \item Prova que ${f^{-1}(S_F)}$ \'es un subespai d'\emph{E}.
+        \end{enumerate}
+        \item Siguin ${A, B, C \in M(n,n,\mathbb{R}), C}$ invertible.
+        \begin{enumerate}
+            \item Prova que ${tr(A\cdot B) = tr(B\cdot A)}$.
+            \item Prova que ${tr(A) = tr(C\cdot A \cdot C^{-1})}$.
+        \end{enumerate}
+    \end{enumerate}
+
+    \section*{Apartat 1.}
+        Per la demostraci\'o de 1. sabem que ${S_E \subset E, S_F \subset F}$ s\'on subespais de \emph{E} i \emph{F} respectivament; i tamb\'e sabem que \emph{f} \'es lineal.
+        \subsection*{Demostraci\'o de (a):}
+            Per demostrar que ${f(S_E)}$ \'es un subespai de \emph{F}, hem de demostrar que no \'es buit, que la suma de dos elements de ${f(S_E)}$ cau a ${f(S_E)}$ i que un escalar per un element de ${f(S_E)}$ tamb\'e pertany a ${f(S_E)}$.\\\\
+            Comencarem demostrant que ${f(S_E)}$ no \'es buit. Per hip\`otesi sabem que ${S_E \subset E}$ \'es subespai i \emph{f} \'es aplicaci\'o lineal. Per tant, sabem que ${\mathbf{0}_E \in S_E}$ i ${f(\mathbf{0}_E) = \mathbf{0}_F}$; d'on queda demostrat que ${f(S_E) \neq \emptyset}$.\\\\
+            A continuaci\'o veurem que dos elements de ${f(S_E)}$ sumats pertanyen a ${f(S_E)}$. Siguin ${u, v \in S_E}$, tenim que:
+            \begin{gather*}
+                f(u) \in f(S_E),\;  f(v) \in f(S_E)\\
+                u \in S_E \text{ i } v\in S_E \implies u+v\in S_E \implies f(u+v) \in f(S_E) \implies f(u) + f(v) \in f(S_E)
+            \end{gather*}
+            D'on queda demostrada la segona propietat.\\\\
+            Finalment hem de demostrar que el producte d'un escalar per un vector de ${f(S_E)}$, pertany a ${f(S_E)}$. Sigui ${\alpha \in \mathbb{R}}$ i ${v \in S_E}$. Com que ${S_E}$ \'es un subespai vectorial, sabem que ${\alpha v \in S_E}$. Aleshores:
+            \begin{equation*}
+                \alpha v \in S_E \implies f(\alpha v) \in f(S_E) \implies \alpha f(v) \in f(S_E)
+            \end{equation*}
+            D'on queda demostrada la tercera propietat i, per tant, el fet de que ${f(S_E)}$ \'es subespai.\\\\
+            Per veure que ${f(S_E)}$ \'es subespai de \emph{F}, nom\'es cal veure que:
+            \begin{equation*}
+                f(S_E) = \left\{f(v): v\in S_E\right\} \subset F
+            \end{equation*}
+
+        \subsection*{Demostraci\'o de (b):}
+            A l'hora de demostrar que ${f^{-1}(S_F)}$ \'es subespai vectorial hem d'anar amb compte, ja que ${f^{-1}}$ no t\'e perqu\`e ser aplicaci\'o; ja que nom\'es ho \'es si \emph{f} \'es un isomorfisme. Sabent aix\`o, seguirem la demostraci\'o considerant ${f^{-1}}$ el conjunt antiimatge i no la aplicaci\'o inversa de \emph{f}.\\
+            Per demostrar que ${f^{-1}(S_F)}$ \'es subespai vectorial, haurem de demostrar que es compleixen les mateixes propietats que hem demostrat per 1.a.\\\\
+            Primer de tot, hem de demostrar que ${f^{-1}(S_F) \neq \emptyset}$. Per la definici\'o de ${f^{-1}}$, sabem que ${f^{-1}(\mathbf{0}_F) = ker f}$; i com que ${ker f \neq \emptyset}$ sempre (considerant \emph{f} lineal), podem afirmar que ${f^{-1}(S_F) \neq \emptyset}$\\\\
+            Per demostrar que la suma de dos elements de ${f^{-1}(S_F)}$ pertany a ${f^{-1}(S_F)}$, considerarem dos vectors ${u, v \in f^{-1}(S_F)}$. Aleshores:
+            \begin{equation*}
+                f(u),f(v) \in S_F \implies f(u) + f(v) \in S_F \implies f(u+v) \in S_F \implies u+v \in f^{-1}(S_F)
+            \end{equation*}
+            I d'aqu\'i demostrem la segona propietat dels subespais per ${f^{-1}(S_F)}$\\\\
+            Finalment hem de demostrar que un escalar per un vector de ${f^{-1}(S_F)}$ pertany a ${f^{-1}(S_F)}$. Considerarem ${\alpha \in \mathbb{R} \text{ i } v\in f^{-1}(S_F)}$. Aleshores, sabem:
+            \begin{equation*}
+                v \in f^{-1}(S_F) \implies f(v) \in S_F \implies \alpha f(v) \in S_F \implies f(\alpha v) \in S_F \implies \alpha v \in f^{-1}(S_F)
+            \end{equation*}
+            Demostrant la tercera condici\'o dels subespais vectorials.\\
+            Com que han quedat demostrades les tres condicions, queda demostrat que ${f^{-1}(S_F)}$ \'es un subespai d'\emph{E}.
+
+    \section*{Apartat 2.}
+        \subsection*{Demostraci\'o de (a):}
+            Siguin ${A = (a_{ij})_{\substack{i=1,\dots,n\\j=1,\dots,n}}}$ i ${B=(b_{st})_{\substack{s=1,\dots,n\\t=1,\dots,n}}}$. Sabem que ${tr(A) = \sum^n_{i=1} a_{ii}}$. Per definici\'o del producte de matrius, sabem que:
+            \begin{gather*}
+                A\cdot B = \left(\sum^n_{k=1}a_{ik}b_{kj}\right)_{\substack{i=1,\dots,n\\j=1,\dots,n}}\\
+                B\cdot A = \left(\sum^n_{k=1}b_{ik}a_{kj}\right)_{\substack{i=1,\dots,n\\j=1,\dots,n}}
+            \end{gather*}
+            Per tant, aplicant la definici\'o de \emph{tr} al producte de matrius, obtenim:
+            \begin{gather*}
+                tr(A\cdot B) = \sum^n_{i=1}\left(\sum^n_{k=1}a_{ik}b_{ki}\right) = \sum^n_{k=1}\sum^n_{i=1}a_{ik}b_{ki} = \sum^n_{k=1}\sum^n_{i=1}b_{ki}a_{ik} = tr(B\cdot A)
+            \end{gather*}
+
+        \subsection*{Demostraci\'o de (b):}
+            Per demostrar que ${tr(C\cdot A \cdot C^{-1}) = tr(A)}$, podem utilitzar la demostraci\'o anterior:
+            \begin{equation*}
+                tr(C\cdot A \cdot C^{-1}) = tr(C \cdot C^{-1} \cdot A) = tr(I_n \cdot A) = tr(A)
+            \end{equation*}
+
+\end{document}
