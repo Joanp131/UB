@@ -1,0 +1,74 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[catalan]{babel}
+\usepackage{fancyhdr}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}%
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Deures 13/03}
+\rfoot{Pàg \thepage}
+
+\begin{document}
+
+    \noindent\textbf{\large \underline{Exercici 2:} \normalsize Demostra el seg\"uent corol·lari:
+    $$
+        C(\mathcal{B}^*_2, \mathcal{B}^*_1) = \left( C(\mathcal{B}_1, \mathcal{B}_2) \right)^t
+    $$
+    On C \'es la matriu de canvi de base; i $\mathbf{\mathcal{B}_1, \mathcal{B}_2}$ s\'on dues bases de l'espai \emph{E} de dimensi\'o finita.
+    }\\\\
+    Recordem que si tenim l'aplicaci\'o lineal $f:E \longrightarrow F$ i definim $ f^*: F^* \longrightarrow E^* $, aleshores
+    \begin{gather}
+        M_{\mathcal{B}_{F^*}\mathcal{B}_{E^*}}(f^*) = \left( M_{\mathcal{B}_E\mathcal{B}_F}(f) \right)^t
+    \end{gather}
+    Definim dues bases d'un espai \emph{E} de dimensi\'o finita i una base dual per cada base de \emph{E}
+    $$
+        \begin{array}{l r}
+            \mathcal{B}_1 = \left\{ v_1,\dots,v_n \right\} & \mathcal{B}^*_1 = \left\{ v^*_1,\dots,v^*_n \right\}\\
+            \mathcal{B}_2 = \left\{ u_1,\dots,u_n \right\} & \mathcal{B}^*_2 = \left\{ u^*_1,\dots,u^*_n \right\}
+        \end{array}
+    $$
+    Definim ara l'endomorfisme \emph{f} de \emph{E} de la seg\"uent manera:
+    \begin{gather*}
+        f: E \longrightarrow E\\
+        f(v_i) \mapsto u_i, \forall i = 1,\dots,n
+    \end{gather*}
+    D'aquesta manera, \emph{f} \'es l'aplicaci\'o de canvi de base de $\mathcal{B}_1$ a $\mathcal{B}_2$. Si aconseguim demostrar que $ f^* $ \'es la funci\'o de canvi de base de $ \mathcal{B}^*_2 $ a $ \mathcal{B}^*_1 $, per (1) haurem demostrat el corol·lari.\\\\
+    Per definici\'o, $ f^* $ ser\`a l'endomorfisme de $ E^* $ tal que
+    \begin{align*}
+        f^*: E^* &\longrightarrow E^*\\
+        \omega &\mapsto \omega \circ f
+    \end{align*}
+    Per demostrar que $ f^* $ \'es la funci\'o de canvi de base, hem de demostrar que
+    $$
+        f^*(u^*_i) = v^*_i \text{, } \forall i = 1,\dots,n
+    $$
+    Per la definici\'o de $ f^* $ sabem que
+    \begin{gather}
+            f^*(u^*_i)(v_j) = (u^*_i \circ f)(v_j) =
+            u^*_i(f(v_j)) = u^*_i(u_j)\text{, } \forall i,j = 1, \dots, n
+    \end{gather}
+    I de la igualtat (2) podem veure que
+    \begin{gather*}
+        (u^*_i \circ f)(v_j) = 
+        \begin{cases}
+            1 \text{ si } i = j\\
+            0 \text{ si } i \neq j
+        \end{cases}
+        \implies (u^*_i \circ f) = v^*_i, \forall i = 1,\dots,n
+    \end{gather*}
+    D'on conclu\"im que $ f^*(u^*_i)=v^*_i, \forall i = 1,\dots,n $; que significa que $ f^* $ \'es la funci\'o de canvi de base $\mathcal{B}_2^*$ a $ \mathcal{B}_1^* $, demostrant aix\'i el corol·lari.\\\\
+
+
+\end{document}

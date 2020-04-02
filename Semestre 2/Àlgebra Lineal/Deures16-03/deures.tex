@@ -1,0 +1,71 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage[catalan]{babel}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}
+
+\newcommand{\exercici}[1]{\noindent{\large\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Homework 16/03}
+
+\begin{document}
+    \exercici{\underline{Exercici 1:} Sigui \emph{E} un espai vectorial de dimensi\'o finita, demostreu:
+        \begin{enumerate}
+            \item $E^\circ = \left\{ \theta_{E^*} \right\}$, $ \left\{ \theta_E \right\}^\circ = E^* $
+            \item $ ^\circ E^* = \left\{ \theta_E \right\} $, $ ^\circ \left\{ \theta_{E^*} \right\} = E$
+            \item Si $A \subset E$ y $ B \subset E^* $, aleshores $A^\circ$ \'es subespai d'$E^*$ y $^\circ B$ \'es subespai d'\emph{E}.
+            \item Si $A_1 \subset A_2 \subset E$ i $B_1 \subset B_2 \subset E^*$ aleshores $A^\circ_2 \subset A^\circ_1$ y $^\circ B_2 \subset ^\circ B_1$
+        \end{enumerate}
+    }
+    \normalsize\noindent\underline{1.1:}\\
+    Recordem que $dim(F) + dim(F^\circ) = dim(E)$ per $F \subset E$ subespai. Aleshores, si $F = E$
+    \begin{gather*}
+        dim(E^\circ) = dim(E) - dim(E) = 0\\
+        \implies E^\circ = \left\{ \theta_{E^*} \right\}
+    \end{gather*}
+    D'on demostrem la primera igualtat.
+    An\`alogament, si $ F = \left\{ \theta_E \right\} $, aleshores
+    \begin{gather*}
+        dim(F^\circ) = dim(E) - dim(\left\{ \theta_E \right\}) = dim(E) = dim(E^*)\\
+        \implies F^\circ = \left\{ \theta_E \right\}^\circ = E^*
+    \end{gather*}\\\\
+    \underline{1.2:}\\
+    Recordem que $ dim(F^*) + dim(^\circ F^*) = dim(E) = dim(E^*) $, amb $ F\subset E $. Per tant si considerem $ F = E $ obtenim
+    \begin{gather*}
+        dim(^\circ E^*) = dim(E^*) - dim(E^*) = 0\\
+        \implies ^\circ E^* = \left\{ \theta_E \right\}
+    \end{gather*}
+    An\`alogament, si $ F^* = \left\{ \theta_{E^*} \right\}$ obtenim
+    \begin{gather*}
+        dim(^\circ \left\{ \theta_{E^*} \right\}) = dim(E^*) - dim(F^*) = dim(E^*)\\
+        \implies ^\circ \left\{ \theta_{E^*} \right\} = E
+    \end{gather*}
+    D'on queda demostrat el segon apartat.\\\\
+    \underline{1.3:}\\
+    Tant per demostrar que $ A^\circ $ com $ ^\circ B $ s\'on subespais, hem de demostrar que es compleixen les tres propietats seg\"uents:
+    \begin{enumerate}
+        \item Suma: Dos elements del conjunt sumats tamb\'e pertanyen al conjunt.
+        \item Un element del conjunt multiplicat per un escalar tamb\'e pertany al conjunt.
+        \item El conjunt no \'es buit.
+    \end{enumerate}
+    Començarem per demostrar les tres propietats anteriors per $ A^\circ $:\\\\
+    Considerem $ A \subset E $ un conjunt qualsevol. Sabem per la definici\'o de $ A^\circ $ que
+    \begin{gather*}
+        A^\circ = \left\{ \omega \in E^*: \omega(u) = 0, \forall u \in A \right\}.
+    \end{gather*}
+    \\
+    Per demostrar la primeta propietat considerarem $ w,v \in A^\circ$
+\end{document}

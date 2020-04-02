@@ -29,7 +29,7 @@
         }
     \end{center}
 
-    \noindent\textbf{\large \underline{Exercici 1:} \normalsize Demostra que \emph{f*} es lineal.}\\\\
+    \noindent\textbf{\large \underline{Exercici 1:} \normalsize Demostra que \emph{f*} \'es lineal.}\\\\
     Sigui $ f: E \longrightarrow F $ una aplicació lineal, definim $f^*$ de la seg\"uent manera:
     \begin{align*}
         f^*: F^* &\longrightarrow E^*\\
@@ -59,44 +59,25 @@
     \begin{gather}
         M_{\mathcal{B}_{F^*}\mathcal{B}_{E^*}}(f^*) = \left( M_{\mathcal{B}_E\mathcal{B}_F}(f) \right)^t
     \end{gather}
-    Definim dues bases d'un espai \emph{E} de dimensi\'o finita i una base dual per cada base de \emph{E}
-    $$
-        \begin{array}{l r}
-            \mathcal{B}_1 = \left\{ v_1,\dots,v_n \right\} & \mathcal{B}^*_1 = \left\{ v^*_1,\dots,v^*_n \right\}\\
-            \mathcal{B}_2 = \left\{ u_1,\dots,u_n \right\} & \mathcal{B}^*_2 = \left\{ u^*_1,\dots,u^*_n \right\}
-        \end{array}
-    $$
-    Definim ara l'endomorfisme \emph{f} de \emph{E} de la seg\"uent manera:
-    \begin{gather*}
-        f: E \longrightarrow E\\
-        f(v_i) \mapsto u_i, \forall i = 1,\dots,n
-    \end{gather*}
-    D'aquesta manera, \emph{f} \'es l'aplicaci\'o de canvi de base de $\mathcal{B}_1$ a $\mathcal{B}_2$. Si aconseguim demostrar que $ f^* $ \'es la funci\'o de canvi de base de $ \mathcal{B}^*_2 $ a $ \mathcal{B}^*_1 $, per (1) haurem demostrat el corol·lari.\\\\
-    Per definici\'o, $ f^* $ ser\`a l'endomorfisme de $ E^* $ tal que
+    Siguin $ \mathcal{B}_1 $ i $ \mathcal{B}_2 $ bases de \emph{E} i $ \mathcal{B}^*_1 $ i $ \mathcal{B}_2 $ les seves bases duals. Definim ara l'endomorfisme \emph{f}
     \begin{align*}
-        f^*: E^* &\longrightarrow E^*\\
-        \omega &\mapsto \omega \circ f
+        f: E &\longrightarrow E\\
+        f(u) &\mapsto u
     \end{align*}
-    Per demostrar que $ f^* $ \'es la funci\'o de canvi de base, hem de demostrar que
-    $$
-        f^*(u^*_i) = v^*_i \text{, } \forall i = 1,\dots,n
-    $$
-    Per la definici\'o de $ f^* $ sabem que
-    \begin{gather}
-            f^*(u^*_i)(v_j) = (u^*_i \circ f)(v_j) =
-            u^*_i(f(v_j)) = u^*_i(u_j)\text{, } \forall i,j = 1, \dots, n
-    \end{gather}
-    I de la igualtat (2) podem veure que
+    que \'es l'aplicaci\'o identitat i comprovem que $ f^* $ tamb\'e ho \'es:
     \begin{gather*}
-        (u^*_i \circ f)(v_j) = 
-        \begin{cases}
-            1 \text{ si } i = j\\
-            0 \text{ si } i \neq j
-        \end{cases}
-        \implies (u^*_i \circ f) = v^*_i, \forall i = 1,\dots,n
+        f^*: E^* \longrightarrow E^*\\
+        f^*(\omega) = \omega \circ f = \omega \circ id = \omega
     \end{gather*}
-    D'on conclu\"im que $ f^*(u^*_i)=v^*_i, \forall i = 1,\dots,n $; que significa que $ f^* $ \'es la funci\'o de canvi de base $\mathcal{B}_2^*$ a $ \mathcal{B}_1^* $, demostrant aix\'i el corol·lari.\\\\
-
+    I com que tant \emph{f} com $ f^* $ s\'on l'aplicaci\'o identitat, al escriure les seves matrius obtenim
+    \begin{gather*}
+        \begin{cases}
+            M_{\mathcal{B}^*_2\mathcal{B}^*_1}(f^*) = M_{\mathcal{B}^*_2\mathcal{B}^*_1}(id^*) = C(\mathcal{B}^*_2, \mathcal{B}^*_1)\\
+            M_{\mathcal{B}_1\mathcal{B}_2}(f) = M_{\mathcal{B}_1\mathcal{B}_2}(id) = C(\mathcal{B}_1, \mathcal{B}_2)
+        \end{cases}
+        \stackrel{(1)}{\implies} C(\mathcal{B}^*_2, \mathcal{B}^*_1) = \left( C(\mathcal{B}_1, \mathcal{B}_2) \right)^t
+    \end{gather*}
+    
     \noindent\textbf{ \large \underline{Exercici 3:}
     \normalsize
     Si $\mathcal{B}$ \'es una base de \emph{E}, $\mathcal{B}^*$ la seva base dual i $\mathcal{B}^{**}$ la base dual de la base dual, demostra que
