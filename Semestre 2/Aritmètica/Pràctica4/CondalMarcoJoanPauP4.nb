@@ -1,0 +1,228 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8057,        220]
+NotebookOptionsPosition[      7779,        206]
+NotebookOutlinePosition[      8157,        222]
+CellTagsIndexPosition[      8114,        219]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Pr\[AGrave]ctica 4 - Joan Pau condal Marco\>\"", ",", " ", 
+   "\"\<Title\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 1:\>\"", ",", " ", "\"\<Subtitle\>\""}], "]"}], "\n", 
+ RowBox[{"Style", " ", "[", 
+  RowBox[{
+  "\"\<Per resoldre el sistema de congru\[EGrave]ncies, podem utilitzar la \
+funci\[OAcute] ChineseReminder que serveix per resoldre sistemes de congru\
+\[EGrave]ncies:\>\"", ",", " ", "\"\<Text\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<ChineseRemainder[{2,1,3},{3,5,7}]\>\"", ",", "\"\<Input\>\""}],
+   "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ChineseRemainder", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "5", ",", "7"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  "\"\<I ens dona la menor x que compleix les tres congru\[EGrave]ncies.\>\"",
+   "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 2:\>\"", ",", " ", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "Product"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "Sum"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "Length"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "Apply"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "PowerMod"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 3:\>\"", ",", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Declarem la funci\[OAcute] TXR:\>\"", ",", "\"\<Text\>\""}], 
+  "]"}], "\n", 
+ RowBox[{
+  RowBox[{"TXR", "[", 
+   RowBox[{"a0_", ",", "m0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", " ", "=", " ", "a0"}], ",", 
+      RowBox[{"m", "=", "m0"}], ",", " ", "r", ",", " ", "s"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"M", ":=", 
+      RowBox[{"Product", "[", 
+       RowBox[{"i", ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "m"}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"r", "=", 
+      RowBox[{"M", "/", "m"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"s", "=", 
+      RowBox[{"PowerMod", "[", 
+       RowBox[{"r", ",", 
+        RowBox[{"-", "1"}], ",", "m"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"y", ":=", 
+      RowBox[{"Sum", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], "*", 
+         RowBox[{"r", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], "*", 
+         RowBox[{"s", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", 
+          RowBox[{"Length", "[", "a", "]"}]}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"x", ":=", 
+      RowBox[{"Mod", "[", 
+       RowBox[{"y", ",", "M"}], "]"}]}], ";", "\[IndentingNewLine]", "x"}]}], 
+   "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  "\"\<Podem comprovar que TXR funciona correctament utilitzant l'exemple de \
+l'exercici 1:\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<TXR[{2,1,3},{3,5,7}]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"TXR", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "5", ",", "7"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 4:\>\"", ",", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Definim la funci\[OAcute] suma modular:\>\"", ",", "\"\<Text\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SumaModular", "[", 
+   RowBox[{"m_", ",", "a_", ",", "b_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "sum", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"sum", " ", "=", " ", 
+      RowBox[{"TXR", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{"a", ",", "m"}], "]"}], "+", 
+         RowBox[{"Mod", "[", 
+          RowBox[{"b", ",", "m"}], "]"}]}], ",", "m"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", "sum"}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Un cop definida la suma modular, hem de veure que funciona \
+correctament, aix\[IAcute] que provarem un parell d'exemples:\>\"", ",", 
+   "\"\<Text\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<SumaModular[{3,5,7,11},30,20] == 30+20\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  "\"\<Veiem que la igualtat es compleix, per tant la funci\[OAcute] est\
+\[AGrave] ben definida.\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SumaModular", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "5", ",", "7", ",", "11"}], "}"}], ",", "30", ",", 
+    "20"}], "]"}], " ", "\[Equal]", " ", 
+  RowBox[{"30", "+", "20"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 5:\>\"", ",", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Definim el producte modular:\>\"", ",", "\"\<Text\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ProducteModular", "[", 
+   RowBox[{"m_", ",", "a_", ",", "b_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "prod", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"prod", "=", 
+      RowBox[{"TXR", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{"a", ",", "m"}], "]"}], "*", 
+         RowBox[{"Mod", "[", 
+          RowBox[{"b", ",", "m"}], "]"}]}], ",", "m"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", "prod"}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Per comprovar que la fucni\[OAcute] funciona correctament, podem fer \
+el mateix que l'exercici anterior:\>\"", ",", "\"\<Text\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<ProducteModular[{3,5,7,11},30,20]==30*20\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ProducteModular", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "5", ",", "7", ",", "11"}], "}"}], ",", "30", ",", 
+    "20"}], "]"}], "==", 
+  RowBox[{"30", "*", "20"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<I comprovem que la funci\[OAcute] actua correctament\>\"", ",", 
+   "\"\<Text\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7940333634902782`*^9, 3.79403338586337*^9}, {
+   3.794033418055085*^9, 3.7940335177587943`*^9}, {3.794033563048394*^9, 
+   3.794033672079361*^9}, {3.794033994997716*^9, 3.794034025455414*^9}, {
+   3.7940344353006043`*^9, 3.7940345232591047`*^9}, 3.7940394734407177`*^9, {
+   3.7940396205539465`*^9, 3.794039884976368*^9}, {3.7940399852088823`*^9, 
+   3.7940403240787086`*^9}, {3.7940403797773647`*^9, 3.794040481959624*^9}, {
+   3.7940405227051697`*^9, 3.7940405859694653`*^9}}]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.2 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 7217, 184, 1094, "Input"]
+}
+]
+*)
+
