@@ -1,0 +1,140 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+\usepackage[catalan]{babel}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Joan Pau Condal Marco}
+\lhead{Homework 20/03}
+
+\rfoot{Pàg. \thepage}
+
+\newcommand{\Bca}{\begin{cases}\begin{aligned}}
+\newcommand{\Eca}{\end{aligned}\end{cases}}
+
+\begin{document}
+    \begin{center}
+        \Large \textbf{Homework 20/03}
+    \end{center}
+    \normalsize
+    
+    \section{Trobeu les equacions}
+    \subsection{$F = \langle (2,5,2),(1,0,1) \rangle \subset \mathbb{R}^3$}
+    \begin{gather*}
+        \Bca
+            2y_1+5y_2+2y_3&\\
+            y_1+y_2&
+        \Eca
+        \longrightarrow
+        \Bca
+            2y_1+5y_2+2y_3 = 0\\
+            y_1+y_2 = 0
+        \Eca
+        \stackrel{y_1 = 1}{\implies} B_{sol} = \langle (1,-1,3/2) \rangle
+        \implies x-y+\frac{3}{2}z\\\\
+        F = \left\{ (x,y,z)\in \mathbb{R}^3 : x-y+\frac{3}{2}z = 0 \right\}
+    \end{gather*}
+    \subsection{$ F = \langle (1,1,0,1),(-1,0,1,0) \rangle \in \mathbb{R}^4 $}
+    \begin{gather*}
+        \Bca
+            y_1+y_2+y_4&\\
+            -y_1+y_3&
+        \Eca
+        \longrightarrow
+        \Bca
+            y_1+y_2+y_4&=0\\
+            -y_1+y_3&=0
+        \Eca
+    \end{gather*}
+    \begin{align*}
+        &\underline{y_1=1 / y_2 = 1} & &\underline{y_1 = 1 / y_2 = 0}\\
+        &y_3 = 1 & &y_3 = 1\\
+        &y_4 = -y_1-y_2 = -2 & &y_4 = -y_1-y_2 = -1\\
+        &\implies (1,1,1,2) & &\implies (1,0,1,-1)
+    \end{align*}
+    \begin{gather*}
+        \implies B_{sol} = \langle (1,1,1,2),(1,0,1,-1) \rangle \implies
+        \Bca
+            x+y+z-2t&\\
+            x+y-z&
+        \Eca\\\\
+        \implies F = \left\{ (x,y,z,t) \in \mathbb{R}^4 : 
+            \Bca
+                x+y+z-2t = 0&\\
+                x+y-z = 0&
+            \Eca
+        \right\}
+    \end{gather*}
+    \subsection{$ F = \langle 1, x, x^4+1 \rangle \subset \mathbb{R}[x]_{\leq 4} $}
+    Considerem la base de $ E = \mathbb{R}[x]_{\leq 4} $ seg\"uent: $B_E = \left\{ 1,x,x^2,x^3,x^4 \right\}$, i reescrivim els vectors generadors de \emph{F}:
+    $$
+        F = \langle (1, 0,0,0,0), (0,1,0,0,0),(1,0,0,0,1) \rangle
+    $$
+    Al ser \emph{F} de dimensi\'o 3, esperem dues equacions.
+    \begin{gather*}
+        \Bca
+            y_1\\
+            y_2\\
+            y_1 + y_5
+        \Eca \longrightarrow
+        \Bca
+            y_1 = 0&\\
+            y_2 = 0&\\
+            y_1 + y_5 = 0&\\
+        \Eca \longrightarrow
+        \Bca
+            y_1 = 0\\
+            y_2 = 0\\
+            y_5 = 0
+        \Eca
+    \end{gather*}
+    Utilitzem $y_3$ i $y_4$ com a variables lliures:
+    \begin{align*}
+        &\underline{y_3 = 1 / y_4 = 0} & &\underline{y_3 = 0 / y_4 = 1}\\
+        &\implies (0, 0, 1, 0, 0) & & \implies (0, 0, 0, 1, 0)
+    \end{align*}
+    D'on obtenim una base de solucions:
+    $$
+        B_{sol} = \langle (0, 0, 1, 0, 0), (0, 0, 0, 1, 0) \rangle
+    $$
+    I finalment trobem les equacions de \emph{F}:
+    $$
+        F = \left\{ (a_0+a_1x+a_2x^2+a_3x^3+a_4x^4+a_5x^5) \in \mathbb{R}[x]_{\leq 4} : a_2 = 0, a_3 = 0 \right\}
+    $$
+
+    \section{Demostreu els apartats 2 i 4 del teorema 2:}
+    Per la seg\"uent demostraci\'o utilitzarem la proposici\'o 2 de la classe del 16/03 que deia:\\
+    Sigui $A \subset E$ i $B \subset E^*$
+    \begin{enumerate}
+        \item $A^\circ = \langle A \rangle ^\circ \text{ i } ^\circ B = ^\circ \langle B \rangle$.
+        \item $^\circ (A^\circ) = \langle A \rangle \text{ i } (^\circ B)^\circ = \langle B \rangle$
+    \end{enumerate}
+    \subsection*{Apartat 2 del teorema}
+    Per demostrar l'apartat 2 del teorema, utilitzarem l'apartat 3 del mateix teorema que afirma
+    $$
+        Ker(f) = ^\circ (Im(f^*))
+    $$
+    A partir d'aqu\'i podem modificar la igualtat amb la proposici\'o 2 recordada abans i obtenir
+    \begin{gather*}
+        ^\circ(Im(f^*)) = Ker(f) \implies (^\circ (Im(f^*)))^\circ = (Ker(f))^\circ \implies Im(f^*) = (Ker(f))^\circ \; _\square
+    \end{gather*}
+    \subsection*{Apartat 4 del teorema}
+    An\`alogament, amb l'apartat 1 del mateix teorema podem demostrar l'apartat 4
+    \begin{gather*}
+        (Im (f))^\circ = Ker(f^*) \implies ^\circ ((Im (f))^\circ) = ^\circ (Ker(f^*)) \implies Im (f) = ^\circ (Ker(f^*)) \; _\square
+    \end{gather*}
+    D'on queden demostrats els apartats 2 i 4 de la proposici\'o.
+\end{document}
