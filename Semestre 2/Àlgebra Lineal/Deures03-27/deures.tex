@@ -1,0 +1,97 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+\usepackage[catalan]{babel}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}
+
+% fancy header & foot
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\headheight}{20pt}
+
+\fancyhead[R]{Joan Pau Condal Marco}
+\lhead{Homework 27/03}
+
+\fancyfoot[R]{Pàg. \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% fancy header & foot
+
+\begin{document}
+
+    \begin{center}
+        \Large
+        \textbf{Joan Pau Condal Marco\\Homework 27/03\\}
+        \normalsize
+    \end{center}
+
+    \section*{Apartat 1:}
+    Siguin $S_1,\dots,S_k$ subespais d'\emph{E}, la suma $S_1+\cdots+S_k$ es defineix com
+    \begin{equation*}
+        S_1 + \cdots + S_k = \{ u_1+\cdots+u_k, u_i\in S_i, i=1,\dots,k \}
+    \end{equation*}
+    Anem a demostrar que la suma, amb aquesta definici\'o  \'es un subespai.
+    \begin{enumerate}
+        \item Considerem $\theta_E$ el vector nul de \emph{E}, sabem per hip\`otesi que $\theta_E \in S_i, i=1,\dots,k$, ja que $S_i$ \'es subespai per tot $i$.\\
+              Aleshores, com que $\theta_E = \theta_E + \cdots + \theta_E$, sabem que $\theta_E \in S_1+\cdots+S_k$; demostrant que $S_1+\cdots+S_k \neq \emptyset$.
+        \item Considerem $u,v \in S_1+\cdots+S_k$. Els podem descomposar de la seg\"uent manera:
+              \begin{align*}
+                  &u = u_1 + \cdots + u_k, \; u_i \in S_i, \; i = 1,\dots,k\\
+                  &v = v_1 + \cdots + v_k, \; v_i \in S_i, \; i = 1,\dots,k
+              \end{align*}
+              Aleshores, el vector $u+v$ \'es 
+              \begin{align*}
+                  u+v &= u_1 + \cdots + u_k + v_1 + \cdots + v_k =\\
+                      &= u_1 + v_1 + \cdots + u_k + v_k
+              \end{align*}
+              Com que $S_i$ \'es subespai, aleshores $u_i + v_i \in S_i,\;i=1,\dots,k$, d'on queda demostrat que $u+v \in S_1+\cdots+S_k$.
+        \item Considerem $\alpha \in \mathbb{R}$ i $v \in S_1+\cdots+S_k$. Aleshores, podem escriure el vector $\alpha v$
+              \begin{align*}
+                  \alpha v &= \alpha\cdot(v_1+\cdots+v_k) = \\
+                           &= \alpha v_1 + \cdots + \alpha v_k
+              \end{align*}
+              I com que $S_1,\dots,S_k$ s\'on subespais, sabem que $\alpha v_i \in S_i,\;i=1,\dots,k$; per tant, $\alpha v \in S_1+\cdots+S_k$.
+    \end{enumerate}
+    Com que es compleixen les tres propietats, queda demostrat que $S_1+\cdots+S_k$ \'es un subespai vectorial.
+
+    \section*{Apartat 2:}
+    Sabent que $S_1+\cdots+S_k$ \'es subespai vectorial, ara hem de demostrar que $S_1+\cdots+S_k = \langle S_1 \cup \cdots \cup S_k \rangle$; on $\langle S_1 \cup \cdots \cup S_k \rangle$ \'es el subespai generat per tots els vectors de la uni\'o $S_1\cup\cdots\cup S_k$.\\
+    \\Per demostrar la igualtat, demostrarem les dues inclusions.\\
+    \begin{enumerate}
+        \item $S_1+\cdots S_k \subseteq \langle S_1 \cup \cdots \cup S_k \rangle$.\\
+              Sigui $u \in S_1+\cdots S_k$. Aleshores, $\exists u_i \in S_i, \; i = 1\dots,k : u = u_1+\cdots+u_k$.
+              \begin{align*}
+                  u_i \in S_i &\implies u_i \in S_1 \cup\cdots\cup S_k,\; \forall i=1,\dots,k.\\
+                              &\implies u_i \in \langle S_1 \cup \cdots \cup S_k \rangle \implies u \in \langle S_1 \cup \cdots \cup S_k \rangle
+              \end{align*}
+        \item $\langle S_1 \cup \cdots \cup S_k \rangle \subseteq S_1+\cdots S_k $.\\
+              Sigui $u \in \langle S_1 \cup \cdots \cup S_k \rangle$. Aleshores $\exists \alpha_i \in \mathbb{R}, u_i \in S_i,\; i = 1,\dots,k$ tal que $u = \alpha_1u_1 + \cdots + \alpha_ku_k$. Com que $S_i$ \'es subespai, aleshores sabem que $\exists v_i \in S_i : v_i = \alpha_iu_i, i = 1,\dots,k$. Per tant, podem reescriure $u = v_1 + \cdots + v_k \implies u \in S_1 + \cdots + S_k$.
+    \end{enumerate}
+    Al demostrar les dues inclusions anteriors, hem demostrat finalment la igualtat inicial.
+
+    \section*{Apartat 3:}
+    L'\'ultima demostraci\'o del homework d'avui \'es provar que
+    \begin{equation*}
+        \bigcap_{\substack{S \supset S_1+\cdots+S_k\\S subespai}} S = S_1 + \cdots + S_k
+    \end{equation*}
+    Anem a estudiar un moment el conjunt
+    \begin{equation*}
+        I = \{ S : S \text{ subespai} \text{ i } S_1 + \cdots + S_k \subset S \}
+    \end{equation*}
+    Podem veure que el mateix subespai $S_1+\cdots+S_k \in I$, ja que com hem demostrat abans \'es subespai, i clarament $S_1 + \cdots + S_k \subset S_1 + \cdots + S_k$.\\\\
+    Si estudiem ara el conjunt $I' = I\setminus \{ S_1+\cdots+S_k \}$, \'es f\`acil veure que tots el seus elements seran estrictament majors que $S_1 + \cdots + S_k$; i per definici\'o de $I$, no hi haur\`a cap element de $I'$ que tingui menys elements que $S_1 + \cdots + S_k$.\\\\
+    Aleshores, podem veure que tots els elements de $I'$ contindran $S_1 + \cdots + S_k$ i seran estrictament majors; cosa que significa que quan fem la intersecci\'o $\bigcap I$ ens quedar\`a $S_1 + \cdots + S_k$, demostrant aix\'i l'\'ultim apartat.
+\end{document}
