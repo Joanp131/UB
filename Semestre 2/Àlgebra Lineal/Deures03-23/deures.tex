@@ -23,34 +23,52 @@
 \rfoot{Pàg. \thepage}
 
 \newcommand{\B}{\mathcal{B}}
+\newcommand{\R}{\mathbb{R}}
 
 \begin{document}
+
+    \begin{center}
+        \Large
+        \textbf{Joan Pau Condal Marco\\Homework 23/03\\}
+        \normalsize
+    \end{center}
+
     \section*{Apartats 1 i 2:}
     Siguin
-    $$
-        M_\mathcal{B}(f) = 
+    \begin{align*}
+        &A = M_\mathcal{B}(f) = 
         \begin{bmatrix}
             a_1^1 & \cdots & a^1_n\\
             \vdots & \ddots & \vdots\\
             a^n_1 & \cdots & a^n_n    
-        \end{bmatrix}
-        \text{ i }
-        B = M_\mathcal{B}(f) - x\cdot I_n = (b^i_j)_{\substack{i = 1,\dots,n\\j = 1,\cdots,n}}
-    $$
+        \end{bmatrix} \in M(n,n,\R)
+        &\text{ i }&
+        &B = M_\mathcal{B}(f) - x\cdot I_n = (b^i_j)_{\substack{i = 1,\dots,n\\j = 1,\cdots,n}}
+    \end{align*}
+    hem de demostrar que
+    \begin{align*}
+        &p_f(x) := det(f-xI_n) \in \R[x] &\text{ i }& &gr(p_f(x)) = n
+    \end{align*}
     Per la definici\'o del polinomi caracter\'istic de \emph{f}, sabem que
-    $$
+    \begin{equation}
+        \label{def}
         p_f(x) := det(M_\mathcal{B} - x\cdot I_n) = det(B)
-    $$
-    Podem aplicar la definici\'o de determinant a la definici\'o anterior i obtenim
-    $$
+    \end{equation}
+    Podem aplicar la definici\'o de determinant a \eqref{def} i obtenim
+    \begin{equation}
+        \label{def:det}
         p_f(x) = \sum_{\sigma\in S_n}\epsilon_\sigma \prod_{i=1}^n b_i^{\sigma(i)}
-    $$
-    On $S_n$ \'es e conjunt de totes les permutacions $\sigma : \{1,\dots,n\} \longrightarrow \{1,\dots,n\}$ i $\epsilon_\sigma$ \'es el signe de la permutaci\'o $\sigma$. Ara podem descomposar l'equaci\'o anterior en dos termes de la manera seg\"uent:
-    $$
+    \end{equation}
+    On $S_n$ \'es e conjunt de totes les permutacions $\sigma : \{1,\dots,n\} \longrightarrow \{1,\dots,n\}$ i $\epsilon_\sigma$ \'es el signe de la permutaci\'o $\sigma$.\\
+    Ara podem descomposar \eqref{def:det} en dos termes, separant $\sigma = id$ de tot el conjunt $S_n$ per obtenir
+    \begin{equation}
+        \label{def:desc}
         p_f(x) = \prod_{i=1}^n (a^i_i -x) + \sum_{\substack{\sigma \in S_n\\ \sigma \neq id}} \epsilon_\sigma \prod_{i=1}^n b_i^{\sigma(i)}
-    $$
-    D'aquesta descomposici\'o podem observar que $p_f(x)$ est\`a format per dos termes. El primer terme \'es $\prod_{i=1}^n (a^i_i -x)$, un polinomi de grau \emph{n}, amb \emph{n} arrels: $a_1^1,\dots,a_n^n$; i el segon terme \'es un sumatori de polinomis de grau estrictament menor que \emph{n-1}, ja que $\sigma = id$ \'es l'\'unica permutaci\'o en $S_n$ tal que el productori de $b_i^{\sigma (i)}$, $i = 1,\dots,n$ genera un polinomi de grau \emph{n} i no existeix cap permutaci\'o que agafi n-1 elements de la diagonal.\\
-    Com que el primer terme t\'e coeficient de grau \emph{n} i el segon no en t\'e, podem afirmar que aquest terme no s'anular\`a mai i $p_f(x)$ ser\`a un sumatori d'un polinomi de grau \emph{n} i $n! -1$ polinomis de grau estrictament menor que \emph{n-1}. D'aqu\'i dedu\"im que $p_f(x)$ \'es un polinomi i \'es de grau \emph{n}.
+    \end{equation}
+    Aquesta descomposici\'o ens \'es molt \'util ja que podem veure el polinomi $p_f(x)$ descomposat en una suma de $n!$ productoris (ja que $\#\{S_n\} = n!$). Cada productori generar\`a un polinomi de grau entre zero i n, ambd\'os inclosos. El grau del polinomi generat per cada productori dependr\`a de quants elements de la diagonal de $B$ agafa la $\sigma$ associada a aquell mateix productori.\\
+    La descomposici\'o \eqref{def:desc} est\`a feta per veure $p_f(x)$ com a suma de dos termes. El primer terme, el productori associat a $\sigma = id$, genera un polinomi de grau $n$, i a coeficients reals, ja que la matriu pertany a $M(n,n,\R)$. D'aquest primer terme veiem que $gr(p_f(x)) \leq n$. Per demostrar que el grau de $p_f(x)$ \'es $n$, hem d'assegurar que el coeficient de $x^n$ no s'anul·li.\\
+    El segon terme de \eqref{def:desc} \'es un sumatori de $n!-1$ polinomis a coeficients reals. \'Es f\`acil veure que cap dels polinomis generats per aquest sumatori ser\`a de grau superior a $n-1$, ja que l'\'unica permutaci\'o que agafa els $n$ elements de la diagonal \'es $\sigma = id$ i no existeix cap permutaci\'o a $S_n$ que agafi exactament $n-1$ elements de la diagonal.\\
+    Per tant, com que de \eqref{def:desc} veiem que $p_f(x)$ \'es la suma d'un polinomi de grau $n$ i $n!-1$ polinomis de grau estictament menor que $n-1$, queda demostrat que \'es un polinomi a coeficients reals i de grau $n$.
     \section*{Apartat 3:}
     \subsection*{Apartats 3.1 i 3.2:}
     Per demostrar els apartats 3.1 i 3.2 utilitzarem inducci\'o. Recordem que els coeficients de $x^n$ i $x^{n-1}$ nom\'es depenen del productori dels elements de la diagonal de la matriu $M_\B -x\cdot I_n$; per tant, si considerem els dos polinomis
@@ -76,13 +94,14 @@
     $$
         p'_f(x) = c_0 + \cdots + (-1)^{n-2} tr(A_{n-1})x^{n-2} + (-1)^{n-1}x^{n-1}
     $$
+    on $tr(A_{n-1}) = \sum_{i=1}^{n-1}a_i^i$.\\
     I ara podem construir el polinomi de grau \emph{n} a partir de $p'_f$ de la manera seg\"uent:
     $$
         p_f(x) = (a_1^1 -x) \cdots (a_{n-1}^{n-1}-x)(a_n^n -x) = p'_f(x) (a_n^n -x)
     $$
     Substitu\"int $p'_f(x)$ i operant una mica obtenim
     \begin{align*}
-        p_f(x) &= (c_0 + \cdots + (-1)^{n-2} tr(A_{n-1})x^{n-2} + (-1)^{n-1}x^{n-1})(a_n^n -x)\\
+        p_f(x) &= (c_0 + \cdots + (-1)^{n-2} tr(A_{n-1})x^{n-2} + (-1)^{n-1}x^{n-1})\cdot(a_n^n -x)\\
         &= d_0 + \cdots + (-1)^{n-1}a_n^n x^{n-1} + (-1)^{n-2} tr(A_{n-1}) x^{n-2} (-x) + (-1)^{n-1} x^{n-1} (-x)\\
         &= d_0 + \cdots + \left[ (-1)^{n-1} a_n^n + (-1)^{n-1} tr(A_{n-1}) \right] x^{n-1} + (-1)^n x^n\\
         &= d_0 + \cdots + \left[ (-1)^{n-1}(a_n^n + tr(A_{n-1})) \right] x^{n-1} + (-1)^n x^n\\
@@ -90,13 +109,14 @@
     \end{align*}
     D'on observem que tamb\'e es compleixen les dues propietats, demostrant que les proposicions 3.1 i 3.2 s\'on certes.
     \subsection*{Apartat 3.3:}
-    Sigui \emph{k}, $0 \leq k \leq n, k \neq n-1$, el nombre d'elements de la diagonal de $B = M_\B(f) -x\cdot I_n$ que hi ha al productori $\prod_{i = 1}^n b_i^{\sigma (i)}$, per qualsevol $\sigma \in S_n$. Aleshores, podem veure que el terme independent del polinomi $\prod_{i = 1}^n b_i^{\sigma(i)}$ \'es $\prod_{i = 1}^n a_i^{\sigma(i)}$.\\
-    Aplicant aquesta propietat a la definici\'o del polinomi caracter\'istic, podem veure que el seu terme independent v\'e donat per
+    Per demostrar la propietat del determinant, analitzarem el terme independent dels polinomis del tipus $\prod_{i = 1}^n b_i^{\sigma (i)}$, $\sigma \in S_n$, ja que la suma de tots aquests polinomis amb el seu signe corresponent \'es $p_f(x)$. Depenent de $\sigma$, el polinomi del productori pot tenir un grau o un altre, per\`o \'es f\`acil veure que sigui quin sigui el grau del polinomi, el seu terme independent ser\`a $\epsilon_\sigma\prod_{i = 1}^n a_i^{\sigma(i)}$.\\
+    Sabent que el terme independent ser\`a la suma de tots aquests termes independents per tot $\sigma \in S_n$, podem reescriure el terme independent de $p_f(x)$ com
     $$
         p_0 = \sum_{\sigma \in S_n}\epsilon_\sigma\prod_{i=1}^n a_i^{\sigma(i)} = det(A)
     $$
+    D'on queda demostrada l'\'ultima propietat.
     \section*{Apartat 4:}
-    Sigui $B = C^{-1}MC - x\cdot I_n$, podem reorganitzar els seus termes de manera que quedi
+    Sigui $B = C^{-1}MC - x I_n$, podem reorganitzar els seus termes de manera que quedi
     $$
         B = C^{-1}MC - x\cdot I_n = C^{-1}MC - C^{-1}x\cdot I_n C = C^{-1}(M - x\cdot I_n)C
     $$
