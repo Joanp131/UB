@@ -1,0 +1,116 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+\usepackage[catalan]{babel}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}
+
+% fancy header & foot
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\headheight}{20pt}
+
+\fancyhead[R]{Joan Pau Condal Marco}
+\lhead{Homework 30/03}
+
+\fancyfoot[R]{Pàg. \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% fancy header & foot
+
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\f}{\varphi}
+\renewcommand{\u}{\alpha_1u_1+\cdots+\alpha_nu_n}
+\renewcommand{\v}{\beta_1u_1+\dots+\beta_nu_n}
+
+\begin{document}
+
+    \begin{center}
+        \Large
+        \textbf{Joan Pau Condal Marco\\Homework 30/03\\}
+        \normalsize
+    \end{center}
+
+    \section*{Apartat 1:}
+    Sigui $\B = (u_1,\dots,u_n)$, aleshores
+    \begin{equation}
+        \label{eq:gram}
+        G(\f, \B) = 
+        \begin{pmatrix}
+            \f(u_1,u_1) & \f(u_1,u_2) & \cdots & \f(u_1,u_n)\\
+            \f(u_2,u_1) & \f(u_2,u_2) & \cdots & \vdots \\
+            \vdots & \vdots & \ddots & \vdots \\
+            \f(u_n, u_1) & \f(u_n,u_2) & \cdots & \f(u_n,u_n)
+        \end{pmatrix}
+    \end{equation}
+    Per demostrar la igualtat de l'enunciat, desenvoluparem els dos termes per separat i comprovarem que obtenim el mateix resultat.\\
+    Primer de tot, desenvoluparem la $\f(u,v)$, on $(u)_\B = (\alpha_1,\dots,\alpha_n)$ i $(v)_\B = (\beta_1,\dots,\beta_n)$
+    \begin{align*}
+        \f(u,v) &= \f(\u,\v)=\\
+                &= \f(\u,\v) + \cdots + \f(\u,\v)=\\
+                &= \sum_{i=1}^n\f(\alpha_iu_i,\v) = \sum_{i=1}^n\left( \f(\alpha_iu_i,\beta_1u_1)+\cdots+\f(\alpha_iu_i,\beta_nu_n) \right)=\\
+                &= \sum_{i=1}^n \sum_{j=1}^n \f(\alpha_iu_i,\beta_ju_j) = \sum_{i=1}^n\sum_{j=1}^n \alpha_i\f(u_i,\beta_ju_j) = \sum_{i=1}^n\sum_{j=1}^n \alpha_i\beta_j\f(u_i,u_j)
+    \end{align*}
+    Ara, si aconseguim demostrar la seg\"uent igualtat
+    \begin{equation}
+        \label{eq:fi_u_v}
+        \begin{pmatrix}
+            \alpha_1 & \cdots & \alpha_n
+        \end{pmatrix} 
+        G(\f,\B) 
+        \begin{pmatrix}
+            \beta_1\\
+            \vdots\\
+            \beta_n
+        \end{pmatrix}
+        = \sum_{i=1}^n\sum_{j=1}^n \alpha_i\beta_j\f(u_i,u_j)
+    \end{equation}
+    haurem demostrat el que voliem. Per demostrar la igualtat \eqref{eq:fi_u_v}, anem a fer el producte de matrius.
+    \begin{align*}
+        G(\f,\B)
+        \begin{pmatrix}
+            \beta_1\\
+            \vdots\\
+            \beta_n
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            \beta_1\f(u_1,u_1) + \cdots + \beta_n\f(u_1,u_n)\\
+            \vdots\\
+            \beta_1\f(u_n,u_1) + \cdots + \beta_n\f(u_n,u_n)
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            \sum_{j=1}^n\beta_j\f(u_1,u_j)\\
+            \vdots\\
+            \sum_{j=1}^n\beta_j\f(u_n,u_j)
+        \end{pmatrix}
+    \end{align*}
+    \begin{align*}
+        \begin{pmatrix}
+            \alpha_1 & \cdots & \alpha_n
+        \end{pmatrix}
+        \begin{pmatrix}
+            \sum_{j=1}^n\beta_j\f(u_1,u_j)\\
+            \vdots\\
+            \sum_{j=1}^n\beta_j\f(u_n,u_j)
+        \end{pmatrix}
+        = \alpha_1 \sum_{j=1}^n\beta_j\f(u_1,u_j) + \cdots + \alpha_n \sum_{j=1}^n\beta_j\f(u_n,u_j) =\\
+        = \sum_{i=1}^n\sum_{j=1}^n \alpha_i\beta_j\f(u_i,u_j) = \f(u,v)
+    \end{align*}
+
+    \section*{Apartat 2:}
+\end{document}
