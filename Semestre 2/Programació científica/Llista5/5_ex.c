@@ -51,6 +51,7 @@ void escriure(fraccio a, char op, fraccio b, fraccio c);
 int main(void) {
 
     fraccio a, b, c;
+    unsigned int flag;
 
     /* Llegim les dues fraccions inicials i comprovem que són correctes */
     printf("Escriu les dues fraccions inicials:\n");
@@ -66,6 +67,9 @@ int main(void) {
 
     /* Fem les operacions */
     suma(a, b, &c);
+    c = producte(a, b);
+    flag = quocient(a, b, &c);
+
 
     return 0;
 }
@@ -89,17 +93,29 @@ void reduir(fraccio* a) {
     d = mcd(a->num, a->den);
 
     a->num /= d;
-    a->num /= d;
+    a->den /= d;
 
     return;
 }
 
 void suma(fraccio a, fraccio b, fraccio* c) {
 
-    c->num = a.num * b.den + b.num * a.den;
-    c->den = a.den * b.den;
+    char aux;
 
-    reduir(c);
+    if(a.sign == b.sign) {
+        c->num = a.num * b.dem + a.den * b.num;
+        c->den = a.den * b.den;
+        c->sign = a.sign;
+
+        reduir(c);
+    } else {
+        aux = a.sign:
+        a.sign = b.sign;
+        *c = resta(a, b);
+
+        a.sign = aux;
+    }
+    
     escriure(a, '+', b, *c);
 
     return;
@@ -108,17 +124,62 @@ void suma(fraccio a, fraccio b, fraccio* c) {
 fraccio resta(fraccio a, fraccio b) {
 
     fraccio c;
+    int aux;
 
-    if(a.sign == '+' && b.sign == '-') {
-        
+    if(a.sign != b.sign) {
+        suma(a, b, &c);
+        reduir(&c);
+    } else {
+        c.num = a.sign == '+' ? 
     }
-    c.num = a.num * b.den - b.num * a.den;
-    c.den = a.den * b.den;
-
-    reduir(&c);
 
     return c;
 
+}
+
+fraccio producte(fraccio a, fraccio b) {
+
+    fraccio c;
+
+    c.num = a.num * b.num;
+    c.den = a.den * b.den;
+    if(a.sign == b.sign) {
+        c.sign = '+';
+    } else {
+        c.sign = '-';
+    }
+    reduir(&c);
+
+    escriure(a, 'x', b, c);
+
+    return c;
+}
+
+unsigned int quocient(fraccio a, fraccio b, fraccio* c) {
+
+    unsigned int flag;
+
+    if(b.num == 0) {
+        printf("No es pot fer el quocient ja que el divisor és zero!\n");
+        flag = 1;
+    } else {
+        c->num = a.num * b.den;
+        c->den = a.den * b.num;
+
+        reduir(c);
+
+        if(a.sign == b.sign) {
+            c->sign = '+';
+        } else {
+            c->sign = '-';
+        }
+
+        escriure(a, ':', b, *c);
+
+        flag = 0;
+    }
+
+    return flag;
 }
 
 void escriure(fraccio a, char op, fraccio b, fraccio c) {
