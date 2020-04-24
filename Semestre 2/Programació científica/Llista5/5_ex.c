@@ -67,8 +67,20 @@ int main(void) {
 
     /* Fem les operacions */
     suma(a, b, &c);
+    escriure(a, '+', b, c);
+
+    c = resta(a, b);
+    escriure(a, '-', b, c);
+
     c = producte(a, b);
+    escriure(a, 'x', b, c);
+
     flag = quocient(a, b, &c);
+    if(!flag) {
+        escriure(a, ':', b, c);
+    } else {
+        printf("No es pot fer el producte\n");
+    }
 
 
     return 0;
@@ -100,23 +112,16 @@ void reduir(fraccio* a) {
 
 void suma(fraccio a, fraccio b, fraccio* c) {
 
-    char aux;
-
     if(a.sign == b.sign) {
-        c->num = a.num * b.dem + a.den * b.num;
+        c->num = a.num * b.den + a.den * b.num;
         c->den = a.den * b.den;
         c->sign = a.sign;
 
         reduir(c);
     } else {
-        aux = a.sign:
-        a.sign = b.sign;
+        b.sign = a.sign;
         *c = resta(a, b);
-
-        a.sign = aux;
     }
-    
-    escriure(a, '+', b, *c);
 
     return;
 }
@@ -124,13 +129,26 @@ void suma(fraccio a, fraccio b, fraccio* c) {
 fraccio resta(fraccio a, fraccio b) {
 
     fraccio c;
-    int aux;
+    long int num;
 
     if(a.sign != b.sign) {
+        b.sign = a.sign;
         suma(a, b, &c);
-        reduir(&c);
     } else {
-        c.num = a.sign == '+' ? 
+        if(a.sign == '+') {
+            num = a.num*b.den;
+            num -= a.den * b.num;
+            c.num = (unsigned) abs(num);
+            c.sign = num >= 0 ? 'a' : '-';
+        } else {
+            num = a.den * b.num;
+            num -= a.num*b.den;
+            c.num = (unsigned) abs(num);
+            c.sign = num >= 0 ? '+' : '-';
+        }
+        c.den = a.den*b.den;
+
+        reduir(&c);
     }
 
     return c;
@@ -150,8 +168,6 @@ fraccio producte(fraccio a, fraccio b) {
     }
     reduir(&c);
 
-    escriure(a, 'x', b, c);
-
     return c;
 }
 
@@ -160,7 +176,6 @@ unsigned int quocient(fraccio a, fraccio b, fraccio* c) {
     unsigned int flag;
 
     if(b.num == 0) {
-        printf("No es pot fer el quocient ja que el divisor és zero!\n");
         flag = 1;
     } else {
         c->num = a.num * b.den;
@@ -173,8 +188,6 @@ unsigned int quocient(fraccio a, fraccio b, fraccio* c) {
         } else {
             c->sign = '-';
         }
-
-        escriure(a, ':', b, *c);
 
         flag = 0;
     }
