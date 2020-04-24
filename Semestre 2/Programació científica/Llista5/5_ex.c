@@ -139,7 +139,7 @@ fraccio resta(fraccio a, fraccio b) {
             num = a.num*b.den;
             num -= a.den * b.num;
             c.num = (unsigned) abs(num);
-            c.sign = num >= 0 ? 'a' : '-';
+            c.sign = num >= 0 ? '+' : '-';
         } else {
             num = a.den * b.num;
             num -= a.num*b.den;
