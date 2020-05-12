@@ -1,0 +1,74 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+
+\usepackage[catalan]{babel}
+\usepackage[
+    left=0.90in,%
+    right=0.90in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}
+
+% fancy header & foot
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\headheight}{20pt}
+
+\fancyhead[R]{Joan Pau Condal Marco}
+\lhead{Homework 17/04}
+
+\fancyfoot[R]{Pàg. \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% fancy header & foot
+
+\newcommand{\C}{\cdot}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+    \begin{center}
+        \Large
+        \textbf{Joan Pau Condal Marco\\Homework 17/04\\}
+    \end{center}
+
+    \large
+    \section*{Definicions:}
+    Recordem les definicions de les aplicacions $\gamma$ i $\gamma_u$:
+    \begin{align*}
+        \gamma : E &\longrightarrow E^* & \gamma_u : E &\longrightarrow \mathbb{R}\\
+        u &\mapsto \gamma_u & v &\mapsto \gamma_u(v) = u \C v
+    \end{align*}
+
+    \section{$\mathbf{\gamma_u}$ \'es lineal:}
+    Siguin $v,w \in E$, $\alpha, \beta \in \R$, aleshores:
+    \begin{align*}
+        \gamma_u (\alpha v + \beta w) &= u \C (\alpha v + \beta w) = u \C \alpha v + u \C \beta w \\
+        &= \alpha (u \C v) + \beta (u \C w) = \alpha \gamma_u(v) + \beta \gamma_u(w) \;_\square
+    \end{align*}
+
+    \section{$\mathbf{\gamma}$ \'es lineal:}
+    Siguin $u,v \in E$, $\alpha, \beta \in \R$, aleshores:
+    \begin{align*}
+        \gamma(\alpha u + \beta v) &= \gamma_{\alpha u + \beta v} = \gamma_{\alpha u} + \gamma_{\beta v} = \alpha\gamma_u + \beta\gamma_v =  \alpha\gamma(u) + \beta\gamma(v) \;_\square
+    \end{align*}
+
+    \section{$\mathbf{\gamma}$ \'es isomorfisme:}
+    Per demostrar que $\gamma$ \'es un isomorfisme hem de demostrar que \'es injectiva i exhaustiva. Per demostrar que \'es injectiva poodem demostrar que $Ker(\gamma) = \{0\}$; i per demostrar que es exhaustiva podem demostrar que $Im(\gamma) = E^*$.
+    \begin{enumerate}
+        \item $\gamma$ \'es injectiva:\\
+              Sigui $u \in Ker(\gamma)$, aleshores $\gamma(u) = 0 \implies \gamma_u = 0$. Si avaluem $\gamma_u$ en $u$, obtenim $\gamma_u(u) = u \C u = 0$; i com que $\C$ \'es definida positiva, aleshores $u = 0 \implies Ker(\gamma) = \{ 0 \} \; _\square$\newpage
+        \item $\gamma$ \'es exhaustiva:\\
+              Sabem per la seva definici\'o que $Im(\gamma) \subset E^*$; i del fet que $\gamma$ \'es injectiva, podem calcular la dimensi\'o de la seva imatge: $dim(E) = dim(Im) + dim(Ker) = dim(Im) = dim(E^*)$. Per tant, com que $Im$ i $E^*$ tenen la mateixa dimensi\'o i $Im(\gamma) \subset E^*$, sabem que $Im (\gamma) = E^* \;_\square$
+    \end{enumerate}
+    De les dues demostracions anteriors, queda demostrar que $\gamma$ \'es un isomorfisme.
+
+\end{document}

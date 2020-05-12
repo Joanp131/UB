@@ -1,0 +1,292 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10576,        284]
+NotebookOptionsPosition[     10325,        271]
+NotebookOutlinePosition[     10676,        286]
+CellTagsIndexPosition[     10633,        283]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Pr\[AGrave]ctica 5 - Joan Pau Condal Marco\>\"", ",", " ", 
+   "\"\<Title\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 1:\>\"", ",", " ", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "BaseForm"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "Characters"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "StringJoin"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Style", "[", 
+   RowBox[{"\"\<Exercici 2:\>\"", ",", "\"\<Subtitle\>\""}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<ToCharacterCode[\\\"5ab c,dA\\\"]\>\"", ",", "\"\<Input\>\""}],
+   "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ToCharacterCode", "[", "\"\<5ab c,dA\>\"", "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<FromCharacterCode[{31,32,33,77,126,915}]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FromCharacterCode", "[", 
+   RowBox[{"{", 
+    RowBox[{"31", ",", "32", ",", "33", ",", "77", ",", "126", ",", "915"}], 
+    "}"}], "]"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<FromCharacterCode[Range[97,122]]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FromCharacterCode", "[", 
+   RowBox[{"Range", "[", 
+    RowBox[{"97", ",", "122"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Characters[FromCharacterCode[Union[Range[0,31],{127}]]]\>\"", ",", 
+   "\"\<Input\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Characters", "[", 
+   RowBox[{"FromCharacterCode", "[", 
+    RowBox[{"Union", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{"0", ",", "31"}], "]"}], ",", 
+      RowBox[{"{", "127", "}"}]}], "]"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Characters[FromCharacterCode[Range[32,126]]]\>\"", ",", 
+   "\"\<Input\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Characters", "[", 
+   RowBox[{"FromCharacterCode", "[", 
+    RowBox[{"Range", "[", 
+     RowBox[{"32", ",", "126"}], "]"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 3:\>\"", ",", "\"\<Subtitle\>\""}], "]"}], "\n", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mT =\\\"An expert is a man who has made all the mistakes, which can be \
+made,\nin a very narrow field. Niels Bohr (1885-1962).\\\"\n\>\"", ",", 
+   "\"\<Input\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "mT", "=", 
+   "\"\<An expert is a man who has made all the mistakes, which can be made,\n\
+in a very narrow field. Niels Bohr (1885-1962).\>\""}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Missatge codificat en ASCII:\>\"", ",", "\"\<Text\>\"", ",", " ", 
+   "Underlined"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<mA = ToCharacterCode[mT]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mA", "=", 
+   RowBox[{"ToCharacterCode", "[", "mT", "]"}]}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Missatge ASCII binari:\>\"", ",", "\"\<Text\>\"", ",", " ", 
+   "Underlined"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<mB = BaseForm[mA, 2]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mB", "=", 
+   RowBox[{"BaseForm", "[", 
+    RowBox[{"mA", ",", "2"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Missatge ASCII Hexadecimal\>\"", ",", " ", "\"\<Text\>\"", ",", " ", 
+   "Underlined"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<mH = BaseForm[mA, 16]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mH", "=", 
+   RowBox[{"BaseForm", "[", 
+    RowBox[{"mA", ",", "16"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<mAT = FromCharacterCode[mA]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mAT", "=", 
+   RowBox[{"FromCharacterCode", "[", "mA", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 4:\>\"", ",", " ", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mAX = Table[mA[[n]]+7,{n,1,Length[mA]}]\>\"", ",", " ", 
+   "\"\<Input\>\""}], "]"}], "\n", 
+ RowBox[{
+  RowBox[{"mAX", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"mA", "[", 
+       RowBox[{"[", "n", "]"}], "]"}], "+", "7"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", 
+       RowBox[{"Length", "[", "mA", "]"}]}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mAXT = FromCharacterCode[mAX]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mAXT", "=", 
+   RowBox[{"FromCharacterCode", "[", "mAX", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mAXTA = ToCharacterCode[mAXT]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mAXTA", "=", 
+   RowBox[{"ToCharacterCode", "[", "mAXT", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mAXTAY = Table[mAXTA[[n]]-7,{n,1, Length[mAXTA]}]\>\"", ",", " ", 
+   "\"\<Input\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mAXTAY", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"mAXTA", "[", 
+       RowBox[{"[", "n", "]"}], "]"}], "-", "7"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", 
+       RowBox[{"Length", "[", "mAXTA", "]"}]}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<mAXTAYT = FromCharacterCode[mAXTAY]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mAXTAYT", "=", 
+   RowBox[{"FromCharacterCode", "[", "mAXTAY", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Exercici 5:\>\"", ",", " ", "\"\<Subtitle\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Xifrar[text0_,n0_]:=Module[{text = \
+text0,n=n0},\[IndentingNewLine]t:=ToCharacterCode[text]+n;\[IndentingNewLine]\
+FromCharacterCode[t]\[IndentingNewLine]]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Xifrar", "[", 
+   RowBox[{"text0_", ",", "n0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"text", " ", "=", " ", "text0"}], ",", 
+      RowBox[{"n", "=", "n0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"t", ":=", 
+      RowBox[{
+       RowBox[{"ToCharacterCode", "[", "text", "]"}], "+", "n"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"FromCharacterCode", "[", "t", "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<mT\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"mT", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Xifrar[mT, 7]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Xifrar", "[", 
+   RowBox[{"mT", ",", " ", "7"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<text := Xifrar[mT, 7]\>\"", ",", " ", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"text", " ", ":=", 
+   RowBox[{"Xifrar", "[", 
+    RowBox[{"mT", ",", "7"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Xifrar[text,-7]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Xifrar", "[", 
+   RowBox[{"text", ",", " ", 
+    RowBox[{"-", "7"}]}], "]"}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{"Style", "[", 
+  RowBox[{
+  "\"\<Per desxifrar l'enunciat farem un estudi de \
+freq\[UDoubleDot]\[EGrave]ncies. Veiem que la paraula encriptada de \
+l'enunciat \[EAcute]s \\\"Ktnuxghutg\\\", on es repeteixen la t i la g. En el \
+catal\[AGrave], la lletra m\[EAcute]s usada en totes les paraules \[EAcute]s \
+la a; per tant, \[EAcute]s molt possible que o la t o la g siguin la lletra \
+a. Com que la t i la a estan molt lluny, provarem primer amb la g. De la a a \
+la g hi ha 6 passos; per tant, l'encriptaci\[OAcute] ser\[AGrave] +6. Si \
+desxifrem l'enunciat amb -6 obtenim:\>\"", ",", "\"\<Text\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Xifrar[\\\"Ktnuxghutg\\\",-6]\>\"", ",", "\"\<Input\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Xifrar", "[", 
+  RowBox[{"\"\<Ktnuxghutg\>\"", ",", 
+   RowBox[{"-", "6"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Style", "[", 
+  RowBox[{"\"\<Per tant la clau era -6!\>\"", ",", "\"\<Text\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.796988723853803*^9, 3.7969887893206544`*^9}, {
+   3.7969888362520065`*^9, 3.7969892091317253`*^9}, {3.7969892440111933`*^9, 
+   3.7969892541506824`*^9}, 3.7969896171188965`*^9, {3.7969905882806387`*^9, 
+   3.79699063394342*^9}, 3.7969907243128457`*^9, {3.7969987493431253`*^9, 
+   3.7969988186513405`*^9}, {3.796999005438545*^9, 3.7969990116619115`*^9}, {
+   3.797068490079032*^9, 3.797068494045495*^9}}]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{Automatic, -1374}, {-9, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 9763, 249, 1684, "Input"]
+}
+]
+*)
+

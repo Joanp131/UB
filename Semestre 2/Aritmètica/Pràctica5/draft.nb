@@ -1,0 +1,1383 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42084,       1373]
+NotebookOptionsPosition[     39938,       1294]
+NotebookOutlinePosition[     40285,       1309]
+CellTagsIndexPosition[     40242,       1306]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "mT", "=", 
+   "\"\<An expert is a man who has made all the mistakes, which can be made,\n\
+in a very narrow field. Niels Bohr (1885-1962).\>\""}], "\n"}]], "Input",
+ CellChangeTimes->{{3.7969865671824903`*^9, 3.7969865672163987`*^9}}],
+
+Cell[BoxData["\<\"An expert is a man who has made all the mistakes, which can \
+be made,\\nin a very narrow field. Niels Bohr (1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.796986567954039*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["mT"], "Input",
+ CellChangeTimes->{{3.7969865696602235`*^9, 3.7969865699506288`*^9}}],
+
+Cell[BoxData["\<\"An expert is a man who has made all the mistakes, which can \
+be made,\\nin a very narrow field. Niels Bohr (1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.796986571884703*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mA", "=", 
+  RowBox[{"ToCharacterCode", "[", "mT", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969865906165266`*^9, 3.796986590669383*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "65", ",", "110", ",", "32", ",", "101", ",", "120", ",", "112", ",", "101",
+    ",", "114", ",", "116", ",", "32", ",", "105", ",", "115", ",", "32", ",",
+    "97", ",", "32", ",", "109", ",", "97", ",", "110", ",", "32", ",", "119",
+    ",", "104", ",", "111", ",", "32", ",", "104", ",", "97", ",", "115", ",",
+    "32", ",", "109", ",", "97", ",", "100", ",", "101", ",", "32", ",", "97",
+    ",", "108", ",", "108", ",", "32", ",", "116", ",", "104", ",", "101", 
+   ",", "32", ",", "109", ",", "105", ",", "115", ",", "116", ",", "97", ",", 
+   "107", ",", "101", ",", "115", ",", "44", ",", "32", ",", "119", ",", 
+   "104", ",", "105", ",", "99", ",", "104", ",", "32", ",", "99", ",", "97", 
+   ",", "110", ",", "32", ",", "98", ",", "101", ",", "32", ",", "109", ",", 
+   "97", ",", "100", ",", "101", ",", "44", ",", "10", ",", "105", ",", "110",
+    ",", "32", ",", "97", ",", "32", ",", "118", ",", "101", ",", "114", ",", 
+   "121", ",", "32", ",", "110", ",", "97", ",", "114", ",", "114", ",", 
+   "111", ",", "119", ",", "32", ",", "102", ",", "105", ",", "101", ",", 
+   "108", ",", "100", ",", "46", ",", "32", ",", "78", ",", "105", ",", "101",
+    ",", "108", ",", "115", ",", "32", ",", "66", ",", "111", ",", "104", ",",
+    "114", ",", "32", ",", "40", ",", "49", ",", "56", ",", "56", ",", "53", 
+   ",", "45", ",", "49", ",", "57", ",", "54", ",", "50", ",", "41", ",", 
+   "46"}], "}"}]], "Output",
+ CellChangeTimes->{3.7969865913071594`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mB", " ", "=", " ", 
+  RowBox[{"BaseForm", "[", 
+   RowBox[{"mA", ",", "2"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969866014035378`*^9, 3.7969866189568434`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"1000001\"\>", "\<\"2\"\>"],
+     65,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1111000\"\>", "\<\"2\"\>"],
+     120,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110000\"\>", "\<\"2\"\>"],
+     112,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101101\"\>", "\<\"2\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110111\"\>", "\<\"2\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101111\"\>", "\<\"2\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101101\"\>", "\<\"2\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100100\"\>", "\<\"2\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101101\"\>", "\<\"2\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101011\"\>", "\<\"2\"\>"],
+     107,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101100\"\>", "\<\"2\"\>"],
+     44,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110111\"\>", "\<\"2\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100011\"\>", "\<\"2\"\>"],
+     99,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100011\"\>", "\<\"2\"\>"],
+     99,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100010\"\>", "\<\"2\"\>"],
+     98,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101101\"\>", "\<\"2\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100100\"\>", "\<\"2\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101100\"\>", "\<\"2\"\>"],
+     44,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1010\"\>", "\<\"2\"\>"],
+     10,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110110\"\>", "\<\"2\"\>"],
+     118,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1111001\"\>", "\<\"2\"\>"],
+     121,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101111\"\>", "\<\"2\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110111\"\>", "\<\"2\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100110\"\>", "\<\"2\"\>"],
+     102,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100100\"\>", "\<\"2\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101110\"\>", "\<\"2\"\>"],
+     46,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1001110\"\>", "\<\"2\"\>"],
+     78,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1000010\"\>", "\<\"2\"\>"],
+     66,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101111\"\>", "\<\"2\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101000\"\>", "\<\"2\"\>"],
+     40,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"110001\"\>", "\<\"2\"\>"],
+     49,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"111000\"\>", "\<\"2\"\>"],
+     56,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"111000\"\>", "\<\"2\"\>"],
+     56,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"110101\"\>", "\<\"2\"\>"],
+     53,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101101\"\>", "\<\"2\"\>"],
+     45,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"110001\"\>", "\<\"2\"\>"],
+     49,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"111001\"\>", "\<\"2\"\>"],
+     57,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"110110\"\>", "\<\"2\"\>"],
+     54,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"110010\"\>", "\<\"2\"\>"],
+     50,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101001\"\>", "\<\"2\"\>"],
+     41,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101110\"\>", "\<\"2\"\>"],
+     46,
+     Editable->False]}], "}"}],
+  BaseForm[#, 2]& ]], "Output",
+ CellChangeTimes->{3.7969866198254037`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mH", " ", "=", " ", 
+  RowBox[{"BaseForm", "[", 
+   RowBox[{"mA", ",", " ", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969866457397027`*^9, 3.7969866563310385`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"41\"\>", "\<\"16\"\>"],
+     65,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"78\"\>", "\<\"16\"\>"],
+     120,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"70\"\>", "\<\"16\"\>"],
+     112,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6d\"\>", "\<\"16\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"77\"\>", "\<\"16\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6f\"\>", "\<\"16\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6d\"\>", "\<\"16\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"64\"\>", "\<\"16\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6d\"\>", "\<\"16\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6b\"\>", "\<\"16\"\>"],
+     107,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2c\"\>", "\<\"16\"\>"],
+     44,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"77\"\>", "\<\"16\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"63\"\>", "\<\"16\"\>"],
+     99,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"63\"\>", "\<\"16\"\>"],
+     99,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"62\"\>", "\<\"16\"\>"],
+     98,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6d\"\>", "\<\"16\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"64\"\>", "\<\"16\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2c\"\>", "\<\"16\"\>"],
+     44,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"a\"\>", "\<\"16\"\>"],
+     10,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"76\"\>", "\<\"16\"\>"],
+     118,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"79\"\>", "\<\"16\"\>"],
+     121,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6f\"\>", "\<\"16\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"77\"\>", "\<\"16\"\>"],
+     119,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"66\"\>", "\<\"16\"\>"],
+     102,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"64\"\>", "\<\"16\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2e\"\>", "\<\"16\"\>"],
+     46,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"4e\"\>", "\<\"16\"\>"],
+     78,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"42\"\>", "\<\"16\"\>"],
+     66,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6f\"\>", "\<\"16\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"28\"\>", "\<\"16\"\>"],
+     40,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"31\"\>", "\<\"16\"\>"],
+     49,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"38\"\>", "\<\"16\"\>"],
+     56,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"38\"\>", "\<\"16\"\>"],
+     56,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"35\"\>", "\<\"16\"\>"],
+     53,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2d\"\>", "\<\"16\"\>"],
+     45,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"31\"\>", "\<\"16\"\>"],
+     49,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"39\"\>", "\<\"16\"\>"],
+     57,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"36\"\>", "\<\"16\"\>"],
+     54,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"32\"\>", "\<\"16\"\>"],
+     50,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"29\"\>", "\<\"16\"\>"],
+     41,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2e\"\>", "\<\"16\"\>"],
+     46,
+     Editable->False]}], "}"}],
+  BaseForm[#, 16]& ]], "Output",
+ CellChangeTimes->{3.796986657617874*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mAT", " ", "=", " ", 
+  RowBox[{"FromCharacterCode", "[", "mA", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969866671409044`*^9, 3.796986677318736*^9}}],
+
+Cell[BoxData["\<\"An expert is a man who has made all the mistakes, which can \
+be made,\\nin a very narrow field. Niels Bohr (1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.7969866784744797`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"mBT", " ", "=", " ", 
+  RowBox[{"FromCharacterCode", "[", "mB", "]"}]}]], "Input",
+ CellChangeTimes->{{3.796986684527343*^9, 3.7969866860181603`*^9}, {
+  3.7969867182766185`*^9, 3.7969867397090263`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mAX", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"mA", "[", 
+      RowBox[{"[", "n", "]"}], "]"}], "+", "7"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", 
+      RowBox[{"Length", "[", "mA", "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.79698689084556*^9, 3.796986924173571*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "72", ",", "117", ",", "39", ",", "108", ",", "127", ",", "119", ",", "108",
+    ",", "121", ",", "123", ",", "39", ",", "112", ",", "122", ",", "39", ",",
+    "104", ",", "39", ",", "116", ",", "104", ",", "117", ",", "39", ",", 
+   "126", ",", "111", ",", "118", ",", "39", ",", "111", ",", "104", ",", 
+   "122", ",", "39", ",", "116", ",", "104", ",", "107", ",", "108", ",", 
+   "39", ",", "104", ",", "115", ",", "115", ",", "39", ",", "123", ",", 
+   "111", ",", "108", ",", "39", ",", "116", ",", "112", ",", "122", ",", 
+   "123", ",", "104", ",", "114", ",", "108", ",", "122", ",", "51", ",", 
+   "39", ",", "126", ",", "111", ",", "112", ",", "106", ",", "111", ",", 
+   "39", ",", "106", ",", "104", ",", "117", ",", "39", ",", "105", ",", 
+   "108", ",", "39", ",", "116", ",", "104", ",", "107", ",", "108", ",", 
+   "51", ",", "17", ",", "112", ",", "117", ",", "39", ",", "104", ",", "39", 
+   ",", "125", ",", "108", ",", "121", ",", "128", ",", "39", ",", "117", ",",
+    "104", ",", "121", ",", "121", ",", "118", ",", "126", ",", "39", ",", 
+   "109", ",", "112", ",", "108", ",", "115", ",", "107", ",", "53", ",", 
+   "39", ",", "85", ",", "112", ",", "108", ",", "115", ",", "122", ",", "39",
+    ",", "73", ",", "118", ",", "111", ",", "121", ",", "39", ",", "47", ",", 
+   "56", ",", "63", ",", "63", ",", "60", ",", "52", ",", "56", ",", "64", 
+   ",", "61", ",", "57", ",", "48", ",", "53"}], "}"}]], "Output",
+ CellChangeTimes->{3.796986926804352*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mAXT", " ", "=", " ", 
+  RowBox[{"FromCharacterCode", "[", "mAX", "]"}]}]], "Input",
+ CellChangeTimes->{{3.796986936025212*^9, 3.796986949280508*^9}}],
+
+Cell[BoxData["\<\"Hu'l\.7fwly{'pz'h'thu'~ov'ohz'thkl'hss'{ol'tpz{hrlz3'~opjo'\
+jhu'il'thkl3\.11pu'h'}ly\.80'uhyyv~'mplsk5'Uplsz'Ivoy'/8??<48@=905\"\>"], \
+"Output",
+ CellChangeTimes->{3.796986949911843*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mAXTAY", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"mAX", "[", 
+      RowBox[{"[", "n", "]"}], "]"}], "-", "7"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", 
+      RowBox[{"Length", "[", "mAX", "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969869734726653`*^9, 3.7969870291347675`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "65", ",", "110", ",", "32", ",", "101", ",", "120", ",", "112", ",", "101",
+    ",", "114", ",", "116", ",", "32", ",", "105", ",", "115", ",", "32", ",",
+    "97", ",", "32", ",", "109", ",", "97", ",", "110", ",", "32", ",", "119",
+    ",", "104", ",", "111", ",", "32", ",", "104", ",", "97", ",", "115", ",",
+    "32", ",", "109", ",", "97", ",", "100", ",", "101", ",", "32", ",", "97",
+    ",", "108", ",", "108", ",", "32", ",", "116", ",", "104", ",", "101", 
+   ",", "32", ",", "109", ",", "105", ",", "115", ",", "116", ",", "97", ",", 
+   "107", ",", "101", ",", "115", ",", "44", ",", "32", ",", "119", ",", 
+   "104", ",", "105", ",", "99", ",", "104", ",", "32", ",", "99", ",", "97", 
+   ",", "110", ",", "32", ",", "98", ",", "101", ",", "32", ",", "109", ",", 
+   "97", ",", "100", ",", "101", ",", "44", ",", "10", ",", "105", ",", "110",
+    ",", "32", ",", "97", ",", "32", ",", "118", ",", "101", ",", "114", ",", 
+   "121", ",", "32", ",", "110", ",", "97", ",", "114", ",", "114", ",", 
+   "111", ",", "119", ",", "32", ",", "102", ",", "105", ",", "101", ",", 
+   "108", ",", "100", ",", "46", ",", "32", ",", "78", ",", "105", ",", "101",
+    ",", "108", ",", "115", ",", "32", ",", "66", ",", "111", ",", "104", ",",
+    "114", ",", "32", ",", "40", ",", "49", ",", "56", ",", "56", ",", "53", 
+   ",", "45", ",", "49", ",", "57", ",", "54", ",", "50", ",", "41", ",", 
+   "46"}], "}"}]], "Output",
+ CellChangeTimes->{3.796987029904192*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", "mAXTAY", "]"}]], "Input",
+ CellChangeTimes->{{3.796987034721381*^9, 3.796987042281439*^9}}],
+
+Cell[BoxData["\<\"An expert is a man who has made all the mistakes, which can \
+be made,\\nin a very narrow field. Niels Bohr (1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.796987043215329*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Xifrar", "[", 
+   RowBox[{"text0_", ",", "n0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"text", " ", "=", " ", "text0"}], ",", 
+      RowBox[{"n", "=", "n0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"t", ":=", 
+      RowBox[{"ToCharacterCode", "[", "text", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"xifrat", ":=", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"t", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], "+", "n"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", 
+          RowBox[{"Length", "[", "t", "]"}]}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"nouText", ":=", 
+      RowBox[{"FromCharacterCode", "[", "xifrat", "]"}]}], ";", 
+     "\[IndentingNewLine]", "nouText"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969870769356737`*^9, 3.796987305477281*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Xifrar", "[", 
+  RowBox[{"mT", ",", "7"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7969873086331973`*^9, 3.796987320619574*^9}}],
+
+Cell[BoxData["\<\"Hu'l\.7fwly{'pz'h'thu'~ov'ohz'thkl'hss'{ol'tpz{hrlz3'~opjo'\
+jhu'il'thkl3\.11pu'h'}ly\.80'uhyyv~'mplsk5'Uplsz'Ivoy'/8??<48@=905\"\>"], \
+"Output",
+ CellChangeTimes->{3.796987321483739*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"hola", ":=", 
+  RowBox[{"Xifrar", "[", 
+   RowBox[{"mT", ",", "7"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7969873324075003`*^9, 3.7969873518371964`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Xifrar", "[", 
+  RowBox[{"hola", ",", 
+   RowBox[{"-", "7"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7969873549841967`*^9, 3.796987364644847*^9}}],
+
+Cell[BoxData["\<\"An expert is a man who has made all the mistakes, which can \
+be made,\\nin a very narrow field. Niels Bohr (1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.7969873654286127`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringReplace", "[", 
+  RowBox[{
+  "\"\<An expert is a man who has made all the mistakes, which can be \
+made,\\nin a very narrow field. Niels Bohr (1885-1962).\>\"", ",", 
+   RowBox[{"Whitespace", "\[Rule]", "\"\<\>\""}]}], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData["\<\"Anexpertisamanwhohasmadeallthemistakes,whichcanbemade,\
+inaverynarrowfield.NielsBohr(1885-1962).\"\>"], "Output",
+ CellChangeTimes->{3.79698812647495*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Characters", "[", 
+  "\"\<Anexpertisamanwhohasmadeallthemistakes,whichcanbemade,\
+inaverynarrowfield.NielsBohr(1885-1962).\>\"", "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"A\"\>", ",", "\<\"n\"\>", ",", "\<\"e\"\>", ",", "\<\"x\"\>", 
+   ",", "\<\"p\"\>", ",", "\<\"e\"\>", ",", "\<\"r\"\>", ",", "\<\"t\"\>", 
+   ",", "\<\"i\"\>", ",", "\<\"s\"\>", ",", "\<\"a\"\>", ",", "\<\"m\"\>", 
+   ",", "\<\"a\"\>", ",", "\<\"n\"\>", ",", "\<\"w\"\>", ",", "\<\"h\"\>", 
+   ",", "\<\"o\"\>", ",", "\<\"h\"\>", ",", "\<\"a\"\>", ",", "\<\"s\"\>", 
+   ",", "\<\"m\"\>", ",", "\<\"a\"\>", ",", "\<\"d\"\>", ",", "\<\"e\"\>", 
+   ",", "\<\"a\"\>", ",", "\<\"l\"\>", ",", "\<\"l\"\>", ",", "\<\"t\"\>", 
+   ",", "\<\"h\"\>", ",", "\<\"e\"\>", ",", "\<\"m\"\>", ",", "\<\"i\"\>", 
+   ",", "\<\"s\"\>", ",", "\<\"t\"\>", ",", "\<\"a\"\>", ",", "\<\"k\"\>", 
+   ",", "\<\"e\"\>", ",", "\<\"s\"\>", ",", "\<\",\"\>", ",", "\<\"w\"\>", 
+   ",", "\<\"h\"\>", ",", "\<\"i\"\>", ",", "\<\"c\"\>", ",", "\<\"h\"\>", 
+   ",", "\<\"c\"\>", ",", "\<\"a\"\>", ",", "\<\"n\"\>", ",", "\<\"b\"\>", 
+   ",", "\<\"e\"\>", ",", "\<\"m\"\>", ",", "\<\"a\"\>", ",", "\<\"d\"\>", 
+   ",", "\<\"e\"\>", ",", "\<\",\"\>", ",", "\<\"i\"\>", ",", "\<\"n\"\>", 
+   ",", "\<\"a\"\>", ",", "\<\"v\"\>", ",", "\<\"e\"\>", ",", "\<\"r\"\>", 
+   ",", "\<\"y\"\>", ",", "\<\"n\"\>", ",", "\<\"a\"\>", ",", "\<\"r\"\>", 
+   ",", "\<\"r\"\>", ",", "\<\"o\"\>", ",", "\<\"w\"\>", ",", "\<\"f\"\>", 
+   ",", "\<\"i\"\>", ",", "\<\"e\"\>", ",", "\<\"l\"\>", ",", "\<\"d\"\>", 
+   ",", "\<\".\"\>", ",", "\<\"N\"\>", ",", "\<\"i\"\>", ",", "\<\"e\"\>", 
+   ",", "\<\"l\"\>", ",", "\<\"s\"\>", ",", "\<\"B\"\>", ",", "\<\"o\"\>", 
+   ",", "\<\"h\"\>", ",", "\<\"r\"\>", ",", "\<\"(\"\>", ",", "\<\"1\"\>", 
+   ",", "\<\"8\"\>", ",", "\<\"8\"\>", ",", "\<\"5\"\>", ",", "\<\"-\"\>", 
+   ",", "\<\"1\"\>", ",", "\<\"9\"\>", ",", "\<\"6\"\>", ",", "\<\"2\"\>", 
+   ",", "\<\")\"\>", ",", "\<\".\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.796988136736475*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\"\<a\>\"", "+", "7"}]], "Input",
+ CellChangeTimes->{{3.7969880873932047`*^9, 3.796988091540245*^9}}],
+
+Cell[BoxData[
+ RowBox[{"7", "+", "\<\"a\"\>"}]], "Output",
+ CellChangeTimes->{3.796988092894886*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Xifrar", "[", 
+  RowBox[{"\"\<Ktnuxghutg\>\"", ",", " ", 
+   RowBox[{"-", "6"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7969881676928067`*^9, 3.7969881934437838`*^9}}],
+
+Cell[BoxData["\<\"Enhorabona\"\>"], "Output",
+ CellChangeTimes->{3.7969881942575717`*^9}]
+}, Open  ]]
+},
+WindowSize->{697, 988},
+WindowMargins->{{562, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 272, 6, 69, "Input"],
+Cell[855, 30, 197, 2, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1089, 37, 98, 1, 30, "Input"],
+Cell[1190, 40, 197, 2, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1424, 47, 161, 3, 30, "Input"],
+Cell[1588, 52, 1511, 22, 145, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3136, 79, 190, 4, 30, "Input"],
+Cell[3329, 85, 13145, 469, 292, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16511, 559, 196, 4, 30, "Input"],
+Cell[16710, 565, 12718, 469, 211, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29465, 1039, 174, 3, 30, "Input"],
+Cell[29642, 1044, 199, 2, 50, "Output"]
+}, Open  ]],
+Cell[29856, 1049, 227, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[30108, 1057, 365, 10, 30, "Input"],
+Cell[30476, 1069, 1522, 22, 145, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32035, 1096, 174, 3, 30, "Input"],
+Cell[32212, 1101, 206, 3, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32455, 1109, 375, 10, 30, "Input"],
+Cell[32833, 1121, 1509, 22, 145, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34379, 1148, 141, 2, 30, "Input"],
+Cell[34523, 1152, 197, 2, 50, "Output"]
+}, Open  ]],
+Cell[34735, 1157, 1013, 28, 126, "Input"],
+Cell[CellGroupData[{
+Cell[35773, 1189, 151, 3, 30, "Input"],
+Cell[35927, 1194, 206, 3, 50, "Output"]
+}, Open  ]],
+Cell[36148, 1200, 181, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[36354, 1208, 172, 4, 30, "Input"],
+Cell[36529, 1214, 199, 2, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36765, 1221, 286, 6, 69, "Input"],
+Cell[37054, 1229, 172, 2, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37263, 1236, 190, 4, 69, "Input"],
+Cell[37456, 1242, 1879, 26, 69, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39372, 1273, 125, 2, 30, "Input"],
+Cell[39500, 1277, 100, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39637, 1284, 193, 4, 30, "Input"],
+Cell[39833, 1290, 89, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
